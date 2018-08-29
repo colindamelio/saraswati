@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./Home";
-import Culture from "./Culture";
-import Curriculum from "./Curriculum";
-import Error from "./Error";
+import Home from "../routes/Home";
+import Culture from "../routes/Culture";
+import Curriculum from "../routes/Curriculum";
+import Error from "../routes//Error";
 import Navigation from "./Navigation";
 
 export default class Body extends Component {
