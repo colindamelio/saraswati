@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Link = styled(NavLink)`
   color: ${props => props.theme.colors.white};
-  padding: 0 10px;
+  padding: 0 20px;
   text-transform: uppercase;
 `;
 
@@ -12,7 +12,7 @@ const NavContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   background: ${props => props.theme.colors.green};
-  padding: 15px 0;
+  padding: 35px 0;
 `;
 
 const Nav = styled.nav`
