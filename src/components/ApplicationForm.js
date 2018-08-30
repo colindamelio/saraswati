@@ -33,31 +33,31 @@ export default class ApplicationForm extends Component {
     return (
       <Form>
         <label for="firstName">First Name</label>
-        <input type="text" firstName="firstName" id="firstName" required />
+        <input type="text" name="firstName" id="firstName" required />
 
         <label for="lastName">Last Name</label>
-        <input type="text" lastName="lastName" id="lastName" required />
+        <input type="text" name="lastName" id="lastName" required />
 
         <label for="email">Email Address</label>
-        <input type="email" lastName="email" id="email" required />
+        <input type="email" name="email" id="email" required />
 
         <label for="phone">Phone Number (Please include Country code)</label>
-        <input type="tel" lastName="phone" id="phone" required />
+        <input type="tel" name="phone" id="phone" required />
 
         <label for="country">
           Where are you applying from? (City, Country)
         </label>
-        <input type="text" lastName="country" id="country" required />
+        <input type="text" name="country" id="country" required />
 
         <label for="retreat">Select an upcoming retreat</label>
-        <select type="text" lastName="retreat" id="retreat" required>
+        <select type="text" name="retreat" id="retreat" required>
           <option>...</option>
         </select>
 
         <label for="textarea">
           What would you like to accomplish during your Saraswati Experience?
         </label>
-        <textarea id="textarea" />
+        <textarea name="textarea" id="textarea" />
 
         <Submit type="submit">Submit</Submit>
       </Form>
