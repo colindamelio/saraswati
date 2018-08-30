@@ -50,7 +50,7 @@ export default class ApplicationForm extends Component {
         <input type="text" name="country" id="country" required />
 
         <label for="retreat">Select an upcoming retreat</label>
-        <select type="text" name="retreat" id="retreat" required>
+        <select name="retreat" id="retreat" required>
           <option>...</option>
         </select>
 
