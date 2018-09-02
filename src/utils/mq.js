@@ -1,9 +1,9 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
 
 export const devices = {
-  mobile: "mobile",
-  talbet: "tablet",
-  desktop: "desktop"
+  mobile: 'mobile',
+  tablet: 'tablet',
+  desktop: 'desktop',
 };
 
 /**
@@ -32,7 +32,7 @@ const mq = {
       @media screen and (min-width: 1024px) {
         ${css(...args)};
       }
-    `
+    `,
 };
 
 export default mq;

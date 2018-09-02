@@ -6,7 +6,7 @@ const H1 = styled.h1`
   font-family: ${props => props.theme.fonts.primaryFont};
   color: ${props =>
     props.secondary ? props.theme.colors.white : props.theme.colors.green};
-  font-weight: ${props => props.theme.weights.secondaryBold};
+  font-weight: normal;
   font-size: 46px;
   line-height: 79px;
 
