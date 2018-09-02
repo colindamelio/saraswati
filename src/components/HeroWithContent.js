@@ -7,6 +7,9 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  ${mq.desktop`
+    flex-direction: row;
+  `};
 `;
 
 const Image = styled.div`
