@@ -10,7 +10,6 @@ const Button = styled.button`
   color: ${props => props.theme.colors.white};
   background: ${props => props.theme.colors.orange};
   text-transform: uppercase;
-  margin-top: 50px;
   padding: 15px;
   border: none;
 `;

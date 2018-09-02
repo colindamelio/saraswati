@@ -12,7 +12,7 @@ const Container = styled.div`
   `};
 `;
 
-const Image = styled.div`
+const HeroContent = styled.div`
   background: ${props => `url(${props.src}) ${props.theme.colors.white}`};
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@ const Content = styled.div`
 const HeroWithContent = ({ src, width, children }) => {
   return (
     <Container>
-      <Image src={src} />
+      <HeroContent src={src} />
       <Content width={width}>{children}</Content>
     </Container>
   );

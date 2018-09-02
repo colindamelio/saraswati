@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-const H2 = styled.h1`
+const H2 = styled.h2`
   font-family: ${props => props.theme.fonts.primaryFont};
   color: ${props =>
     props.secondary ? props.theme.colors.white : props.theme.colors.orange};
