@@ -5,7 +5,6 @@ import Image from 'components/Image';
 import H2 from './H2';
 import BodyText from './BodyText';
 import Button from './Button';
-import Bold from './Bold';
 import colImage1 from 'media/bali-2-min.jpg';
 import colImage2 from 'media/bali-6-min.jpg';
 import colImage3 from 'media/bali-7-min.jpg';
@@ -52,7 +51,7 @@ const Information = () => {
         <Image src={colImage1} alt="" />
         <H2>Upcoming Retreats</H2>
         <BodyText>
-          <Bold>February 10-23, 2019</Bold>
+          <b>February 10-23, 2019</b>
           <br />
           Register by December 15, 2018 to be eligible for our Early Bird
           Pricing!
@@ -75,9 +74,9 @@ const Information = () => {
           <ListItem>Morning meditation & yoga</ListItem>
         </ul>
         <BodyText>
-          <Bold>Note:</Bold> Please be sure to bring your own personal laptop.
-          Flight costs not included. Airport transfer can be arranged for an
-          additional fee.
+          <b>Note:</b> Please be sure to bring your own personal laptop. Flight
+          costs not included. Airport transfer can be arranged for an additional
+          fee.
         </BodyText>
       </InfoColumn>
       <InfoColumn>
