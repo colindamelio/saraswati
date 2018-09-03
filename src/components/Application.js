@@ -10,7 +10,7 @@ const Application = () => {
     <Fragment>
       <HeroWithContent src={reflection} width={50}>
         <H1>
-          <b>Apply today</b> for an upcoming retreat!
+          <strong>Apply today</strong> for an upcoming retreat!
         </H1>
         <ApplicationForm />
       </HeroWithContent>

@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import mq from "utils/mq";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import mq from 'utils/mq';
 
 const Container = styled.div`
   background: ${props => props.theme.colors.white};
@@ -31,17 +31,19 @@ const HeroContent = styled.div`
 
 const Content = styled.div`
   width: 100%;
-  padding: 25px;
+  padding: 25px 60px 25px 25px;
   ${mq.desktop`
     width: ${props => `${props.width}%`};
   `};
 `;
 
-const HeroWithContent = ({ src, width, children }) => {
+const HeroWithContent = ({ className, src, width, children }) => {
   return (
     <Container>
       <HeroContent src={src} />
-      <Content width={width}>{children}</Content>
+      <Content className={className} width={width}>
+        {children}
+      </Content>
     </Container>
   );
 };
@@ -50,5 +52,5 @@ export default HeroWithContent;
 
 HeroWithContent.propTypes = {
   src: PropTypes.string,
-  width: PropTypes.number
+  width: PropTypes.number,
 };

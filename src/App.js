@@ -9,7 +9,7 @@ import theme from './theme';
 import Body from './components/Body';
 
 injectGlobal`
-  b, strong {
+  strong {
     font-weight: 700;
   }
 `;

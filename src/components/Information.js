@@ -51,7 +51,7 @@ const Information = () => {
         <Image src={colImage1} alt="" />
         <H2>Upcoming Retreats</H2>
         <BodyText>
-          <b>February 10-23, 2019</b>
+          <strong>February 10-23, 2019</strong>
           <br />
           Register by December 15, 2018 to be eligible for our Early Bird
           Pricing!
@@ -74,7 +74,7 @@ const Information = () => {
           <ListItem>Morning meditation & yoga</ListItem>
         </ul>
         <BodyText>
-          <b>Note:</b> Please be sure to bring your own personal laptop. Flight
+          <strong>Note:</strong> Please be sure to bring your own personal laptop. Flight
           costs not included. Airport transfer can be arranged for an additional
           fee.
         </BodyText>
