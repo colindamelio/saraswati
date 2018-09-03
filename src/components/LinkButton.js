@@ -1,6 +1,4 @@
-import React, { Component } from 'react';
 import styled from 'styled-components';
-import mq from './../utils/mq';
 
 const LinkButton = styled.button`
   max-width: 180px;
