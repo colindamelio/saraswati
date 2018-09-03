@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const LinkButton = styled.button`
   max-width: 180px;
@@ -11,6 +11,7 @@ const LinkButton = styled.button`
   text-transform: uppercase;
   padding: 15px;
   border: none;
+  cursor: pointer;
 `;
 
 export default LinkButton;

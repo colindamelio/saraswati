@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Button = styled.button`
   max-width: 180px;
@@ -7,11 +7,12 @@ const Button = styled.button`
   font-size: 14px;
   color: ${props => props.theme.colors.white};
   background: ${props =>
-    props.secondary ? 'none' : props.theme.colors.orange};
+    props.secondary ? "none" : props.theme.colors.orange};
   text-transform: uppercase;
   padding: 15px;
   border: ${props =>
-    props.secondary ? `4px solid ${props.theme.colors.white}` : 'none'};
+    props.secondary ? `4px solid ${props.theme.colors.white}` : "none"};
+  cursor: pointer;
 `;
 
 export default Button;
