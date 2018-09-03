@@ -1,6 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import mq from './../utils/mq';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import mq from "./../utils/mq";
 
 const Container = styled.div`
   background: ${props => props.theme.colors.white};
@@ -46,3 +47,8 @@ const HeroWithContent = ({ src, width, children }) => {
 };
 
 export default HeroWithContent;
+
+HeroWithContent.propTypes = {
+  src: PropTypes.string,
+  width: PropTypes.number
+};

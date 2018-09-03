@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import mq from './../utils/mq';
-import Image from './../components/Image';
-import H2 from './H2';
-import BodyText from './BodyText';
-import Button from './Button';
-import colImage1 from './../media/bali-2-min.jpg';
-import colImage2 from './../media/bali-6-min.jpg';
-import colImage3 from './../media/bali-7-min.jpg';
+import React from "react";
+import styled from "styled-components";
+import mq from "./../utils/mq";
+import Image from "./../components/Image";
+import H2 from "./H2";
+import BodyText from "./BodyText";
+import Button from "./Button";
+import colImage1 from "./../media/bali-2-min.jpg";
+import colImage2 from "./../media/bali-6-min.jpg";
+import colImage3 from "./../media/bali-7-min.jpg";
 
 const Container = styled.div`
   display: flex;
@@ -41,9 +41,9 @@ const Bold = styled.span`
 
 const ListItem = styled.li`
   font-family: ${props => props.theme.fonts.secondaryFont};
-  color: ${props => props.theme.colors.black};
   font-weight: normal;
   font-size: 16px;
+  color: ${props => props.theme.colors.black};
   line-height: 33px;
 `;
 
@@ -51,7 +51,7 @@ const Information = () => {
   return (
     <Container>
       <InfoColumn>
-        <Image src={colImage1} />
+        <Image src={colImage1} alt="" />
         <H2>Upcoming Retreats</H2>
         <BodyText>
           <Bold>February 10-23, 2019</Bold>
@@ -66,7 +66,7 @@ const Information = () => {
         <Button>Apply Today</Button>
       </InfoColumn>
       <InfoColumn>
-        <Image src={colImage2} />
+        <Image src={colImage2} alt="" />
         <H2>What's Included</H2>
         <ul>
           <ListItem>13 nights accomodation</ListItem>
@@ -83,7 +83,7 @@ const Information = () => {
         </BodyText>
       </InfoColumn>
       <InfoColumn>
-        <Image src={colImage3} />
+        <Image src={colImage3} alt="" />
         <H2>Early Bird Price - $2999USD</H2>
         <BodyText>
           Save big when you register early for upcoming retreats! See retreat
@@ -95,7 +95,8 @@ const Information = () => {
           provided with quality training. Reserve your spot today!
         </BodyText>
         <Conditions>
-          <sup>*</sup>Rates are based on 2-person occupancy.
+          <sup>*</sup>
+          Rates are based on 2-person occupancy.
         </Conditions>
       </InfoColumn>
     </Container>
