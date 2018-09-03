@@ -39,6 +39,14 @@ const Bold = styled.span`
   font-weight: ${props => props.theme.weights.primaryBold};
 `;
 
+const ListItem = styled.li`
+  font-family: ${props => props.theme.fonts.secondaryFont};
+  color: ${props => props.theme.colors.black};
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 33px;
+`;
+
 const Information = () => {
   return (
     <Container>
@@ -61,12 +69,12 @@ const Information = () => {
         <Image src={colImage2} />
         <H2>What's Included</H2>
         <ul>
-          <li>13 nights accomodation</li>
-          <li>10 days of in-class training</li>
-          <li>Breakfast & lunch (weekdays)</li>
-          <li>5 scheduled dinners</li>
-          <li>1 traditional Balinese cooking class (5 hours)</li>
-          <li>Morning meditation & yoga</li>
+          <ListItem>13 nights accomodation</ListItem>
+          <ListItem>10 days of in-class training</ListItem>
+          <ListItem>Breakfast & lunch (weekdays)</ListItem>
+          <ListItem>5 scheduled dinners</ListItem>
+          <ListItem>1 traditional Balinese cooking class (5 hours)</ListItem>
+          <ListItem>Morning meditation & yoga</ListItem>
         </ul>
         <BodyText>
           <Bold>Note:</Bold> Please be sure to bring your own personal laptop.
