@@ -21,8 +21,10 @@ const HeroContent = styled.div`
 
   ${mq.tablet`
     max-height: 450px;
+    min-height: 250px;
   `} ${mq.mobile`
     max-height: 220px;
+    min-height: 200px;
   `};
 `;
 
