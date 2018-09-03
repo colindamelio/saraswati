@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import HeroWithContent from './HeroWithContent';
-import H2 from './H2';
-import BodyText from './BodyText';
-import Button from './Button';
-import LinkButton from './LinkButton';
-import devImage from './../media/bali-1-min.jpg';
+import React from "react";
+import styled from "styled-components";
+import HeroWithContent from "./HeroWithContent";
+import H2 from "./H2";
+import BodyText from "./BodyText";
+import Button from "./Button";
+import LinkButton from "./LinkButton";
+import devImage from "media/bali-1-min.jpg";
 
 const Container = styled.div``;
 

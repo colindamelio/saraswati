@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import mq from './../utils/mq';
+import React from "react";
+import styled from "styled-components";
+import mq from "utils/mq";
 
 const Container = styled.div`
   position: relative;

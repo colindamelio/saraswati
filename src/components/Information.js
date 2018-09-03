@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import mq from "./../utils/mq";
-import Image from "./../components/Image";
+import mq from "utils/mq";
+import Image from "components/Image";
 import H2 from "./H2";
 import BodyText from "./BodyText";
 import Button from "./Button";
-import colImage1 from "./../media/bali-2-min.jpg";
-import colImage2 from "./../media/bali-6-min.jpg";
-import colImage3 from "./../media/bali-7-min.jpg";
+import colImage1 from "media/bali-2-min.jpg";
+import colImage2 from "media/bali-6-min.jpg";
+import colImage3 from "media/bali-7-min.jpg";
 
 const Container = styled.div`
   display: flex;
