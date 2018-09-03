@@ -12,7 +12,8 @@ const Button = styled.button`
     props.secondary ? 'none' : props.theme.colors.orange};
   text-transform: uppercase;
   padding: 15px;
-  border: none;
+  border: ${props =>
+    props.secondary ? `4px solid ${props.theme.colors.white}` : 'none'};
 `;
 
 export default Button;

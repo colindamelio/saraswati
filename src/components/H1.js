@@ -8,7 +8,7 @@ const H1 = styled.h1`
     props.secondary ? props.theme.colors.white : props.theme.colors.green};
   font-weight: normal;
   font-size: 46px;
-  line-height: 79px;
+  line-height: 71px;
 
   ${mq.mobile`
     font-size: 30px;
