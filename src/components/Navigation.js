@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 
 const Link = styled(NavLink)`
   color: ${props => props.theme.colors.white};
@@ -13,6 +13,7 @@ const NavContainer = styled.div`
   flex-wrap: wrap;
   background: ${props => props.theme.colors.green};
   padding: 35px 0;
+  margin-bottom: 5px;
 `;
 
 const Nav = styled.nav`

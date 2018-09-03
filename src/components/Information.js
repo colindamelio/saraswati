@@ -13,6 +13,7 @@ import colImage3 from 'media/bali-7-min.jpg';
 const Container = styled.div`
   display: flex;
   padding: 50px;
+  margin-bottom: 5px;
   ${mq.tablet`
     padding: 50px 15px;
   `} ${mq.mobile`

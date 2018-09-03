@@ -1,12 +1,16 @@
-import React, { Fragment } from "react";
-import styled from "styled-components";
-import mq from "utils/mq";
-import Hero from "./Hero";
-import H1 from "./H1";
-import BodyText from "./BodyText";
-import Button from "./Button";
-import LinkButton from "./LinkButton";
-import experienceImage from "media/bali-3-min.jpg";
+import React from 'react';
+import styled from 'styled-components';
+import mq from 'utils/mq';
+import Hero from './Hero';
+import H1 from './H1';
+import BodyText from './BodyText';
+import Button from './Button';
+import LinkButton from './LinkButton';
+import experienceImage from 'media/bali-3-min.jpg';
+
+const Container = styled.div`
+  margin-bottom: 5px;
+`;
 
 const Column = styled.div`
   flex-grow: 1;
@@ -20,7 +24,7 @@ const Column = styled.div`
 
 const Experience = () => {
   return (
-    <Fragment>
+    <Container>
       <Hero src={experienceImage}>
         <Column>
           <H1 secondary>Providing you authentic Balinese experiences.</H1>
@@ -42,7 +46,7 @@ const Experience = () => {
           </BodyText>
         </Column>
       </Hero>
-    </Fragment>
+    </Container>
   );
 };
 
