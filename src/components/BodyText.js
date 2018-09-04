@@ -12,8 +12,12 @@ const Body = styled.p`
   line-height: 33px;
 `;
 
-const BodyText = ({ className, children }) => {
-  return <Body className={className}>{children}</Body>;
+const BodyText = ({ className, children, secondary }) => {
+  return (
+    <Body className={className} secondary={secondary}>
+      {children}
+    </Body>
+  );
 };
 
 export default BodyText;

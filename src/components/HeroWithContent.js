@@ -25,7 +25,7 @@ const HeroContent = styled.div`
     min-height: 250px;
   `} ${mq.mobile`
     max-height: 220px;
-    min-height: 200px;
+    min-height: 150px;
   `};
 `;
 
