@@ -1,10 +1,9 @@
-import React, { Fragment } from 'react';
-import styled from 'styled-components';
-import HeroWithContent from './HeroWithContent';
-import H1 from './H1';
-import ApplicationForm from './ApplicationForm';
-import Bold from './Bold';
-import reflection from 'media/bali-tall-2-min.jpg';
+import React, { Fragment } from "react";
+import HeroWithContent from "./HeroWithContent";
+import H1 from "./H1";
+import ApplicationForm from "./ApplicationForm";
+import Bold from "./Bold";
+import reflection from "media/bali-tall-2-min.jpg";
 
 const Application = () => {
   return (
