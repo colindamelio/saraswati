@@ -14,19 +14,32 @@ const Semibold = styled.span`
   font-weight: ${props => props.theme.weights.secondaryBold};
 `;
 
+const Header = styled(H1)`
+  line-height: 79px;
+  margin: 0 0 80px;
+`;
+
+const Text = styled(BodyText)`
+  font-size: 24px;
+`;
+
+const HeroContent = styled(HeroWithContent)`
+  padding: 100px 60px 35px 25px;
+`;
+
 const LandingModule = ({ src, width, children }) => {
   return (
     <Container>
-      <HeroWithContent src={mainImage} width={50}>
-        <H1>
+      <HeroContent src={mainImage} width={50}>
+        <Header>
           At Saraswati Retreats, we believe your education should be{' '}
           <Semibold>extraordinary</Semibold>.
-        </H1>
-        <BodyText>
+        </Header>
+        <Text>
           Learn to code your own website in the heart of Bali. Apply for our
           14-day retreat today!
-        </BodyText>
-      </HeroWithContent>
+        </Text>
+      </HeroContent>
     </Container>
   );
 };

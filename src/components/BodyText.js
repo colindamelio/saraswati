@@ -1,6 +1,9 @@
-import styled from "styled-components";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-const BodyText = styled.p`
+const Body = styled.p`
+  margin: 0 0 25px 0;
   font-family: ${props => props.theme.fonts.secondaryFont};
   font-weight: normal;
   font-size: 16px;
@@ -9,4 +12,13 @@ const BodyText = styled.p`
   line-height: 33px;
 `;
 
+const BodyText = ({ className, children }) => {
+  return <Body className={className}>{children}</Body>;
+};
+
 export default BodyText;
+
+BodyText.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.any,
+};
