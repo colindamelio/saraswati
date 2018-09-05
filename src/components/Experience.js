@@ -3,7 +3,7 @@ import styled from "styled-components";
 import mq from "utils/mq";
 import Hero from "./Hero";
 import H1 from "./H1";
-import BodyText from "./BodyText";
+import BodyTextLockup from "./BodyTextLockup";
 import Button from "./Button";
 import LinkButton from "./LinkButton";
 import experienceImage from "media/bali-3-min.jpg";
@@ -23,23 +23,17 @@ const Experience = () => {
     <Fragment>
       <Hero src={experienceImage}>
         <Column>
-          <H1 secondary>Providing you authentic Balinese experiences.</H1>
+          <H1>Providing you authentic Balinese experiences.</H1>
         </Column>
         <Column>
-          <BodyText secondary>
-            Without a doubt, Bali is beautiful. However, most people who visit
-            the island miss an opportunity to discover authentic Balinese
-            Culture.
-          </BodyText>
-          <BodyText secondary>
-            Saraswati Retreats strives to educate our guests beyond coding their
-            website - experience local cuisine, traverse the landscape, and
-            embrace what it means to be truly Balinese.
-          </BodyText>
-          <BodyText>
-            <Button>Apply Today</Button>
-            <LinkButton secondary>See All Activities</LinkButton>
-          </BodyText>
+          <BodyTextLockup
+            description={"Without a doubt, Bali is beautiful. However, most people who visit the island miss an opportunity to discover authentic Balinese Culture."}
+          />
+          <BodyTextLockup
+            description={"Saraswati Retreats strives to educate our guests beyond coding their website - experience local cuisine, traverse the landscape, and embrace what it means to be truly Balinese."}
+          />
+          <Button>Apply Today</Button>
+          <LinkButton>See All Activities</LinkButton>
         </Column>
       </Hero>
     </Fragment>
