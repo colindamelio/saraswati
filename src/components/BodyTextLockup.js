@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-// import mq from "utils/mq";
 
 const Container = styled.div`
   display: flex;
@@ -20,9 +19,9 @@ const BodyTextLockup = ({ title, description, cta }) => {
 
   return (
     <Container>
-      {title ? <Title>{title}</Title> : null}
-      {description ? <Description>{description}</Description> : null}
-      {cta ? <button>{cta.text}</button> : null}
+      {title && <Title>{title}</Title>}
+      {description && <Description>{description}</Description>}
+      {cta && cta.text && <button>{cta.text}</button>}
     </Container>
   );
 };
@@ -32,5 +31,8 @@ export default BodyTextLockup;
 BodyTextLockup.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  cta: PropTypes.object
+  cta: PropTypes.shape({
+    text: PropTypes.string,
+    href: PropTypes.string
+  })
 };

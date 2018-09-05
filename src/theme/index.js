@@ -18,16 +18,16 @@ module.exports = {
     boldItalic: "700i"
   },
   bodyTextSizing: {
-    desktop: "16px",
-    tablet: "16px",
-    mobile: "16px",
-    lineHeightDesktop: "33px",
-    lineHeightTablet: "33px",
-    lineHeightMobile: "33px",
+    desktop: "1rem",
+    tablet: "1rem",
+    mobile: "1rem",
+    lineHeightDesktop: "2rem",
+    lineHeightTablet: "2rem",
+    lineHeightMobile: "2rem",
   },
   disclaimerTextSizing: {
-    desktop: "12px",
-    tablet: "12px",
-    mobile: "10px",
+    desktop: "0.75rem",
+    tablet: "0.75rem",
+    mobile: "0.625rem",
   },
 };
