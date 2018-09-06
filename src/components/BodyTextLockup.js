@@ -9,9 +9,13 @@ const Container = styled.div`
 
 const Title = styled.h2`
   font-family: ${props => props.theme.primaryFont};
+  titleLineHeight: ${props => props.theme.titleLineHeight};
 `;
 
-const Description = styled.div``;
+const Description = styled.div`
+  font-size: ${props => props.theme.bodyTextDesktop};
+  line-height: ${props => props.theme.descriptionLineHeight};
+`;
 
 const BodyTextLockup = ({ title, description, cta }) => {
 

@@ -10,23 +10,35 @@ import colImage3 from 'media/bali-7-min.jpg';
 
 const Container = styled.div`
   display: flex;
-  padding: 50px;
-  ${mq.tablet`
-    padding: 50px 15px;
-  `} ${mq.mobile`
+  flex-wrap: wrap;
+  ${mq.desktop`
+    flex-direction: row;
+    padding: ${props => props.theme.paddingDesktop};
+  `}
+  ${mq.mobile`
+    padding: ${props => props.theme.paddingTablet};
+  `}
+  ${mq.mobile`
     flex-direction: column;
-    padding: 30px 0;
-  `};
+    padding: ${props => props.theme.paddingMobile};
+  `}
 `;
 
 const InfoColumn = styled.div`
   flex-grow: 1;
-  width: calc(1 / 3 * 100%);
-  padding: 0 10px;
+  padding: 15px;
+  ${mq.desktop`
+    width: calc(1 / 3 * 100%);
+  `}
+  ${mq.tablet`
+    width: 50%;
+    &:first-child{
+      width: 100%;
+    }
+  `}
   ${mq.mobile`
     width: 100%;
-    padding: 0 25px 30px;
-  `};
+  `}
 `;
 
 const Conditions = styled.p`
@@ -70,10 +82,8 @@ const Information = (image) => {
           title={"Regular Price – $3499USD"}
           description={"We accept a limited number of students each retreat to ensure you’re provided quality training. Reserve your spot today!."}
         />
-        />
         <Conditions>
-          <sup>*</sup>
-          Rates are based on 2-person occupancy.
+          <sup>*</sup> Rates are based on 2-person occupancy.
         </Conditions>
       </InfoColumn>
     </Container>

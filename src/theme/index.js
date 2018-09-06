@@ -30,7 +30,7 @@ module.exports = {
   disclaimerMobile: "12px",
 
   //Line Heights//
-  titleLineHeight: "2",
+  titleLineHeight: "1.5",
   descriptionLineHeight: "1.5",
 
   //CTAs//

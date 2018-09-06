@@ -11,14 +11,15 @@ const Container = styled.div`
 
 const Tout = ({ image, title, description, cta }) => {
 
+  //We need to improve the CTA logic to map through CTA array//
+  
   return (
     <Container>
       {image && image.url && <Image src={image.url} alt={image.alt}/>}
-      {title || description && <BodyTextLockup
+      <BodyTextLockup
         title={title}
         description={description}
-      /> }
-      //We need to improve the CTA logic to map through CTA array//
+      />
       {cta}
     </Container>
   );
