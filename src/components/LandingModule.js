@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import SplitHero from './SplitHero';
 import H1 from './H1';
 import BodyTextLockup from './BodyTextLockup';
-import mainImage from 'media/bali-4-min.jpg';
+import mainImage from 'media/bali-landscape-1.jpg';
 
 const Container = styled.div`
   display: flex;

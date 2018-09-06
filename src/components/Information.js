@@ -4,9 +4,9 @@ import mq from 'utils/mq';
 import Image from 'components/Image';
 import Tout from './Tout';
 import Button from './Button';
-import colImage1 from 'media/bali-2-min.jpg';
-import colImage2 from 'media/bali-6-min.jpg';
-import colImage3 from 'media/bali-7-min.jpg';
+import colImage1 from 'media/students.jpg';
+import colImage2 from 'media/students.jpg';
+import colImage3 from 'media/students.jpg';
 
 const Container = styled.div`
   display: flex;
@@ -59,14 +59,16 @@ const Conditions = styled.p`
 //   line-height: 33px;
 // `;
 
-const Information = (image) => {
+const Information = image => {
   return (
     <Container>
       <InfoColumn>
         <Tout
           image={image}
-          title={"Upcoming Retreats"}
-          description={"February 10-23, 2019\n Deposit payments are due October 31, 2018. Complete your registration by December 15, 2018 to be eligible for our Early Bird Pricing!\n A non-refundable $500USD deposit is required to secure your spot on all retreats."}
+          title={'Upcoming Retreats'}
+          description={
+            'February 10-23, 2019\n Deposit payments are due October 31, 2018. Complete your registration by December 15, 2018 to be eligible for our Early Bird Pricing!\n A non-refundable $500USD deposit is required to secure your spot on all retreats.'
+          }
         />
         <Button>Apply Today</Button>
       </InfoColumn>
@@ -74,18 +76,22 @@ const Information = (image) => {
         <Tout
           image={image}
           title={"What's Included"}
-          description={"List of inclusions"}
+          description={'List of inclusions'}
         />
       </InfoColumn>
       <InfoColumn>
         <Tout
           image={image}
-          title={"Early Bird Price – $2999USD"}
-          description={"Save big when you register early for upcoming retreats! See retreat dates for Early Bird cut-off."}
+          title={'Early Bird Price – $2999USD'}
+          description={
+            'Save big when you register early for upcoming retreats! See retreat dates for Early Bird cut-off.'
+          }
         />
         <Tout
-          title={"Regular Price – $3499USD"}
-          description={"We accept a limited number of students each retreat to ensure you’re provided quality training. Reserve your spot today!."}
+          title={'Regular Price – $3499USD'}
+          description={
+            'We accept a limited number of students each retreat to ensure you’re provided quality training. Reserve your spot today!.'
+          }
         />
         <Conditions>
           <sup>*</sup> Rates are based on 2-person occupancy.
