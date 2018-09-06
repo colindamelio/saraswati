@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const FooterContainer = styled.div`
-  height: 45px;
-  background: papayawhip;
+  padding: ${props => props.theme.footerPaddingDesktop};
+  background: ${props => props.theme.black};
 `;
 
 const Footer = () => {

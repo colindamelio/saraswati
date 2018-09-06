@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Link = styled(NavLink)`
-  color: ${props => props.theme.colors.white};
+  color: ${props => props.theme.white};
   padding: 0 20px;
   text-transform: uppercase;
 `;
@@ -11,7 +11,7 @@ const Link = styled(NavLink)`
 const NavContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  background: ${props => props.theme.colors.green};
+  background: ${props => props.theme.primaryAccent};
   padding: 35px 0;
 `;
 
@@ -22,17 +22,18 @@ const Nav = styled.nav`
   flex-grow: 1;
 
   ${Link}:first-child {
-    font-family: ${props => props.theme.fonts.primaryFont};
-    font-weight: ${props => props.theme.weights.primaryBold};
+    font-family: ${props => props.theme.primaryFont};
+    font-weight: ${props => props.theme.bold};
     font-size: 30px;
     line-height: 13px;
+    letter-spacing: 1px;
     margin-top: 11px;
     margin-right: auto;
   }
 
   ${Link} {
-    font-family: ${props => props.theme.fonts.secondaryFont};
-    font-weight: ${props => props.theme.weights.secondaryBold};
+    font-family: ${props => props.theme.secondaryFont};
+    font-weight: ${props => props.theme.bold};
     font-size: 14px;
   }
 `;

@@ -3,49 +3,27 @@ import styled from "styled-components";
 import mq from "utils/mq";
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
   position: relative;
-  background: ${props => `url(${props.src}) ${props.theme.colors.white}`};
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  background: ${props => props.theme.primaryAccent}
+  color: ${props => props.theme.white};
   ${mq.desktop`
     flex-direction: row;
+    background: ${props => props.src ? `linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(${props.src})` : `${props.theme.primaryAccent}`};
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   `};
 `;
 
-const Content = styled.div`
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  ${mq.desktop`
-    flex-direction: row;
-  `};
-`;
-
-const Overlay = styled.div`
-  background: ${props => props.theme.colors.green};
-  opacity: 0.8;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  ${mq.desktop`
-    background: black;
-    opacity: 0.4;
-  `};
-`;
-
-const HeroWithContent = ({ src, width, children }) => {
+const Hero = ({ src, children }) => {
   return (
     <Container src={src}>
-      <Overlay />
-      <Content>{children}</Content>
+      {children}
     </Container>
   );
 };
 
-export default HeroWithContent;
+export default Hero;

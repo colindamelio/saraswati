@@ -9,8 +9,8 @@ import Application from "components/Application";
 const Home = () => {
   return (
     <Fragment>
-      <LandingModule />
       <Navigation />
+      <LandingModule />
       <Overview />
       <Experience />
       <Information />
