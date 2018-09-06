@@ -26,7 +26,7 @@ const strings = {
   'landing/experience/description':
     'Without a doubt, Bali is beautiful. However, most people who visit the island miss an opportunity to discover authentic Balinese Culture. Saraswati Retreats strives to educate our guests beyond coding their website - experience local cuisine, traverse the landscape, and embrace what it means to be truly Balinese.',
   'landing/accommodations/title': 'Your Accommodations',
-  'landing/accommodations/title':
+  'landing/accommodations/description':
     'Located in the charming village of Umalas, near Seminyak, Villa Malaathina - set among 5,000 square metres of immaculate tropical gardens and surrounded by traditional Balinese rice paddies - is home for the duration of our retreat. For more information, visit the Villa Malaanthina Official Site.',
   'landing/retreats/title': 'Upcoming Retreats',
   'landing/retreats/description':

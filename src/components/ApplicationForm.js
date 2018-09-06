@@ -6,26 +6,28 @@ const Form = styled.form`
   flex-direction: column;
 
   label {
-    color: ${props => props.theme.colors.black};
+    color: ${props => props.theme.black};
     margin: 20px 0 15px;
   }
 
   input {
-    border: 1px solid ${props => props.theme.colors.black};
-    height: 45px;
+    border: ${props => props.theme.inputBorderStyle};
+    border-color: ${props => props.theme.black};
+    height: ${props => props.theme.inputHeight};
+    padding: ${props => props.theme.inputPadding};
   }
 `;
 
 const Submit = styled.button`
-  max-width: 180px;
-  font-family: ${props => props.theme.fonts.secondaryFont};
-  font-weight: ${props => props.theme.weights.secondaryBold};
-  font-size: 14px;
-  color: ${props => props.theme.colors.white};
-  background: ${props => props.theme.colors.orange};
-  text-transform: uppercase;
   margin-top: 50px;
-  padding: 15px;
+  padding: ${props => props.theme.ctaPadding};
+  background: ${props => props.theme.secondaryAccent};
+  color: ${props => props.theme.white};
+  font-family: ${props => props.theme.secondaryFont};
+  font-weight: ${props => props.theme.bold};
+  font-size: ${props => props.theme.ctaFontSize};
+  text-transform: ${props => props.theme.ctaCasing};
+  cursor: pointer;
 `;
 
 export default class ApplicationForm extends Component {

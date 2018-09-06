@@ -4,7 +4,7 @@ import styled from "styled-components";
 import mq from "utils/mq";
 
 const Container = styled.div`
-  background: ${props => props.theme.colors.white};
+  background: ${props => props.theme.white};
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,8 +13,8 @@ const Container = styled.div`
   `};
 `;
 
-const HeroContent = styled.div`
-  background: ${props => `url(${props.src}) ${props.theme.colors.white}`};
+const Image = styled.div`
+  background: ${props => `url(${props.src}) ${props.theme.white}`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -31,24 +31,30 @@ const HeroContent = styled.div`
 
 const Content = styled.div`
   width: 100%;
-  padding: 25px;
   ${mq.desktop`
-    width: ${props => `${props.width}%`};
+    width: 50%;
+    padding: ${props => props.theme.paddingDesktop};
+  `};
+  ${mq.tablet`
+    padding: ${props => props.theme.paddingTablet};
+  `};
+  ${mq.mobile`
+    padding: ${props => props.theme.paddingMobile};
   `};
 `;
 
-const HeroWithContent = ({ src, width, children }) => {
+const SplitHero = ({ src, width, children }) => {
   return (
     <Container>
-      <HeroContent src={src} />
-      <Content width={width}>{children}</Content>
+      <Image src={src} />
+      <Content>{children}</Content>
     </Container>
   );
 };
 
-export default HeroWithContent;
+export default SplitHero;
 
-HeroWithContent.propTypes = {
+SplitHero.propTypes = {
   src: PropTypes.string,
   width: PropTypes.number
 };

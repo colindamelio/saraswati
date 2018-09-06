@@ -19,7 +19,6 @@ class App extends Component {
   componentDidMount() {
     this.setViewportDimensions();
     window.addEventListener('resize', this.setViewportDimensions);
-    console.log(strings);
   }
 
   componentWillUnmount() {
