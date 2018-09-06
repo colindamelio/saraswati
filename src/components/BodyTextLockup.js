@@ -10,6 +10,9 @@ const Container = styled.div`
 const Title = styled.h2`
   font-family: ${props => props.theme.primaryFont};
   titleLineHeight: ${props => props.theme.titleLineHeight};
+  color: ${props =>
+    props.secondary ? props.theme.white : props.theme.secondaryAccent};
+  margin-bottom: 15px;
 `;
 
 const Description = styled.div`
