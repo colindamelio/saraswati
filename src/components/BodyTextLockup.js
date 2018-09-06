@@ -11,7 +11,7 @@ const Title = styled.h2`
   font-family: ${props => props.theme.primaryFont};
 `;
 
-const Description = styled.p``;
+const Description = styled.div``;
 
 const BodyTextLockup = ({ title, description, cta }) => {
 
@@ -19,7 +19,6 @@ const BodyTextLockup = ({ title, description, cta }) => {
     <Container>
       {title && <Title>{title}</Title>}
       {description && <Description>{description}</Description>}
-      {cta && cta.text && <button>{cta.text}</button>}
     </Container>
   );
 };
