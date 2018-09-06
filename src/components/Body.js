@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "routes/Home";
-import Culture from "routes/Culture";
-import Curriculum from "routes/Curriculum";
-import Error from "routes/Error";
-import Footer from "components/Footer";
+import React, { Fragment } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from 'routes/Home';
+import Culture from 'routes/Culture';
+import Curriculum from 'routes/Curriculum';
+import Error from 'routes/Error';
+import Footer from 'components/Footer';
 
 const Body = props => {
   return (
