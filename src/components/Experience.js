@@ -24,7 +24,7 @@ const Experience = () => {
     <Fragment>
       <Hero src={experienceImage}>
         <Column>
-          <H1>Providing you authentic Balinese experiences.</H1>
+          <H1 secondary>Providing you authentic Balinese experiences.</H1>
         </Column>
         <Column>
           <Tout

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import HeroWithContent from "./HeroWithContent";
 import Tout from "./Tout";
 import Image from "./Image";
 import Button from "./Button";

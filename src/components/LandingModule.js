@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import HeroWithContent from "./HeroWithContent";
+import SplitHero from "./SplitHero";
 import H1 from "./H1";
 import BodyTextLockup from "./BodyTextLockup";
 import mainImage from "media/bali-4-min.jpg";
@@ -11,22 +11,17 @@ const Container = styled.div`
   background: ${props => props.theme.primaryAccent};
 `;
 
-const Semibold = styled.span`
-  font-weight: ${props => props.theme.semiBold};
-`;
-
-const LandingModule = ({ src, width, children }) => {
+const LandingModule = ({ src, children }) => {
   return (
     <Container>
-      <HeroWithContent src={mainImage} width={50}>
+      <SplitHero src={mainImage}>
         <H1>
-          At Saraswati Retreats, we believe your education should be{" "}
-          <Semibold>extraordinary</Semibold>.
+          At Saraswati Retreats, we believe your education should be <span className="semiBold">extraordinary</span>.
         </H1>
         <BodyTextLockup
           description={"Learn to code your own website in the heart of Bali. Apply for our 14-day retreat today!"}
         />
-      </HeroWithContent>
+      </SplitHero>
     </Container>
   );
 };
