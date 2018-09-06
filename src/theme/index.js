@@ -36,10 +36,21 @@ module.exports = {
   //CTAs//
   ctaBorder: "4px solid",
   ctaPadding: "15px 30px",
+  ctaFontSize: "14px",
   ctaCasing: "uppercase",
 
   //Content Containers//
   paddingDesktop: "50px",
   paddingTablet: "25px",
   paddingMobile: "15px",
+
+  //Application Form//
+  inputBorderStyle: "1px solid",
+  inputHeight: "45px",
+  inputPadding: "15px",
+
+  //Footer//
+  footerPaddingDesktop: "50px 0",
+  footerPaddingTablet: "25px 0",
+  footerPaddingMobile: "15px 0",
 };

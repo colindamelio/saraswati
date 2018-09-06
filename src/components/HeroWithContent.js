@@ -4,7 +4,7 @@ import styled from "styled-components";
 import mq from "utils/mq";
 
 const Container = styled.div`
-  background: ${props => props.theme.colors.white};
+  background: ${props => props.theme.white};
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 const HeroContent = styled.div`
-  background: ${props => `url(${props.src}) ${props.theme.colors.white}`};
+  background: ${props => `url(${props.src}) ${props.theme.white}`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

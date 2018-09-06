@@ -2,16 +2,14 @@ import styled from "styled-components";
 import mq from "utils/mq";
 
 const H1 = styled.h1`
-  font-family: ${props => props.theme.fonts.primaryFont};
   color: ${props =>
-    props.secondary ? props.theme.colors.white : props.theme.colors.green};
-  font-weight: normal;
-  font-size: 46px;
-  line-height: 71px;
+    props.secondary ? props.theme.white : props.theme.secondaryAccent};
+  font-weight: ${props => props.theme.light};
+  font-size: ${props => props.theme.heroTitleDesktop};
+  line-height: ${props => props.theme.titleLineHeight};
 
   ${mq.mobile`
-    font-size: 30px;
-    line-height: 43px;
+    font-size: ${props => props.theme.heroTitleMobile};
   `};
 `;
 

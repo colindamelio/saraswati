@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 const H2 = styled.h2`
-  font-family: ${props => props.theme.fonts.primaryFont};
   color: ${props =>
-    props.secondary ? props.theme.colors.white : props.theme.colors.orange};
-  font-weight: ${props => props.theme.weights.primaryBold};
-  font-size: 24px;
-  line-height: 33px;
+    props.secondary ? props.theme.white : props.theme.secondaryAccent};
+  font-weight: ${props => props.theme.bold};
+  font-size: ${props => props.theme.subtitleDesktop};
+  line-height: ${props => props.theme.titleLineHeight};
+
+  ${mq.mobile`
+    font-size: ${props => props.theme.subtitleMobile};
+  `};
 `;
 
 export default H2;

@@ -3,14 +3,14 @@ import styled from "styled-components";
 import mq from "utils/mq";
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
   position: relative;
-  background: ${props => `url(${props.src}) ${props.theme.colors.white}`};
+  background: ${props => `url(${props.src}) ${props.theme.white}`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   ${mq.desktop`
     flex-direction: row;
   `};
@@ -28,7 +28,7 @@ const Content = styled.div`
 `;
 
 const Overlay = styled.div`
-  background: ${props => props.theme.colors.green};
+  background: ${props => props.theme.primaryAccent};
   opacity: 0.8;
   position: absolute;
   width: 100%;

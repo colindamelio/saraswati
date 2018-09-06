@@ -5,7 +5,7 @@ import Hero from "./Hero";
 import H1 from "./H1";
 import BodyTextLockup from "./BodyTextLockup";
 import Button from "./Button";
-import LinkButton from "./LinkButton";
+import Link from "./Link";
 import experienceImage from "media/bali-3-min.jpg";
 
 const Column = styled.div`
@@ -33,7 +33,7 @@ const Experience = () => {
             description={"Saraswati Retreats strives to educate our guests beyond coding their website - experience local cuisine, traverse the landscape, and embrace what it means to be truly Balinese."}
           />
           <Button>Apply Today</Button>
-          <LinkButton>See All Activities</LinkButton>
+          <Link>See All Activities</Link>
         </Column>
       </Hero>
     </Fragment>

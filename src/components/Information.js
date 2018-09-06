@@ -31,14 +31,14 @@ const InfoColumn = styled.div`
 
 const Conditions = styled.p`
   font-size: 12px;
-  color: ${props => props.theme.colors.black};
+  color: ${props => props.theme.black};
 `;
 
 // const ListItem = styled.li`
-//   font-family: ${props => props.theme.fonts.secondaryFont};
+//   font-family: ${props => props.theme.secondaryFont};
 //   font-weight: normal;
 //   font-size: 16px;
-//   color: ${props => props.theme.colors.black};
+//   color: ${props => props.theme.black};
 //   line-height: 33px;
 // `;
 

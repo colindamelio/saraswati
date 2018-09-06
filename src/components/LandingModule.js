@@ -6,13 +6,13 @@ import BodyTextLockup from "./BodyTextLockup";
 import mainImage from "media/bali-4-min.jpg";
 
 const Container = styled.div`
-  background: blue;
-  height: 100vh;
   display: flex;
+  height: 100vh;
+  background: ${props => props.theme.primaryAccent};
 `;
 
 const Semibold = styled.span`
-  font-weight: ${props => props.theme.weights.bold};
+  font-weight: ${props => props.theme.semiBold};
 `;
 
 const LandingModule = ({ src, width, children }) => {

@@ -8,12 +8,10 @@ const Container = styled.div`
 `;
 
 const Title = styled.h2`
-  font-family: ${props => props.theme.fonts.primaryFont};
+  font-family: ${props => props.theme.primaryFont};
 `;
 
-const Description = styled.p`
-
-`;
+const Description = styled.p``;
 
 const BodyTextLockup = ({ title, description, cta }) => {
 
