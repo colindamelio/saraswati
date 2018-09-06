@@ -6,7 +6,7 @@ import H1 from "./H1";
 import Tout from "./Tout";
 import Button from "./Button";
 import Link from "./Link";
-import experienceImage from "media/bali-3-min.jpg";
+import experienceImage from "media/temple-courtyard.jpg";
 
 const Column = styled.div`
   width: 100%;

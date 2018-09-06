@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Tout from "./Tout";
 import Image from "./Image";
 import Button from "./Button";
-import studentsImage from "media/bali-1-min.jpg";
+import studentsImage from "media/students.jpg";
 import mq from "../utils/mq";
 
 const Container = styled.section`

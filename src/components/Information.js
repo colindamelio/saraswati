@@ -4,9 +4,9 @@ import mq from 'utils/mq';
 import Image from 'components/Image';
 import Tout from './Tout';
 import Button from './Button';
-import colImage1 from 'media/bali-2-min.jpg';
-import colImage2 from 'media/bali-6-min.jpg';
-import colImage3 from 'media/bali-7-min.jpg';
+import colImage1 from 'media/bali-landscape-2.jpg';
+import colImage2 from 'media/cooking-2.jpg';
+import colImage3 from 'media/monkeys-1.jpg';
 
 const Container = styled.div`
   display: flex;
