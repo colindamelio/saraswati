@@ -13,7 +13,7 @@ const Home = props => {
       {/* <LandingModule /> */}
       {/* <Overview /> */}
       {/* <Experience /> */}
-      <Information />
+      <Information {...props} />
       {/* <Application /> */}
     </Fragment>
   );
