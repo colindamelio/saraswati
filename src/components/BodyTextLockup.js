@@ -27,9 +27,5 @@ export default BodyTextLockup;
 
 BodyTextLockup.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.string,
-  cta: PropTypes.shape({
-    text: PropTypes.string,
-    href: PropTypes.string
-  })
+  description: PropTypes.string
 };
