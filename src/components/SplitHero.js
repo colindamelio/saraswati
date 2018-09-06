@@ -31,9 +31,15 @@ const Image = styled.div`
 
 const Content = styled.div`
   width: 100%;
-  padding: 25px;
   ${mq.desktop`
     width: 50%;
+    padding: ${props => props.theme.paddingDesktop};
+  `};
+  ${mq.tablet`
+    padding: ${props => props.theme.paddingTablet};
+  `};
+  ${mq.mobile`
+    padding: ${props => props.theme.paddingMobile};
   `};
 `;
 

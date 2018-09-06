@@ -11,11 +11,12 @@ import colImage3 from 'media/bali-7-min.jpg';
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   ${mq.desktop`
     flex-direction: row;
     padding: ${props => props.theme.paddingDesktop};
   `}
-  ${mq.mobile`
+  ${mq.tablet`
     padding: ${props => props.theme.paddingTablet};
   `}
   ${mq.mobile`
@@ -25,19 +26,23 @@ const Container = styled.div`
 `;
 
 const InfoColumn = styled.div`
-  flex-grow: 1;
-  padding: 15px;
   ${mq.desktop`
-    width: calc(1 / 3 * 100%);
+    width: calc(100%/3 - 35px);
   `}
   ${mq.tablet`
-    width: 50%;
+    width: calc(50% - 25px);
     &:first-child{
       width: 100%;
+    }
+    &:not(:first-child){
+      margin-top: ${props => props.theme.paddingTablet};
     }
   `}
   ${mq.mobile`
     width: 100%;
+    &:not(:first-child){
+      margin-top: ${props => props.theme.paddingMobile};
+    }
   `}
 `;
 

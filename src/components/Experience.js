@@ -13,10 +13,16 @@ const Column = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   ${mq.desktop`
     width: 50%;
-  `}
+    padding: ${props => props.theme.paddingDesktop};
+  `};
+  ${mq.tablet`
+    padding: ${props => props.theme.paddingTablet};
+  `};
+  ${mq.mobile`
+    padding: ${props => props.theme.paddingMobile};
+  `};
 `;
 
 const Experience = () => {

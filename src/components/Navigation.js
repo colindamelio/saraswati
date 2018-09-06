@@ -26,6 +26,7 @@ const Nav = styled.nav`
     font-weight: ${props => props.theme.bold};
     font-size: 30px;
     line-height: 13px;
+    letter-spacing: 1px;
     margin-top: 11px;
     margin-right: auto;
   }

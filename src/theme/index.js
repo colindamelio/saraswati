@@ -40,9 +40,9 @@ module.exports = {
   ctaCasing: "uppercase",
 
   //Content Containers//
-  paddingDesktop: "50px",
-  paddingTablet: "25px",
-  paddingMobile: "15px",
+  paddingDesktop: "70px",
+  paddingTablet: "50px",
+  paddingMobile: "25px",
 
   //Application Form//
   inputBorderStyle: "1px solid",
@@ -50,7 +50,7 @@ module.exports = {
   inputPadding: "15px",
 
   //Footer//
-  footerPaddingDesktop: "50px 0",
-  footerPaddingTablet: "25px 0",
-  footerPaddingMobile: "15px 0",
+  footerPaddingDesktop: "70px 0",
+  footerPaddingTablet: "50px 0",
+  footerPaddingMobile: "25px 0",
 };
