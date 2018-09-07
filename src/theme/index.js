@@ -16,7 +16,7 @@ module.exports = {
   bold: "700",
 
   //Font Sizing//
-  heroTitleDesktop: "66px",
+  heroTitleDesktop: "55px",
   heroTitleMobile: "30px",
   heroDescriptionDesktop: "24px",
   heroDescriptionMobile: "24px",

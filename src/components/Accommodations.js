@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Tout from "./Tout";
 import Image from "./Image";
-import Button from "./Button";
 import villaImage from "media/villa-malaathina-1.jpg";
 import mq from "../utils/mq";
 

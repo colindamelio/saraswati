@@ -3,10 +3,6 @@ import styled from 'styled-components';
 import mq from 'utils/mq';
 import Image from 'components/Image';
 import Tout from './Tout';
-import Button from './Button';
-import colImage1 from 'media/bali-landscape-2.jpg';
-import colImage2 from 'media/cooking-2.jpg';
-import colImage3 from 'media/monkeys-1.jpg';
 
 const Container = styled.div`
   display: flex;
@@ -89,7 +85,7 @@ const Information = (image, ctas) => {
 
   return (
     <Container>
-      {retreatInformation.map((column, i, ListItem) => (
+      {retreatInformation.map((column, i, ListItem, Conditions) => (
         <InfoColumn key={`${i}-column`}>
           {column.map((item, ctas, n) => (
             <Tout

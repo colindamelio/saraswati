@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Tout from "./Tout";
 import Image from "./Image";
-import Button from "./Button";
 import studentsImage from "media/students.jpg";
 import mq from "../utils/mq";
 
