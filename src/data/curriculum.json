@@ -1,0 +1,49 @@
+"curriculum": {
+  "header": {
+    "title": "...",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Discover More",
+        "href": "#",
+        "style": "primary",
+      }
+    ]
+  },
+  "environment": {
+    "title": "Your Learning Environment",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Apply Today",
+        "href": "#",
+        "style": "primary",
+      }
+    ]
+  },
+  "curriculumInformation": [
+    {
+      "title": "10 Days of in-class training",
+      "description": "..."
+    },
+    {
+      "title": "Front-End Fundamentals",
+      "description": "..."
+    },
+    {
+      "title": "What you'll need...",
+      "description": "..."
+    }
+  ],
+  "join": {
+    "title": "Join one of our upcoming retreats!",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "#",
+        "style": "primary",
+      }
+    ]
+  }
+}

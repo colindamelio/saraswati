@@ -1,0 +1,22 @@
+"form": {
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "email": "Email Address",
+  "phone": "Phone Number (Please Include Country Code)",
+  "location": "Where are you applying from? (City, Country)",
+  "retreats": {
+    "label": "Select an upcoming retreat",
+    "dates": [
+      {
+        "programTitle": "Front-End Fundamentals",
+        "date": "February 11 – 23, 2019",
+        "depositDue": "December 31, 2018",
+        "earlyBird": "October 31, 2018"
+      }
+    ]
+  },
+  "cta": {
+    "text": "Submit",
+    "style": "primary"
+  }
+}
