@@ -15,12 +15,15 @@ const CtaContainer = styled.div`
 `;
 
 
-const Tout = ({ image, title, description, ctas }) => {
+const Tout = ({ image, title, description, secondary }) => {
+
+  const ctas = [];
 
   return (
     <Container>
       {image && image.url && <Image src={image.url} alt={image.alt}/>}
       <BodyTextLockup
+        secondary={secondary}
         title={title}
         description={description}
       />
@@ -45,8 +48,5 @@ export default Tout;
 Tout.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  cta: PropTypes.shape({
-    text: PropTypes.string,
-    href: PropTypes.string
-  })
+  ctas: PropTypes.array
 };
