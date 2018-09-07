@@ -14,7 +14,12 @@ const CtaContainer = styled.div`
   display: flex;
 `;
 
-const Tout = ({ image, title, description, ctas }) => {
+
+const Tout = ({ image, title, description }) => {
+
+  //Defining CTAs here for now because the function fails otherwise... which is weird because map shouldn't worry if CTA doesn't exist
+  
+  const ctas = [];
 
   return (
     <Container>
