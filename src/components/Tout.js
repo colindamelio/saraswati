@@ -15,11 +15,7 @@ const CtaContainer = styled.div`
 `;
 
 
-const Tout = ({ image, title, description }) => {
-
-  //Defining CTAs here for now because the function fails otherwise... which is weird because map shouldn't worry if CTA doesn't exist
-  
-  const ctas = [];
+const Tout = ({ image, title, description, ctas }) => {
 
   return (
     <Container>

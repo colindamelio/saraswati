@@ -59,7 +59,7 @@ const ListItem = styled.li`
   line-height: 33px;
 `;
 
-const Information = (image, strings) => {
+const Information = (image, ctas) => {
 
   const retreatInformation = [
     [

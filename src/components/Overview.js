@@ -37,7 +37,7 @@ const Content = styled.div`
   `};
 `;
 
-const Overview = () => {
+const Overview = (ctas) => {
   return (
     <Container>
       <ImageContainer>
@@ -49,7 +49,7 @@ const Overview = () => {
           description={
             "With 10 days of in-class training, our goal is to ensure you have a strong foundation. Using HTML, CSS, and JAVASCRIPT, you will build your own website from scratch!\n No prior experience is required - just a desire to learn! It may be challenging, but we're excited to guide you through a comprehensive curriculum."
           }
-          cta={'Course Overview'}
+          ctas={ctas}
         />
       </Content>
     </Container>
