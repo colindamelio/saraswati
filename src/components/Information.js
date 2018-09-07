@@ -60,31 +60,7 @@ const ListItem = styled.li`
 `;
 
 const Information = (image, strings) => {
-  // const retreatInformation = [
-  //   [
-  //     {
-  //       title: strings['landing/retreats/title'],
-  //       description: strings['landing/retreats/description'],
-  //     },
-  //   ],
-  //   [
-  //     {
-  //       title: strings['landing/included/title'],
-  //       description: strings['landing/included/list'],
-  //     },
-  //   ],
-  //
-  //   [
-  //     {
-  //       title: strings['landing/early/title'],
-  //       description: strings['landing/early/description'],
-  //     },
-  //     {
-  //       title: strings['landing/regular/title'],
-  //       description: strings['landing/regular/description'],
-  //     },
-  //   ],
-  // ];
+
   const retreatInformation = [
     [
       {
@@ -115,13 +91,13 @@ const Information = (image, strings) => {
     <Container>
       {retreatInformation.map((column, i, ListItem) => (
         <InfoColumn key={`${i}-column`}>
-          {column.map((item, n) => (
+          {column.map((item, ctas, n) => (
             <Tout
               key={`${n}-paragraph`}
-              // image={image}
+              image={image}
               title={item.title}
               description={item.description}
-              // cta={cta}
+              ctas={ctas}
             />
           ))}
         </InfoColumn>

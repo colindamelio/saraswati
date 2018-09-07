@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Image from "./Image";
+import Button from "./Button";
 import BodyTextLockup from "./BodyTextLockup";
 
 const Container = styled.div`
@@ -9,10 +10,12 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const Tout = ({ image, title, description, cta }) => {
+const CtaContainer = styled.div`
+  display: flex;
+`;
 
-  //We need to improve the CTA logic to map through CTA array//
-  
+const Tout = ({ image, title, description, ctas }) => {
+
   return (
     <Container>
       {image && image.url && <Image src={image.url} alt={image.alt}/>}
@@ -20,7 +23,18 @@ const Tout = ({ image, title, description, cta }) => {
         title={title}
         description={description}
       />
-      {cta}
+      {ctas &&
+        <CtaContainer>
+        {ctas.map((cta, n) => (
+          <Button
+            key={`${n}-cta`}
+            text={cta.title}
+            href={cta.href}
+            style={cta.style}
+          />
+        ))}
+        </CtaContainer>
+      }
     </Container>
   );
 };
