@@ -3,10 +3,6 @@ import styled from 'styled-components';
 import mq from 'utils/mq';
 import Image from 'components/Image';
 import Tout from './Tout';
-import Button from './Button';
-import colImage1 from 'media/bali-2-min.jpg';
-import colImage2 from 'media/bali-6-min.jpg';
-import colImage3 from 'media/bali-7-min.jpg';
 
 const Container = styled.div`
   display: flex;
@@ -51,46 +47,57 @@ const Conditions = styled.p`
   color: ${props => props.theme.black};
 `;
 
-// const ListItem = styled.li`
-//   font-family: ${props => props.theme.secondaryFont};
-//   font-weight: normal;
-//   font-size: 16px;
-//   color: ${props => props.theme.black};
-//   line-height: 33px;
-// `;
+const ListItem = styled.li`
+  font-family: ${props => props.theme.secondaryFont};
+  font-weight: normal;
+  font-size: 16px;
+  color: ${props => props.theme.black};
+  line-height: 33px;
+`;
 
-const Information = (image) => {
+const Information = (image, ctas) => {
+
+  const retreatInformation = [
+    [
+      {
+        title: 'Upcoming Retreats',
+        description: 'Description for column 1',
+      },
+    ],
+    [
+      {
+        title: 'Included',
+        description: 'Description for column 2',
+      },
+    ],
+
+    [
+      {
+        title: 'Early Bird',
+        description: 'Description',
+      },
+      {
+        title: 'Regular',
+        description: 'Description',
+      },
+    ],
+  ];
+
   return (
     <Container>
-      <InfoColumn>
-        <Tout
-          image={image}
-          title={"Upcoming Retreats"}
-          description={"February 10-23, 2019\n Deposit payments are due October 31, 2018. Complete your registration by December 15, 2018 to be eligible for our Early Bird Pricing!\n A non-refundable $500USD deposit is required to secure your spot on all retreats."}
-        />
-        <Button>Apply Today</Button>
-      </InfoColumn>
-      <InfoColumn>
-        <Tout
-          image={image}
-          title={"What's Included"}
-          description={"List of inclusions"}
-        />
-      </InfoColumn>
-      <InfoColumn>
-        <Tout
-          image={image}
-          title={"Early Bird Price – $2999USD"}
-          description={"Save big when you register early for upcoming retreats! See retreat dates for Early Bird cut-off."}
-        />
-        <Tout
-          title={"Regular Price – $3499USD"}
-          description={"We accept a limited number of students each retreat to ensure you’re provided quality training. Reserve your spot today!."}
-        />
-        <Conditions>
-          <sup>*</sup> Rates are based on 2-person occupancy.
-        </Conditions>
-      </InfoColumn>
+      {retreatInformation.map((column, i, ListItem, Conditions) => (
+        <InfoColumn key={`${i}-column`}>
+          {column.map((item, ctas, n) => (
+            <Tout
+              key={`${n}-paragraph`}
+              image={image}
+              title={item.title}
+              description={item.description}
+              ctas={ctas}
+            />
+          ))}
+        </InfoColumn>
+      ))}
     </Container>
   );
 };

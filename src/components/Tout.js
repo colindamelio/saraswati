@@ -1,26 +1,40 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import Image from "./Image";
-import BodyTextLockup from "./BodyTextLockup";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import Image from './Image';
+import Button from './Button';
+import BodyTextLockup from './BodyTextLockup';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-const Tout = ({ image, title, description, cta }) => {
+const CtaContainer = styled.div`
+  display: flex;
+`;
 
-  //We need to improve the CTA logic to map through CTA array//
-  
+const Tout = ({ image, title, description, secondary, ctas }) => {
   return (
     <Container>
-      {image && image.url && <Image src={image.url} alt={image.alt}/>}
+      {image && image.url && <Image src={image.url} alt={image.alt} />}
       <BodyTextLockup
+        secondary={secondary}
         title={title}
         description={description}
       />
-      {cta}
+      {ctas.length > 0 && (
+        <CtaContainer>
+          {ctas.map((cta, n) => (
+            <Button
+              key={`${n}-cta`}
+              text={cta.title}
+              href={cta.href}
+              style={cta.style}
+            />
+          ))}
+        </CtaContainer>
+      )}
     </Container>
   );
 };
@@ -30,8 +44,5 @@ export default Tout;
 Tout.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  cta: PropTypes.shape({
-    text: PropTypes.string,
-    href: PropTypes.string
-  })
+  ctas: PropTypes.array,
 };

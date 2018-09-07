@@ -6,16 +6,14 @@ const strings = {
   'landing/first/title': Semibold => {
     return (
       <span>
-        At Saraswati Retreats, we believe your education should be{' '}
-        <Semibold>extraordinary.</Semibold>
+        At Saraswati Retreats, we believe your education should be <Semibold>extraordinary.</Semibold>
       </span>
     );
   },
   'landing/first/description': Link => {
     return (
       <Fragment>
-        Learn to code your own website in the heart of Bali. <Link>Apply</Link>{' '}
-        for our 14-day retreat today!
+        Learn to code your own website in the heart of Bali. <Link>Apply</Link> for our 14-day retreat today!
       </Fragment>
     );
   },

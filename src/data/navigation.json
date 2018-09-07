@@ -1,0 +1,29 @@
+"navigation": {
+  "logo": {
+    "src": "saraswati-logo",
+    "alt": "Saraswati Logo",
+    "href":"#",
+  },
+  "navLinks": [
+    {
+      "text": "About",
+      "href": "#"
+    },
+    {
+      "text": "Curriculum",
+      "href": "#"
+    },
+    {
+      "text": "Culture",
+      "href": "#"
+    },
+    {
+      "text": "FAQ",
+      "href": "#"
+    },
+    {
+      "text": "Apply",
+      "href": "#"
+    }
+  ]
+}

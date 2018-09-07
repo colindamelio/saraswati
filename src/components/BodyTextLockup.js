@@ -18,14 +18,16 @@ const Title = styled.h2`
 const Description = styled.div`
   font-size: ${props => props.theme.bodyTextDesktop};
   line-height: ${props => props.theme.descriptionLineHeight};
+  color: ${props =>
+    props.secondary ? props.theme.white : props.theme.black};
 `;
 
-const BodyTextLockup = ({ title, description, cta }) => {
+const BodyTextLockup = ({ title, description, cta, secondary }) => {
 
   return (
     <Container>
-      {title && <Title>{title}</Title>}
-      {description && <Description>{description}</Description>}
+      {title && <Title secondary={secondary}>{title}</Title>}
+      {description && <Description secondary={secondary}>{description}</Description>}
     </Container>
   );
 };

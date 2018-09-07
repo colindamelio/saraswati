@@ -1,0 +1,105 @@
+"landing": {
+  "header": {
+    "image": {
+      "src": "bali-landscape-1",
+      "alt": "bali-landscape-1 alt text"
+    },
+    "title": "...",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Discover More",
+        "href": "#",
+        "style": "primary",
+      },
+    ]
+  },
+  "fundamentals": {
+    "image": {
+      "src": "image src",
+      "alt": "alt text"
+    },
+    "title": "...",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "#",
+        "style": "primary",
+      },
+      {
+        "text": "Course Curriculum",
+        "href": "#",
+        "style": "primary",
+      },
+    ]
+  },
+  "experience": {
+    "image": {
+      "src": "image src",
+      "alt": "alt text"
+    },
+    "title": "...",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "#",
+        "style": "primary",
+      },
+      {
+        "text": "See All Activities",
+        "href": "#",
+        "style": "secondary",
+      }
+    ],
+  },
+  "accommodations": {
+    "image": {
+      "src": "villa-malaathina-1",
+      "alt": "villa-malaathina-1 alt text"
+    },
+    "title": "...",
+    "description": "...",
+  },
+  "retreatInformation": [
+    {
+      "image": {
+        "src": "bali-landscape-2",
+        "alt": "bali-landscape-2 alt text"
+      },
+      "title": "Upcoming Retreats",
+      "description": "...",
+      "ctas": [
+        {
+          "text": "Apply Now",
+          "href": "#",
+          "style": "primary",
+        },
+      ]
+    },
+    {
+      "image": {
+        "src": "cooking-2",
+        "alt": "cooking-2 alt text"
+      },
+      "title": "What's Included",
+      "description": "..."
+    },
+    {
+      "image": {
+        "src": "monkeys-1",
+        "alt": "monkeys-1 alt text"
+      },
+      "title": "Early Bird Pricing",
+      "description": "..."
+    }
+  ],
+  "application": {
+    "image": {
+      "src": "temple-sunset",
+      "alt": "temple-sunset alt text"
+    },
+    "title": "Apply Today for an upcoming retreat!"
+  }
+}

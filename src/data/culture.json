@@ -1,0 +1,69 @@
+"culture": {
+  "header": {
+    "image": {
+      "src": "temple-saraswati-3",
+      "alt": "temple-saraswati-3 alt text"
+    },
+    "title": "...",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Discover More",
+        "href": "#",
+        "style": "primary",
+      },
+    ]
+  },
+  "experience": {
+    "image": {
+      "src": "statue-ganesha",
+      "alt": "statue-ganesha alt text"
+    },
+    "title": "...",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "#",
+        "style": "primary",
+      }
+    ]
+  },
+  "cultureInformation": [
+    {
+      "image": {
+        "src": "monkeys-2",
+        "alt": "monkeys-2 alt text"
+      },
+      "title": "Day trips to Ubud",
+      "description": "..."
+    },
+    {
+      "image": {
+        "src": "cooking-1",
+        "alt": "cooking-1 alt text"
+      },
+      "title": "Traditional Balinese Cooking",
+      "description": "..."
+    },
+    {
+      "image": {
+        "src": "yoga",
+        "alt": "yoga alt text"
+      },
+      "title": "Mind, Body & Spirit",
+      "description": "..."
+    }
+  ],
+  "join": {
+    "title": "Join one of our upcoming retreats!",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "#",
+        "style": "primary",
+      }
+    ]
+  }
+}

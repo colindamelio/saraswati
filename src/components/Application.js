@@ -1,16 +1,14 @@
-import React, { Fragment } from "react";
-import SplitHero from "./SplitHero";
-import H1 from "./H1";
-import ApplicationForm from "./ApplicationForm";
-import reflection from "media/bali-tall-2-min.jpg";
+import React, { Fragment } from 'react';
+import SplitHero from './SplitHero';
+import H1 from './H1';
+import ApplicationForm from './ApplicationForm';
+import reflection from "media/temple-sunset.jpg";
 
 const Application = () => {
   return (
     <Fragment>
       <SplitHero src={reflection}>
-        <H1>
-          Apply today for an upcoming retreat!
-        </H1>
+        <H1>Apply today for an upcoming retreat!</H1>
         <ApplicationForm />
       </SplitHero>
     </Fragment>

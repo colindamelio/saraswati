@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Tout from "./Tout";
 import Image from "./Image";
-import studentsImage from "media/students.jpg";
+import villaImage from "media/villa-malaathina-1.jpg";
 import mq from "../utils/mq";
 
 const Container = styled.section`
@@ -10,7 +10,7 @@ const Container = styled.section`
   flex-direction: column;
   min-height: 300px;
   ${mq.desktop`
-    flex-direction: row-reverse;
+    flex-direction: row;
   `};
 `;
 
@@ -25,6 +25,7 @@ const Content = styled.div`
   width: 100%;
   height: auto;
   padding: ${props => props.theme.paddingDesktop};
+  background: ${props => props.theme.primaryAccent};
   ${mq.desktop`
     width: 50%;
   `};
@@ -36,17 +37,17 @@ const Content = styled.div`
   `};
 `;
 
-const Overview = (ctas) => {
+const Accommodations = (ctas) => {
   return (
     <Container>
       <ImageContainer>
-        <Image src={studentsImage} />
+        <Image src={villaImage} />
       </ImageContainer>
       <Content>
-        <Tout
-          title={'Front-End Fundamentals'}
+        <Tout secondary
+          title={'Your Accommodations'}
           description={
-            "With 10 days of in-class training, our goal is to ensure you have a strong foundation. Using HTML, CSS, and JAVASCRIPT, you will build your own website from scratch!\n No prior experience is required - just a desire to learn! It may be challenging, but we're excited to guide you through a comprehensive curriculum."
+            "Located in the charming village of Umalas, near Seminyak, Villa Malaathina - set among 5,000 square metres of immaculate tropical gardens and surrounded by traditional Balinese rice paddies - is home for the duration of our retreat. For more information, visit the Villa Malaanthina Official Site."
           }
           ctas={ctas}
         />
@@ -55,4 +56,4 @@ const Overview = (ctas) => {
   );
 };
 
-export default Overview;
+export default Accommodations;
