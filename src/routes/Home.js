@@ -9,12 +9,12 @@ import Application from 'components/Application';
 const Home = props => {
   return (
     <Fragment>
-      <Navigation />
-      <LandingModule />
-      <Overview />
-      <Experience />
-      <Information />
-      <Application />
+      {/* <Navigation /> */}
+      {/* <LandingModule /> */}
+      {/* <Overview /> */}
+      {/* <Experience /> */}
+      <Information {...props} />
+      {/* <Application /> */}
     </Fragment>
   );
 };

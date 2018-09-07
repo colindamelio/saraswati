@@ -34,8 +34,10 @@ const Experience = () => {
         </Column>
         <Column>
           <Tout
-            description={"Without a doubt, Bali is beautiful. However, most people who visit the island miss an opportunity to discover authentic Balinese Culture.Saraswati Retreats strives to educate our guests beyond coding their website - experience local cuisine, traverse the landscape, and embrace what it means to be truly Balinese."}
-            cta={"Apply Today"}
+            description={
+              'Without a doubt, Bali is beautiful. However, most people who visit the island miss an opportunity to discover authentic Balinese Culture.Saraswati Retreats strives to educate our guests beyond coding their website - experience local cuisine, traverse the landscape, and embrace what it means to be truly Balinese.'
+            }
+            cta={'Apply Today'}
           />
         </Column>
       </Hero>
