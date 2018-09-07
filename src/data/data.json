@@ -1,0 +1,274 @@
+"navigation": {
+  "logo": {
+    "src": "saraswati-logo",
+    "alt": "Saraswati Logo",
+    "href":"#",
+  },
+  "navLinks": [
+    {
+      "text": "About",
+      "href": "#"
+    },
+    {
+      "text": "Curriculum",
+      "href": "#"
+    },
+    {
+      "text": "Culture",
+      "href": "#"
+    },
+    {
+      "text": "FAQ",
+      "href": "#"
+    },
+    {
+      "text": "Apply",
+      "href": "#"
+    }
+  ]
+}
+
+"applicationForm": {
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "email": "Email Address",
+  "phone": "Phone Number (Please Include Country Code)",
+  "location": "Where are you applying from? (City, Country)",
+  "retreats": {
+    "label": "Select an upcoming retreat",
+    "dates": [
+      {
+        "programTitle": "Front-End Fundamentals",
+        "date": "February 11 – 23, 2019",
+        "depositDue": "December 31, 2018",
+        "earlyBird": "October 31, 2018"
+      }
+    ]
+  },
+  "cta": {
+    "text": "Submit",
+    "style": "primary"
+  }
+}
+
+"landing": {
+  "header": {
+    "image": {
+      "src": "bali-landscape-1",
+      "alt": "bali-landscape-1 alt text"
+    },
+    "title": "...",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Discover More",
+        "href": "#",
+        "style": "primary",
+      },
+    ]
+  },
+  "fundamentals": {
+    "image": {
+      "src": "image src",
+      "alt": "alt text"
+    },
+    "title": "...",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "#",
+        "style": "primary",
+      },
+      {
+        "text": "Course Curriculum",
+        "href": "#",
+        "style": "primary",
+      },
+    ]
+  },
+  "experience": {
+    "image": {
+      "src": "image src",
+      "alt": "alt text"
+    },
+    "title": "...",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "#",
+        "style": "primary",
+      },
+      {
+        "text": "See All Activities",
+        "href": "#",
+        "style": "secondary",
+      }
+    ],
+  },
+  "accommodations": {
+    "image": {
+      "src": "villa-malaathina-1",
+      "alt": "villa-malaathina-1 alt text"
+    },
+    "title": "...",
+    "description": "...",
+  },
+  "retreatInformation": [
+    {
+      "image": {
+        "src": "bali-landscape-2",
+        "alt": "bali-landscape-2 alt text"
+      },
+      "title": "Upcoming Retreats",
+      "description": "...",
+      "ctas": [
+        {
+          "text": "Apply Now",
+          "href": "#",
+          "style": "primary",
+        },
+      ]
+    },
+    {
+      "image": {
+        "src": "cooking-2",
+        "alt": "cooking-2 alt text"
+      },
+      "title": "What's Included",
+      "description": "..."
+    },
+    {
+      "image": {
+        "src": "monkeys-1",
+        "alt": "monkeys-1 alt text"
+      },
+      "title": "Early Bird Pricing",
+      "description": "..."
+    }
+  ],
+  "application": {
+    "title": "Apply Today for an upcoming retreat!"
+  }
+}
+
+"curriculum": {
+  "header": {
+    "title": "...",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Discover More",
+        "href": "#",
+        "style": "primary",
+      }
+    ]
+  },
+  "environment": {
+    "title": "Your Learning Environment",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Apply Today",
+        "href": "#",
+        "style": "primary",
+      }
+    ]
+  },
+  "curriculumInformation": [
+    {
+      "title": "10 Days of in-class training",
+      "description": "..."
+    },
+    {
+      "title": "Front-End Fundamentals",
+      "description": "..."
+    },
+    {
+      "title": "What you'll need...",
+      "description": "..."
+    }
+  ],
+  "join": {
+    "title": "Join one of our upcoming retreats!",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "#",
+        "style": "primary",
+      }
+    ]
+  }
+}
+
+"culture": {
+  "header": {
+    "image": {
+      "src": "temple-saraswati-3",
+      "alt": "temple-saraswati-3 alt text"
+    },
+    "title": "...",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Discover More",
+        "href": "#",
+        "style": "primary",
+      },
+    ]
+  },
+  "experience": {
+    "image": {
+      "src": "statue-ganesha",
+      "alt": "statue-ganesha alt text"
+    },
+    "title": "...",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "#",
+        "style": "primary",
+      }
+    ]
+  },
+  "cultureInformation": [
+    {
+      "image": {
+        "src": "monkeys-2",
+        "alt": "monkeys-2 alt text"
+      },
+      "title": "Day trips to Ubud",
+      "description": "..."
+    },
+    {
+      "image": {
+        "src": "cooking-1",
+        "alt": "cooking-1 alt text"
+      },
+      "title": "Traditional Balinese Cooking",
+      "description": "..."
+    },
+    {
+      "image": {
+        "src": "yoga",
+        "alt": "yoga alt text"
+      },
+      "title": "Mind, Body & Spirit",
+      "description": "..."
+    }
+  ],
+  "join": {
+    "title": "Join one of our upcoming retreats!",
+    "description": "...",
+    "ctas": [
+      {
+        "text": "Apply Now",
+        "href": "#",
+        "style": "primary",
+      }
+    ]
+  }
+}
