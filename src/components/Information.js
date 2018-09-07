@@ -121,9 +121,9 @@ const Information = (image, strings) => {
               // image={image}
               title={item.title}
               description={item.description}
+              // cta={cta}
             />
           ))}
-          <Button>Apply Today</Button>
         </InfoColumn>
       ))}
     </Container>
