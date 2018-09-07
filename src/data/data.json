@@ -149,6 +149,10 @@
     }
   ],
   "application": {
+    "image": {
+      "src": "temple-sunset",
+      "alt": "temple-sunset alt text"
+    },
     "title": "Apply Today for an upcoming retreat!"
   }
 }
