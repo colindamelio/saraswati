@@ -20,7 +20,7 @@ const Container = styled.div`
   `}
 `;
 
-const InfoColumn = styled.div`
+const Column = styled.div`
   ${mq.desktop`
     width: calc(100%/3 - 35px);
   `}
@@ -58,24 +58,30 @@ const Touts = ({ id, content, image, ctas }) => {
   return (
     <Container id={id}>
       {content.map((column, i, ListItem, Conditions) => (
-        <InfoColumn key={`${i}-column`}>
+        <Column key={`${i}-column`}>
           {column.map((item, n) => (
             <Tout
-              key={`${n}-paragraph`}
+              key={`${n}-tout`}
               image={item.image}
               title={item.title}
               description={item.description}
               ctas={item.ctas}
             />
           ))}
-        </InfoColumn>
+        </Column>
       ))}
     </Container>
   );
 };
 
 Touts.defaultProps = {
-  ctas: [],
+  id: PropTypes.String,
+  content: PropTypes.Array,
+  image: PropTypes.Shape({
+    src: PropTypes.string,
+    alt: PropTypes.string
+  }),
+  ctas: PropTypes.Array,
 };
 
 export default Touts;
