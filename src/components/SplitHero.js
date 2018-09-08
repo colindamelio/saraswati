@@ -80,8 +80,6 @@ SplitHero.defaultProps = {
   ctas: [],
 };
 
-SplitHero.PropTypes = {
-  ctas: [],
-};
+SplitHero.PropTypes = {};
 
 export default SplitHero;
