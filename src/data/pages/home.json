@@ -54,23 +54,42 @@
 			[
 				{
 					"title": "Upcoming Retreats",
-					"description": "Description for column 1"
+					"description": "February 10 – 23, 2019\nDeposit payments are due October 31, 2018. Complete your registration by December 15, 2018 to be eligible for our Early Bird Pricing!\nA non-refundable $500USD deposit is required to secure your spot on all retreats.",
+					"image": {
+						"src": "http://www.unsplash.it/960/640/",
+						"alt": "alt text"
+					},
+					"ctas": [
+						{
+							"text": "Apply Now",
+							"href": "#",
+							"variant": "primary"
+						}
+					]
 				}
 			],
 			[
 				{
 					"title": "Included",
-					"description": "Description for column 2"
+					"description": "- Airport transfer\n- 13 nights accommodation\n- 10 days of in-class training\n- All breakfasts & lunches included\n- 4 group dinners\n- Cultural excursions and activities \n- 1 traditional balinese cooking class (5 hours)\nNote: Please be sure to bring your own personal laptop. Flight costs not included.",
+					"image": {
+						"src": "http://www.unsplash.it/960/640/",
+						"alt": "alt text"
+					}
 				}
 			],
 			[
 				{
 					"title": "Early Bird",
-					"description": "Description"
+					"description": "Save big when you register early for upcoming retreats! See retreat dates for Early Bird cut-off.",
+					"image": {
+						"src": "http://www.unsplash.it/960/640/",
+						"alt": "alt text"
+					}
 				},
 				{
 					"title": "Regular",
-					"description": "Description"
+					"description": "We accept a limited number of students each retreat to ensure you’re provided quality training. Reserve your spot today!\n*Rates are based on 2-person occupancy."
 				}
 			]
 		]

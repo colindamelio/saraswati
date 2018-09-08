@@ -17,7 +17,7 @@ const CtaContainer = styled.div`
 const Tout = ({image, title, description, secondary, ctas}) => {
   return (
     <Container>
-      {image && image.url && <Image src={image.url} alt={image.alt} />}
+      {image && image.src && <Image src={image.src} alt={image.alt} />}
       <BodyTextLockup
         secondary={secondary}
         title={title}

@@ -44,19 +44,19 @@ const InfoColumn = styled.div`
 
 class Information extends Component {
 	render() {
-		const { image, retreats } = this.props;
+		const { retreats } = this.props;
 
 		return (
 			<Container>
 				{retreats.map((column, i) => (
 					<InfoColumn key={`${i}-column`}>
-						{column.map((item, ctas, n) => (
+						{column.map((item, n) => (
 							<Tout
 								key={`${n}-paragraph`}
-								image={image}
+								image={item.image}
 								title={item.title}
 								description={item.description}
-								ctas={ctas}
+								ctas={item.ctas}
 							/>
 						))}
 					</InfoColumn>
