@@ -4,7 +4,6 @@ const Button = styled.button`
   padding: ${props => props.theme.ctaPadding};
   background: ${props => props.theme.secondaryAccent};
   border: none;
-  border-color: none;
   color: ${props => props.theme.white};
   font-family: ${props => props.theme.secondaryFont};
   font-weight: ${props => props.theme.bold};
