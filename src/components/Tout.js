@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Image from "./Image";
 import Button from "./Button";
 import BodyTextLockup from "./BodyTextLockup";
+import mq from '../utils/mq';
 
 const Container = styled.div`
   display: flex;
@@ -12,6 +13,13 @@ const Container = styled.div`
 
 const CtaContainer = styled.div`
   display: flex;
+  margin-top: ${props => props.theme.paddingDesktop};
+  ${mq.tablet`
+    margin-top: ${props => props.theme.paddingTablet};
+  `}
+  ${mq.mobile`
+    margin-top: ${props => props.theme.paddingMobile};
+  `}
 `;
 
 const Tout = ({image, title, description, secondary, ctas}) => {

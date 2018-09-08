@@ -9,11 +9,25 @@ const Button = styled.button`
   font-weight: ${props => props.theme.bold};
   font-size: ${props => props.theme.ctaFontSize};
   text-transform: ${props => props.theme.ctaCasing};
+  cursor: pointer;
+  &:nth-child(n+2) {
+    background: none;
+    border: none;
+    color: ${props => props.theme.black};
+    padding: 0;
+    margin-left: 30px;
+  }
 
   &.secondary {
     background: none;
     border: ${props => props.theme.ctaBorder};
     border-color: ${props => props.theme.white};
+    &:nth-child(n+2) {
+      border: none;
+      color: ${props => props.theme.white};
+      padding: 0;
+      margin-left: 30px;
+    }
   }
 `;
 
