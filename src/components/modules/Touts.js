@@ -75,13 +75,13 @@ const Touts = ({ id, content, image, ctas }) => {
 };
 
 Touts.defaultProps = {
-  id: PropTypes.String,
-  content: PropTypes.Array,
-  image: PropTypes.Shape({
+  id: PropTypes.string,
+  content: PropTypes.array,
+  image: PropTypes.shape({
     src: PropTypes.string,
     alt: PropTypes.string
   }),
-  ctas: PropTypes.Array,
+  ctas: PropTypes.array,
 };
 
 export default Touts;
