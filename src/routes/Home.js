@@ -5,11 +5,11 @@ import Experience from 'components/Experience';
 import Split from 'components/modules/Split';
 import Touts from 'components/modules/Touts';
 import Application from 'components/Application';
-
 import villaImage from 'media/villa-malaathina-1.jpg';
 import studentsImage from 'media/students.jpg';
 
 const Home = props => {
+  /// This is placeholder content being used while our resources/data files are sorted out
   const overviewContent = [
     {
       title: 'Front-End Fundamentals',
