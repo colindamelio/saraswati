@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import mq from 'utils/mq';
-import Image from 'components/Image';
 import Tout from './Tout';
 
 const Container = styled.div`
@@ -21,7 +21,7 @@ const Container = styled.div`
   `}
 `;
 
-const InfoColumn = styled.div`
+const Column = styled.div`
   ${mq.desktop`
     width: calc(100%/3 - 35px);
   `}
@@ -55,51 +55,34 @@ const ListItem = styled.li`
   line-height: 33px;
 `;
 
-const Information = (image, ctas) => {
-
-  const retreatInformation = [
-    [
-      {
-        title: 'Upcoming Retreats',
-        description: 'Description for column 1',
-      },
-    ],
-    [
-      {
-        title: 'Included',
-        description: 'Description for column 2',
-      },
-    ],
-
-    [
-      {
-        title: 'Early Bird',
-        description: 'Description',
-      },
-      {
-        title: 'Regular',
-        description: 'Description',
-      },
-    ],
-  ];
-
+const Touts = ({ id, content, image, ctas }) => {
   return (
-    <Container>
-      {retreatInformation.map((column, i, ListItem, Conditions) => (
-        <InfoColumn key={`${i}-column`}>
-          {column.map((item, ctas, n) => (
+    <Container id={id}>
+      {content.map((column, i, ListItem, Conditions) => (
+        <Column key={`${i}-column`}>
+          {column.map((item, n) => (
             <Tout
-              key={`${n}-paragraph`}
-              image={image}
+              key={`${n}-tout`}
+              image={item.image}
               title={item.title}
               description={item.description}
-              ctas={ctas}
+              ctas={item.ctas}
             />
           ))}
-        </InfoColumn>
+        </Column>
       ))}
     </Container>
   );
 };
 
-export default Information;
+Touts.defaultProps = {
+  id: PropTypes.string,
+  content: PropTypes.array,
+  image: PropTypes.shape({
+    src: PropTypes.string,
+    alt: PropTypes.string,
+  }),
+  ctas: PropTypes.array,
+};
+
+export default Touts;
