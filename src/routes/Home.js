@@ -1,12 +1,15 @@
 import React, { Fragment } from 'react';
 import Navigation from 'components/Navigation';
-import LandingModule from 'components/LandingModule';
 import Experience from 'components/Experience';
 import Split from 'components/Split';
 import Touts from 'components/Touts';
-import Application from 'components/Application';
+import ApplicationForm from 'components/ApplicationForm';
+import H1 from 'components/H1';
+import BodyTextLockup from 'components/BodyTextLockup';
+import mainImage from 'media/bali-landscape-1.jpg';
 import villaImage from 'media/villa-malaathina-1.jpg';
 import studentsImage from 'media/students.jpg';
+import reflection from 'media/temple-sunset.jpg';
 
 const Home = props => {
   /// This is placeholder content being used while our resources/data files are sorted out
@@ -58,7 +61,17 @@ const Home = props => {
   return (
     <Fragment>
       <Navigation />
-      <LandingModule />
+      <Split id="first" src={mainImage}>
+        <H1>
+          At Saraswati Retreats, we believe your education should be{' '}
+          <span className="semiBold">extraordinary</span>.
+        </H1>
+        <BodyTextLockup
+          description={
+            'Learn to code your own website in the heart of Bali. Apply for our 14-day retreat today!'
+          }
+        />
+      </Split>
       <Split
         id="overview"
         src={studentsImage}
@@ -73,7 +86,10 @@ const Home = props => {
         secondary
       />
       <Touts id="retreatInformation" content={infoContent} />
-      <Application />
+      <Split id="application" src={reflection}>
+        <H1>Apply today for an upcoming retreat!</H1>
+        <ApplicationForm />
+      </Split>
     </Fragment>
   );
 };

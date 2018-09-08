@@ -14,6 +14,22 @@ const Section = styled.section`
   `};
 `;
 
+const HeroImage = styled.div`
+  background: ${props => `url(${props.src}) ${props.theme.white}`};
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex-grow: 1;
+
+  ${mq.tablet`
+    max-height: 450px;
+    min-height: 250px;
+  `} ${mq.mobile`
+    max-height: 220px;
+    min-height: 200px;
+  `};
+`;
+
 const ImageContainer = styled.div`
   width: 100%;
   ${mq.desktop`
@@ -38,22 +54,25 @@ const Content = styled.div`
   `};
 `;
 
-const Split = ({ id, src, content, ctas, secondary, isReversed }) => {
+const Split = ({ id, src, children, content, ctas, secondary, isReversed }) => {
   return (
     <Section id={id} isReversed={isReversed}>
-      <ImageContainer>
+      <HeroImage src={src} />
+      {/* <ImageContainer>
         <Image src={src} />
-      </ImageContainer>
+      </ImageContainer> */}
       <Content secondary={secondary}>
-        {content.map((item, n) => (
-          <Tout
-            key={`${id}-${n}-paragraph`}
-            secondary={secondary}
-            title={item.title}
-            description={item.description}
-            ctas={item.ctas}
-          />
-        ))}
+        {children
+          ? children
+          : content.map((item, n) => (
+              <Tout
+                key={`${id}-${n}-paragraph`}
+                secondary={secondary}
+                title={item.title}
+                description={item.description}
+                ctas={item.ctas}
+              />
+            ))}
       </Content>
     </Section>
   );
