@@ -1,8 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import mq from 'utils/mq';
-import Tout from './Tout';
+import Tout from '.././Tout';
 
 const Container = styled.div`
   display: flex;
@@ -76,17 +75,13 @@ const Touts = ({ id, content, image, ctas }) => {
 };
 
 Touts.defaultProps = {
-  ctas: [],
-};
-
-Touts.PropTypes = {
-  id: PropTypes.String,
-  content: PropTypes.Array,
+  id: PropTypes.string,
+  content: PropTypes.array,
   image: PropTypes.shape({
     src: PropTypes.string,
-    alt: PropTypes.string,
+    alt: PropTypes.string
   }),
-  ctas: PropTypes.Array,
+  ctas: PropTypes.array,
 };
 
 export default Touts;
