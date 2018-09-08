@@ -1,22 +1,22 @@
-import React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import Tout from './Tout';
-import Image from './Image';
-import villaImage from 'media/villa-malaathina-1.jpg';
-import mq from 'utils/mq';
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import Tout from "./Tout";
+import Image from "./Image";
+import villaImage from "media/villa-malaathina-1.jpg";
+import mq from "utils/mq";
 
 const Section = styled.section`
   display: flex;
   flex-direction: column;
   min-height: 300px;
   ${mq.desktop`
-    flex-direction: ${props => (props.isReversed ? 'row-reverse' : 'row')};
+    flex-direction: ${props => (props.isReversed ? "row-reverse" : "row")};
   `};
 `;
 
 const HeroImage = styled.div`
-  background: ${props => `url(${props.src}) ${props.theme.white}`};
+  background: ${props => `url(${props.src})`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -36,7 +36,7 @@ const Content = styled.div`
   height: auto;
   padding: ${props => props.theme.paddingDesktop};
   background: ${props =>
-    props.secondary ? props.theme.primaryAccent : 'none'};
+    props.secondary ? props.theme.primaryAccent : "none"};
   ${mq.desktop`
     width: 50%;
   `};
@@ -50,16 +50,15 @@ const Content = styled.div`
 
 const SplitHero = ({
   id,
-  src,
+  image,
   children,
   content,
-  ctas,
   secondary,
-  isReversed,
+  isReversed
 }) => {
   return (
     <Section id={id} isReversed={isReversed}>
-      <HeroImage src={src} />
+      <HeroImage src={image.src} />
       <Content secondary={secondary}>
         {children ||
           content.map((item, n) => (
@@ -77,9 +76,16 @@ const SplitHero = ({
 };
 
 SplitHero.defaultProps = {
-  ctas: [],
+  ctas: []
 };
 
-SplitHero.PropTypes = {};
+SplitHero.PropTypes = {
+  image: PropTypes.shape({
+    src: PropTypes.string,
+    alt: PropTypes.string
+  }),
+  secondary: PropTypes.bool,
+  isReversed: PropTypes.bool
+};
 
 export default SplitHero;

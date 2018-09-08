@@ -82,9 +82,9 @@
 			]
 		]
 	},
-	"application": {
+	"applicationForm": {
 		"image": {
-			"src": "temple-sunset",
+			"src": "http://unsplash.it/1024/800/",
 			"alt": "temple-sunset alt text"
 		},
 		"title": "Apply Today for an upcoming retreat!"

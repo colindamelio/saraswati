@@ -15,7 +15,7 @@ const Home = props => {
       {data.experience && <Experience {...data.experience} />}
       {data.accommodations && <Accommodations {...data.accommodations} />}
       {data.information && <Information {...data.information} />}
-      {data.application && <ApplicationForm {...data.application} />}
+      {data.applicationForm && <ApplicationForm {...data.applicationForm} />}
     </Fragment>
   );
 };
