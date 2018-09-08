@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import styled from "styled-components";
 import SplitHero from "./SplitHero";
+import H1 from "./H1";
 
 const Form = styled.form`
   display: flex;
@@ -37,6 +38,7 @@ export default class ApplicationForm extends Component {
 
     return (
       <SplitHero image={image}>
+				<H1>{title}</H1>
         <Form>
           <label htmlFor="firstName">First Name</label>
           <input type="text" name="firstName" id="firstName" required />
