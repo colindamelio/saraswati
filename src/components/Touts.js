@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import mq from 'utils/mq';
 import Tout from './Tout';
 
@@ -80,7 +81,7 @@ Touts.defaultProps = {
   content: PropTypes.array,
   image: PropTypes.shape({
     src: PropTypes.string,
-    alt: PropTypes.string
+    alt: PropTypes.string,
   }),
   ctas: PropTypes.array,
 };

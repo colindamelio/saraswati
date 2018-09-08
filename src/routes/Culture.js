@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Navigation from 'components/Navigation';
-import Split from 'components/Split';
+import SplitHero from 'components/SplitHero';
 import Touts from 'components/Touts';
 import ganesha from 'media/statue-ganesha.jpg';
 import keeper from 'media/temple-keeper.jpg';
@@ -62,14 +62,14 @@ export default class Culture extends Component {
     return (
       <Fragment>
         <Navigation />
-        <Split
+        <SplitHero
           id="balineseExperiences"
           src={ganesha}
           content={sampleContent1}
           secondary
         />
         <Touts id="activities" content={sampleContent2} />
-        <Split id="join" src={keeper} content={sampleContent3} secondary />
+        <SplitHero id="join" src={keeper} content={sampleContent3} secondary />
       </Fragment>
     );
   }
