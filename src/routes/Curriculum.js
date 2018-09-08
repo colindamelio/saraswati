@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Navigation from 'components/Navigation';
-import Split from 'components/Split';
+import SplitHero from 'components/SplitHero';
 import Touts from 'components/Touts';
 import students from 'media/students.jpg';
 import laptop from 'media/laptop.jpg';
@@ -57,14 +57,14 @@ export default class Curriculum extends Component {
     return (
       <Fragment>
         <Navigation />
-        <Split
+        <SplitHero
           id="environment"
           src={students}
           content={sampleContent1}
           secondary
         />
         <Touts id="details" content={sampleContent2} />
-        <Split id="join" src={laptop} content={sampleContent3} secondary />
+        <SplitHero id="join" src={laptop} content={sampleContent3} secondary />
       </Fragment>
     );
   }

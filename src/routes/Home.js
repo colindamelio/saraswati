@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Navigation from 'components/Navigation';
 import Experience from 'components/Experience';
-import Split from 'components/Split';
+import SplitHero from 'components/SplitHero';
 import Touts from 'components/Touts';
 import ApplicationForm from 'components/ApplicationForm';
 import H1 from 'components/H1';
@@ -61,7 +61,7 @@ const Home = props => {
   return (
     <Fragment>
       <Navigation />
-      <Split id="first" src={mainImage}>
+      <SplitHero id="first" src={mainImage}>
         <H1>
           At Saraswati Retreats, we believe your education should be{' '}
           <span className="semiBold">extraordinary</span>.
@@ -71,25 +71,25 @@ const Home = props => {
             'Learn to code your own website in the heart of Bali. Apply for our 14-day retreat today!'
           }
         />
-      </Split>
-      <Split
+      </SplitHero>
+      <SplitHero
         id="overview"
         src={studentsImage}
         content={overviewContent}
         isReversed
       />
       <Experience />
-      <Split
+      <SplitHero
         id="accommodations"
         src={villaImage}
         content={accommodationsContent}
         secondary
       />
       <Touts id="retreatInformation" content={infoContent} />
-      <Split id="application" src={reflection}>
+      <SplitHero id="application" src={reflection}>
         <H1>Apply today for an upcoming retreat!</H1>
         <ApplicationForm />
-      </Split>
+      </SplitHero>
     </Fragment>
   );
 };
