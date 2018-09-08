@@ -16,7 +16,7 @@ const Section = styled.section`
 `;
 
 const HeroImage = styled.div`
-  background: ${props => `url(${props.src})`};
+  background: ${props => props.src ? `url(${props.src})` : `${props.theme.primaryAccent}`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
