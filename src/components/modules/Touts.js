@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import mq from 'utils/mq';
-import Image from 'components/Image';
-import Tout from './Tout';
+import Tout from '.././Tout';
 
 const Container = styled.div`
   display: flex;
@@ -55,8 +54,7 @@ const ListItem = styled.li`
   line-height: 33px;
 `;
 
-const Information = (image, ctas) => {
-
+const Touts = (image, ctas) => {
   const retreatInformation = [
     [
       {
@@ -102,4 +100,4 @@ const Information = (image, ctas) => {
   );
 };
 
-export default Information;
+export default Touts;
