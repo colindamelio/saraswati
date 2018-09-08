@@ -26,7 +26,7 @@ const Tout = ({image, title, description, secondary, ctas}) => {
       {ctas && ctas.length > 0 ? (
         <CtaContainer>
           {ctas.map((cta, n) => (
-            <Button key={`${n}-cta`} href={cta.href} className={`${cta.style}`}>
+            <Button key={`${n}-cta`} href={cta.href} className={`${cta.variant}`}>
               {cta.text}
             </Button>
           ))}

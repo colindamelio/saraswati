@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import styled from 'styled-components';
+import SplitHero from "./SplitHero";
 import Tout from './Tout';
 import Image from './Image';
 import studentsImage from 'media/students.jpg';
@@ -13,13 +13,6 @@ const Container = styled.section`
 	min-height: 300px;
 	${mq.desktop`
     flex-direction: row-reverse;
-  `};
-`;
-
-const ImageContainer = styled.div`
-	width: 100%;
-	${mq.desktop`
-    width: 50%;
   `};
 `;
 
@@ -38,15 +31,10 @@ const Content = styled.div`
   `};
 `;
 
-const Overview = ({ title, description, ctas }) => {
+const Overview = ({ image, title, description, ctas, isReversed }) => {
 	return (
 		<Container>
-			<ImageContainer>
-				<Image src={studentsImage} />
-			</ImageContainer>
-			<Content>
-				<Tout title={title} description={description} ctas={ctas} />
-			</Content>
+			<SplitHero image={image} title={title} description={description} ctas={ctas} isReversed />
 		</Container>
 	);
 };

@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import styled from "styled-components";
 import SplitHero from "./SplitHero";
 import H1 from "./H1";
@@ -32,46 +32,44 @@ const Submit = styled.button`
   cursor: pointer;
 `;
 
-export default class ApplicationForm extends Component {
-  render() {
-    const {image, title} = this.props;
+const ApplicationForm = ({ image, title }) => {
+  return (
+    <SplitHero image={image}>
+			<H1>{title}</H1>
+      <Form>
+        <label htmlFor="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" required />
 
-    return (
-      <SplitHero image={image}>
-				<H1>{title}</H1>
-        <Form>
-          <label htmlFor="firstName">First Name</label>
-          <input type="text" name="firstName" id="firstName" required />
+        <label htmlFor="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" required />
 
-          <label htmlFor="lastName">Last Name</label>
-          <input type="text" name="lastName" id="lastName" required />
+        <label htmlFor="email">Email Address</label>
+        <input type="email" name="email" id="email" required />
 
-          <label htmlFor="email">Email Address</label>
-          <input type="email" name="email" id="email" required />
+        <label htmlFor="phone">
+          Phone Number (Please include Country code)
+        </label>
+        <input type="tel" name="phone" id="phone" required />
 
-          <label htmlFor="phone">
-            Phone Number (Please include Country code)
-          </label>
-          <input type="tel" name="phone" id="phone" required />
+        <label htmlFor="country">
+          Where are you applying from? (City, Country)
+        </label>
+        <input type="text" name="country" id="country" required />
 
-          <label htmlFor="country">
-            Where are you applying from? (City, Country)
-          </label>
-          <input type="text" name="country" id="country" required />
+        <label htmlFor="retreat">Select an upcoming retreat</label>
+        <select name="retreat" id="retreat" required>
+          <option>...</option>
+        </select>
 
-          <label htmlFor="retreat">Select an upcoming retreat</label>
-          <select name="retreat" id="retreat" required>
-            <option>...</option>
-          </select>
+        <label htmlFor="textarea">
+          What would you like to accomplish during your Saraswati Experience?
+        </label>
+        <textarea name="textarea" id="textarea" />
 
-          <label htmlFor="textarea">
-            What would you like to accomplish during your Saraswati Experience?
-          </label>
-          <textarea name="textarea" id="textarea" />
-
-          <Submit type="submit">Submit</Submit>
-        </Form>
-      </SplitHero>
-    );
-  }
+        <Submit type="submit">Submit</Submit>
+      </Form>
+    </SplitHero>
+  );
 }
+
+export default ApplicationForm;

@@ -52,7 +52,9 @@ const SplitHero = ({
   id,
   image,
   children,
-  content,
+  title,
+  description,
+  ctas,
   secondary,
   isReversed
 }) => {
@@ -61,16 +63,14 @@ const SplitHero = ({
     <Section id={id} isReversed={isReversed}>
       <HeroImage image={{...image}} />
       <Content secondary={secondary}>
-        {children ||
-          content.map((item, n) => (
+        {children || (
             <Tout
-              key={`${id}-${n}-paragraph`}
               secondary={secondary}
-              title={item.title}
-              description={item.description}
-              ctas={item.ctas}
+              title={title}
+              description={description}
+              ctas={ctas}
             />
-          ))}
+          )}
       </Content>
     </Section>
   );

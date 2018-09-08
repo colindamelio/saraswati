@@ -8,16 +8,15 @@ import mainImage from 'media/bali-landscape-1.jpg';
 
 // mainImage should be managed in JSON
 
-const Container = styled.div`
+const Container = styled.section`
 	display: flex;
 	height: 100vh;
-	background: ${props => props.theme.primaryAccent};
 `;
 
-const LandingModule = ({ src, title, description }) => {
+const LandingModule = ({ image, title, description }) => {
 	return (
 		<Container>
-			<SplitHero src={mainImage}>
+			<SplitHero image={image}>
 				<H1 dangerouslySetInnerHTML={{ __html: title }} />
 				<BodyTextLockup description={description} />
 			</SplitHero>
