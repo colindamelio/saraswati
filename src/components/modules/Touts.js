@@ -54,50 +54,28 @@ const ListItem = styled.li`
   line-height: 33px;
 `;
 
-const Touts = (image, ctas) => {
-  const retreatInformation = [
-    [
-      {
-        title: 'Upcoming Retreats',
-        description: 'Description for column 1',
-      },
-    ],
-    [
-      {
-        title: 'Included',
-        description: 'Description for column 2',
-      },
-    ],
-
-    [
-      {
-        title: 'Early Bird',
-        description: 'Description',
-      },
-      {
-        title: 'Regular',
-        description: 'Description',
-      },
-    ],
-  ];
-
+const Touts = ({ id, content, image, ctas }) => {
   return (
-    <Container>
-      {retreatInformation.map((column, i, ListItem, Conditions) => (
+    <Container id={id}>
+      {content.map((column, i, ListItem, Conditions) => (
         <InfoColumn key={`${i}-column`}>
-          {column.map((item, ctas, n) => (
+          {column.map((item, n) => (
             <Tout
               key={`${n}-paragraph`}
-              image={image}
+              image={item.image}
               title={item.title}
               description={item.description}
-              ctas={ctas}
+              ctas={item.ctas}
             />
           ))}
         </InfoColumn>
       ))}
     </Container>
   );
+};
+
+Touts.defaultProps = {
+  ctas: [],
 };
 
 export default Touts;

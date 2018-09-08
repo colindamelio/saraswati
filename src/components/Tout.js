@@ -23,19 +23,15 @@ const Tout = ({ image, title, description, secondary, ctas }) => {
         title={title}
         description={description}
       />
-      {ctas &&
-        ctas.length > 0 && (
-          <CtaContainer>
-            {ctas.map((cta, n) => (
-              <Button
-                key={`${n}-cta`}
-                text={cta.title}
-                href={cta.href}
-                style={cta.style}
-              />
-            ))}
-          </CtaContainer>
-        )}
+      {ctas && ctas.length > 0 ? (
+        <CtaContainer>
+          {ctas.map((cta, n) => (
+            <Button key={`${n}-cta`} href={cta.href} style={cta.style}>
+              {cta.title}
+            </Button>
+          ))}
+        </CtaContainer>
+      ) : null}
     </Container>
   );
 };

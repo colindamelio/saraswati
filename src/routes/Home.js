@@ -28,6 +28,33 @@ const Home = props => {
     },
   ];
 
+  const infoContent = [
+    [
+      {
+        title: 'Upcoming Retreats',
+        description: 'Description for column 1',
+        ctas: [{ title: 'Apply today' }],
+      },
+    ],
+    [
+      {
+        title: 'Included',
+        description: 'Description for column 2',
+      },
+    ],
+
+    [
+      {
+        title: 'Early Bird',
+        description: 'Description',
+      },
+      {
+        title: 'Regular',
+        description: 'Description',
+      },
+    ],
+  ];
+
   return (
     <Fragment>
       <Navigation />
@@ -45,7 +72,7 @@ const Home = props => {
         content={accommodationsContent}
         secondary
       />
-      <Touts {...props} />
+      <Touts id="retreatInformation" content={infoContent} />
       <Application />
     </Fragment>
   );
