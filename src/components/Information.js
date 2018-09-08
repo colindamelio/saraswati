@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import mq from 'utils/mq';
-import Image from 'components/Image';
 import Tout from './Tout';
 
 const Container = styled.div`
@@ -42,64 +42,36 @@ const InfoColumn = styled.div`
   `}
 `;
 
-const Conditions = styled.p`
-  font-size: 12px;
-  color: ${props => props.theme.black};
-`;
+class Information extends Component {
+	render() {
+		const { image, retreats } = this.props;
 
-const ListItem = styled.li`
-  font-family: ${props => props.theme.secondaryFont};
-  font-weight: normal;
-  font-size: 16px;
-  color: ${props => props.theme.black};
-  line-height: 33px;
-`;
+		return (
+			<Container>
+				{retreats.map((column, i) => (
+					<InfoColumn key={`${i}-column`}>
+						{column.map((item, ctas, n) => (
+							<Tout
+								key={`${n}-paragraph`}
+								image={image}
+								title={item.title}
+								description={item.description}
+								ctas={ctas}
+							/>
+						))}
+					</InfoColumn>
+				))}
+			</Container>
+		);
+	}
+}
 
-const Information = (image, ctas) => {
+Information.defaultProps = {
+	retreats: [],
+};
 
-  const retreatInformation = [
-    [
-      {
-        title: 'Upcoming Retreats',
-        description: 'Description for column 1',
-      },
-    ],
-    [
-      {
-        title: 'Included',
-        description: 'Description for column 2',
-      },
-    ],
-
-    [
-      {
-        title: 'Early Bird',
-        description: 'Description',
-      },
-      {
-        title: 'Regular',
-        description: 'Description',
-      },
-    ],
-  ];
-
-  return (
-    <Container>
-      {retreatInformation.map((column, i, ListItem, Conditions) => (
-        <InfoColumn key={`${i}-column`}>
-          {column.map((item, ctas, n) => (
-            <Tout
-              key={`${n}-paragraph`}
-              image={image}
-              title={item.title}
-              description={item.description}
-              ctas={ctas}
-            />
-          ))}
-        </InfoColumn>
-      ))}
-    </Container>
-  );
+Information.propTypes = {
+	retreats: PropTypes.array,
 };
 
 export default Information;
