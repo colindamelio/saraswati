@@ -16,7 +16,7 @@ const Section = styled.section`
 `;
 
 const HeroImage = styled.div`
-  background: ${props => `url(${props.image.src})`};
+  background: ${props => `url(${props.src})`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -61,7 +61,7 @@ const SplitHero = ({
 
   return (
     <Section id={id} isReversed={isReversed}>
-      <HeroImage image={{...image}} />
+      <HeroImage src={image} />
       <Content secondary={secondary}>
         {children || (
             <Tout

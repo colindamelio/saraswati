@@ -2,18 +2,12 @@
 	"landingModule": {
 		"title": "At Saraswati Retreats, we believe your education should be <span className='semiBold'>extraordinary</span>.",
 		"description": "Learn to code your own website in the heart of Bali. Apply for our 14-day retreat today!",
-		"image": {
-			"src": "http://www.unsplash.it/1280/800/?random",
-			"alt": "alt text"
-		}
+		"image": "http://www.unsplash.it/1280/800/?random"
 	},
 	"overview": {
 		"title": "Front-End Fundamentals",
 		"description": "With 10 days of in-class training, our goal is to ensure you have a strong foundation. Using HTML, CSS, and JAVASCRIPT, you will build your own website from scratch!\n No prior experience is required - just a desire to learn! It may be challenging, but we're excited to guide you through a comprehensive curriculum.",
-		"image": {
-			"src": "http://www.unsplash.it/1280/801/?random",
-			"alt": "alt text"
-		},
+		"image": "http://www.unsplash.it/1280/801/?random",
 		"ctas": [
 			{
 				"text": "Apply Now",
@@ -82,10 +76,7 @@
 		]
 	},
 	"applicationForm": {
-		"image": {
-			"src": "http://unsplash.it/1280/802/?random",
-			"alt": "temple-sunset alt text"
-		},
+		"image": "http://unsplash.it/1280/802/?random",
 		"title": "Apply Today for an upcoming retreat!"
 	}
 }
