@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Tout from 'components/Tout';
-import Image from 'components/Image';
+import Tout from './Tout';
+import Image from './Image';
 import villaImage from 'media/villa-malaathina-1.jpg';
 import mq from 'utils/mq';
 
@@ -45,8 +45,9 @@ const Split = ({ id, src, content, ctas, secondary, isReversed }) => {
         <Image src={src} />
       </ImageContainer>
       <Content secondary={secondary}>
-        {content.map(item => (
+        {content.map((item, n) => (
           <Tout
+            key={`${id}-${n}-paragraph`}
             secondary={secondary}
             title={item.title}
             description={item.description}
