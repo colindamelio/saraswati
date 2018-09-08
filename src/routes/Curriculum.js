@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Navigation from 'components/Navigation';
-import Split from 'components/modules/Split';
-import Touts from 'components/modules/Touts';
+import Split from 'components/Split';
+import Touts from 'components/Touts';
 import students from 'media/students.jpg';
 import laptop from 'media/laptop.jpg';
 

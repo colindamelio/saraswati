@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Tout from 'components/Tout';
-import Image from 'components/Image';
+import Tout from './Tout';
+import Image from './Image';
 import villaImage from 'media/villa-malaathina-1.jpg';
 import mq from 'utils/mq';
 
@@ -11,6 +11,22 @@ const Section = styled.section`
   min-height: 300px;
   ${mq.desktop`
     flex-direction: ${props => (props.isReversed ? 'row-reverse' : 'row')};
+  `};
+`;
+
+const HeroImage = styled.div`
+  background: ${props => `url(${props.src}) ${props.theme.white}`};
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex-grow: 1;
+
+  ${mq.tablet`
+    max-height: 450px;
+    min-height: 250px;
+  `} ${mq.mobile`
+    max-height: 220px;
+    min-height: 200px;
   `};
 `;
 
@@ -38,21 +54,25 @@ const Content = styled.div`
   `};
 `;
 
-const Split = ({ id, src, content, ctas, secondary, isReversed }) => {
+const Split = ({ id, src, children, content, ctas, secondary, isReversed }) => {
   return (
     <Section id={id} isReversed={isReversed}>
-      <ImageContainer>
+      <HeroImage src={src} />
+      {/* <ImageContainer>
         <Image src={src} />
-      </ImageContainer>
+      </ImageContainer> */}
       <Content secondary={secondary}>
-        {content.map(item => (
-          <Tout
-            secondary={secondary}
-            title={item.title}
-            description={item.description}
-            ctas={item.ctas}
-          />
-        ))}
+        {children
+          ? children
+          : content.map((item, n) => (
+              <Tout
+                key={`${id}-${n}-paragraph`}
+                secondary={secondary}
+                title={item.title}
+                description={item.description}
+                ctas={item.ctas}
+              />
+            ))}
       </Content>
     </Section>
   );

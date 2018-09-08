@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Navigation from 'components/Navigation';
-import Split from 'components/modules/Split';
-import Touts from 'components/modules/Touts';
+import Split from 'components/Split';
+import Touts from 'components/Touts';
 import ganesha from 'media/statue-ganesha.jpg';
 import keeper from 'media/temple-keeper.jpg';
 
