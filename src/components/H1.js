@@ -8,6 +8,11 @@ const H1 = styled.h1`
   line-height: ${props => props.theme.titleLineHeight};
   color: ${props =>
     props.secondary ? props.theme.white : props.theme.primaryAccent};
+  span {
+    &.bold {
+      font-weight: ${props => props.theme.bold};
+    }
+  }
   ${mq.mobile`
     font-size: ${props => props.theme.heroTitleMobile};
   `};

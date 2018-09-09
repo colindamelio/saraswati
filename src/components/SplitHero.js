@@ -52,9 +52,6 @@ const SplitHero = ({
   id,
   image,
   children,
-  title,
-  description,
-  ctas,
   secondary,
   isReversed
 }) => {
@@ -63,14 +60,7 @@ const SplitHero = ({
     <Section id={id} isReversed={isReversed}>
       <HeroImage src={image} />
       <Content secondary={secondary}>
-        {children || (
-            <Tout
-              secondary={secondary}
-              title={title}
-              description={description}
-              ctas={ctas}
-            />
-          )}
+        {children}
       </Content>
     </Section>
   );

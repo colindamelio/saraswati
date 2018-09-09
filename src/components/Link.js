@@ -4,7 +4,6 @@ const Link = styled.a`
   color: ${props => props.secondary ? props.theme.white : props.theme.black};
   font-family: ${props => props.theme.secondaryFont};
   font-weight: ${props => props.theme.bold};
-  font-size: ${props => props.theme.ctaFontSize};
   text-transform: ${props => props.theme.ctaCasing};
   text-decoration: none;
 `;

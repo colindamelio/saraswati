@@ -4,29 +4,35 @@ import styled from 'styled-components';
 import SplitHero from 'components/SplitHero';
 import H1 from 'components/H1';
 import BodyTextLockup from 'components/BodyTextLockup';
-import mainImage from 'media/bali-landscape-1.jpg';
-
-// mainImage should be managed in JSON
+import landingImage from 'media/bali-landscape-1.jpg';
 
 const Container = styled.section`
-	display: flex;
-	height: 100vh;
+  display: flex;
+  height: 100vh;
 `;
 
-const LandingModule = ({ image, title, description }) => {
-	return (
-		<Container>
-			<SplitHero image={image}>
-				<H1 dangerouslySetInnerHTML={{ __html: title }} />
-				<BodyTextLockup description={description} />
-			</SplitHero>
-		</Container>
-	);
+const LandingModule = () => {
+  return (
+    <Container>
+      <SplitHero image={landingImage}>
+        <H1>
+          At Saraswati Retreats, we believe your education should be{' '}
+          <span className="bold">extraordinary.</span>
+        </H1>
+        <BodyTextLockup>
+          <p className="header">
+            Learn to code your own website in the heart of Bali.{' '}
+            <a href="#">Apply</a> for our 14-day retreat today!
+          </p>
+        </BodyTextLockup>
+      </SplitHero>
+    </Container>
+  );
 };
 
 LandingModule.propTypes = {
-	title: PropTypes.string,
-	description: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
 };
 
 export default LandingModule;

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import mq from 'utils/mq';
 
 const H2 = styled.h2`
   font-family: ${props => props.theme.primaryFont};

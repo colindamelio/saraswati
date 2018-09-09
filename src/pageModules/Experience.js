@@ -8,39 +8,67 @@ import Tout from 'components/Tout';
 import experienceImage from 'media/temple-courtyard.jpg';
 
 const Column = styled.div`
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	${mq.desktop`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  ${mq.desktop`
     width: 50%;
     padding: ${props => props.theme.paddingDesktop};
   `};
-	${mq.tablet`
+  ${mq.tablet`
     padding: ${props => props.theme.paddingTablet};
   `};
-	${mq.mobile`
+  ${mq.mobile`
     padding: ${props => props.theme.paddingMobile};
   `};
 `;
 
-const Experience = ({ title, description, ctas }) => {
-	return (
-		<Hero src={experienceImage}>
-			<Column>
-				<H1 secondary>{title}</H1>
-			</Column>
-			<Column>
-				<Tout secondary description={description} ctas={ctas} />
-			</Column>
-		</Hero>
-	);
+const ctas = [
+  {
+    text: 'Apply Now',
+    href: '#',
+    variant: 'secondary',
+  },
+  {
+    text: 'See All Activities',
+    href: '#',
+    variant: 'secondary',
+  },
+];
+
+const Experience = () => {
+  return (
+    <Hero src={experienceImage}>
+      <Column>
+        <H1 secondary>
+          Providing you an <span className="bold">authentic</span> Balinese
+          Experience
+        </H1>
+      </Column>
+      <Column>
+        <Tout secondary ctas={ctas}>
+          <p>
+            Without a doubt,{' '}
+            <span className="bold italic">Bali is beautiful</span>. However,
+            most people who visit the island miss an opportunity to discover
+            authentic Balinese Culture.
+          </p>
+          <p>
+            Saraswati Retreats strives to educate our guests beyond coding their
+            website – experience local cuisine, traverse the landscape, and
+            embrace what it means to be truly Balinese.
+          </p>
+        </Tout>
+      </Column>
+    </Hero>
+  );
 };
 
 Experience.propTypes = {
-	title: PropTypes.string,
-	description: PropTypes.string,
-	cta: PropTypes.array,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  cta: PropTypes.array,
 };
 
 export default Experience;
