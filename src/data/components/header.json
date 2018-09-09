@@ -1,0 +1,20 @@
+{
+	"routes": [
+		{
+			"title": "Saraswati",
+			"to": "/"
+		},
+		{
+			"title": "Culture",
+			"to": "/culture"
+		},
+		{
+			"title": "Curriculum",
+			"to": "/curriculum"
+		},
+		{
+			"title": "Apply",
+			"to": "/"
+		}
+	]
+}

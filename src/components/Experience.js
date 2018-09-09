@@ -1,47 +1,46 @@
-import React, { Fragment } from "react";
-import styled from "styled-components";
-import mq from "utils/mq";
-import Hero from "./Hero";
-import H1 from "./H1";
-import Tout from "./Tout";
-import experienceImage from "media/temple-courtyard.jpg";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import mq from 'utils/mq';
+import Hero from './Hero';
+import H1 from './H1';
+import Tout from './Tout';
+import experienceImage from 'media/temple-courtyard.jpg';
 
 const Column = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  ${mq.desktop`
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	${mq.desktop`
     width: 50%;
     padding: ${props => props.theme.paddingDesktop};
   `};
-  ${mq.tablet`
+	${mq.tablet`
     padding: ${props => props.theme.paddingTablet};
   `};
-  ${mq.mobile`
+	${mq.mobile`
     padding: ${props => props.theme.paddingMobile};
   `};
 `;
 
-const Experience = (ctas) => {
-  return (
-    <Fragment>
-      <Hero src={experienceImage}>
-        <Column>
-          <H1 secondary>Providing you authentic Balinese experiences.</H1>
-        </Column>
-        <Column>
-          <Tout
-            secondary
-            description={
-              'Without a doubt, Bali is beautiful. However, most people who visit the island miss an opportunity to discover authentic Balinese Culture. Saraswati Retreats strives to educate our guests beyond coding their website - experience local cuisine, traverse the landscape, and embrace what it means to be truly Balinese.'
-            }
-            ctas={ctas}
-          />
-        </Column>
-      </Hero>
-    </Fragment>
-  );
+const Experience = ({ title, description, ctas }) => {
+	return (
+		<Hero src={experienceImage}>
+			<Column>
+				<H1 secondary>{title}</H1>
+			</Column>
+			<Column>
+				<Tout secondary description={description} ctas={ctas} />
+			</Column>
+		</Hero>
+	);
+};
+
+Experience.propTypes = {
+	title: PropTypes.string,
+	description: PropTypes.string,
+	cta: PropTypes.array,
 };
 
 export default Experience;

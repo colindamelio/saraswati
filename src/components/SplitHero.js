@@ -1,20 +1,22 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
+import PropTypes from "prop-types";
+import Tout from "./Tout";
+import Image from "./Image";
+import villaImage from "media/villa-malaathina-1.jpg";
 import mq from "utils/mq";
 
-const Container = styled.div`
-  background: ${props => props.theme.white};
-  width: 100%;
+const Section = styled.section`
   display: flex;
   flex-direction: column;
+  min-height: 300px;
   ${mq.desktop`
-    flex-direction: row;
+    flex-direction: ${props => (props.isReversed ? "row-reverse" : "row")};
   `};
 `;
 
-const Image = styled.div`
-  background: ${props => `url(${props.src}) ${props.theme.white}`};
+const HeroImage = styled.div`
+  background: ${props => props.src ? `url(${props.src})` : `${props.theme.primaryAccent}`};
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -31,9 +33,12 @@ const Image = styled.div`
 
 const Content = styled.div`
   width: 100%;
+  height: auto;
+  padding: ${props => props.theme.paddingDesktop};
+  background: ${props =>
+    props.secondary ? props.theme.primaryAccent : "none"};
   ${mq.desktop`
     width: 50%;
-    padding: ${props => props.theme.paddingDesktop};
   `};
   ${mq.tablet`
     padding: ${props => props.theme.paddingTablet};
@@ -43,18 +48,45 @@ const Content = styled.div`
   `};
 `;
 
-const SplitHero = ({ src, width, children }) => {
+const SplitHero = ({
+  id,
+  image,
+  children,
+  title,
+  description,
+  ctas,
+  secondary,
+  isReversed
+}) => {
+
   return (
-    <Container>
-      <Image src={src} />
-      <Content>{children}</Content>
-    </Container>
+    <Section id={id} isReversed={isReversed}>
+      <HeroImage src={image} />
+      <Content secondary={secondary}>
+        {children || (
+            <Tout
+              secondary={secondary}
+              title={title}
+              description={description}
+              ctas={ctas}
+            />
+          )}
+      </Content>
+    </Section>
   );
 };
 
-export default SplitHero;
+SplitHero.defaultProps = {
+  ctas: []
+};
 
 SplitHero.propTypes = {
-  src: PropTypes.string,
-  width: PropTypes.number
+  image: PropTypes.shape({
+    src: PropTypes.string,
+    alt: PropTypes.string
+  }),
+  secondary: PropTypes.bool,
+  isReversed: PropTypes.bool
 };
+
+export default SplitHero;

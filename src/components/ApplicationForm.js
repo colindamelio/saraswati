@@ -1,5 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
+import SplitHero from "./SplitHero";
+import H1 from "./H1";
 
 const Form = styled.form`
   display: flex;
@@ -30,9 +32,10 @@ const Submit = styled.button`
   cursor: pointer;
 `;
 
-export default class ApplicationForm extends Component {
-  render() {
-    return (
+const ApplicationForm = ({ image, title }) => {
+  return (
+    <SplitHero image={image}>
+			<H1>{title}</H1>
       <Form>
         <label htmlFor="firstName">First Name</label>
         <input type="text" name="firstName" id="firstName" required />
@@ -65,6 +68,8 @@ export default class ApplicationForm extends Component {
 
         <Submit type="submit">Submit</Submit>
       </Form>
-    );
-  }
+    </SplitHero>
+  );
 }
+
+export default ApplicationForm;

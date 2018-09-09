@@ -1,9 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Image from './Image';
-import Button from './Button';
-import BodyTextLockup from './BodyTextLockup';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import Image from "./Image";
+import Button from "./Button";
+import BodyTextLockup from "./BodyTextLockup";
+import mq from '../utils/mq';
 
 const Container = styled.div`
   display: flex;
@@ -12,37 +13,45 @@ const Container = styled.div`
 
 const CtaContainer = styled.div`
   display: flex;
+  margin-top: ${props => props.theme.paddingDesktop};
+  ${mq.tablet`
+    margin-top: ${props => props.theme.paddingTablet};
+  `}
+  ${mq.mobile`
+    margin-top: ${props => props.theme.paddingMobile};
+  `}
 `;
 
-const Tout = ({ image, title, description, secondary, ctas }) => {
+const Tout = ({image, title, description, secondary, ctas}) => {
   return (
     <Container>
-      {image && image.url && <Image src={image.url} alt={image.alt} />}
+      {image && image.src && <Image src={image.src} alt={image.alt} />}
       <BodyTextLockup
         secondary={secondary}
         title={title}
         description={description}
       />
-      {ctas.length > 0 && (
+      {ctas && ctas.length > 0 ? (
         <CtaContainer>
           {ctas.map((cta, n) => (
-            <Button
-              key={`${n}-cta`}
-              text={cta.title}
-              href={cta.href}
-              style={cta.style}
-            />
+            <Button key={`${n}-cta`} href={cta.href} className={`${cta.variant}`}>
+              {cta.text}
+            </Button>
           ))}
         </CtaContainer>
-      )}
+      ) : null}
     </Container>
   );
 };
 
-export default Tout;
+Tout.defaultProps = {
+  ctas: []
+};
 
 Tout.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  ctas: PropTypes.array,
+  ctas: PropTypes.array
 };
+
+export default Tout;
