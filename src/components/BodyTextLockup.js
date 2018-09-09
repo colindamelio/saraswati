@@ -22,12 +22,12 @@ const Description = styled.div`
     props.secondary ? props.theme.white : props.theme.black};
 `;
 
-const BodyTextLockup = ({ title, description, cta, secondary }) => {
+const BodyTextLockup = ({ title, secondary, children }) => {
 
   return (
     <Container>
       {title && <Title secondary={secondary}>{title}</Title>}
-      {description && <Description secondary={secondary}>{description}</Description>}
+      {children && <Description secondary={secondary}>{children}</Description>}
     </Container>
   );
 };

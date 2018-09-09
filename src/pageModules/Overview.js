@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import SplitHero from "./SplitHero";
-import Tout from './Tout';
-import Image from './Image';
+import SplitHero from "components/SplitHero";
+import Tout from 'components/Tout';
+import Image from 'components/Image';
 import studentsImage from 'media/students.jpg';
 import mq from '../utils/mq';
 

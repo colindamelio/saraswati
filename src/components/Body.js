@@ -4,8 +4,8 @@ import Home from 'routes/Home';
 import Culture from 'routes/Culture';
 import Curriculum from 'routes/Curriculum';
 import Error from 'routes/Error';
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import Header from 'pageModules/Header';
+import Footer from 'pageModules/Footer';
 
 const Body = props => {
 	return (

@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import mq from 'utils/mq';
-import Hero from './Hero';
-import H1 from './H1';
-import Tout from './Tout';
+import Hero from 'components/Hero';
+import H1 from 'components/H1';
+import Tout from 'components/Tout';
 import experienceImage from 'media/temple-courtyard.jpg';
 
 const Column = styled.div`

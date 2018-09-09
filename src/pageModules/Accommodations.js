@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import SplitHero from "./SplitHero";
-import Tout from './Tout';
+import SplitHero from "components/SplitHero";
+import Tout from 'components/Tout';
 import mq from '../utils/mq';
 
 const Container = styled.section`

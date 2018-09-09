@@ -22,15 +22,16 @@ const CtaContainer = styled.div`
   `}
 `;
 
-const Tout = ({image, title, description, secondary, ctas}) => {
+const Tout = ({image, title, children, secondary, ctas}) => {
+
   return (
     <Container>
       {image && image.src && <Image src={image.src} alt={image.alt} />}
       <BodyTextLockup
         secondary={secondary}
-        title={title}
-        description={description}
-      />
+        title={title}>
+        {children}
+      </BodyTextLockup>
       {ctas && ctas.length > 0 ? (
         <CtaContainer>
           {ctas.map((cta, n) => (
@@ -50,7 +51,6 @@ Tout.defaultProps = {
 
 Tout.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.string,
   ctas: PropTypes.array
 };
 

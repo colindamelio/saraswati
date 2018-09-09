@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import mq from 'utils/mq';
-import Tout from './Tout';
+import Tout from 'components/Tout';
 
 const Container = styled.div`
   display: flex;

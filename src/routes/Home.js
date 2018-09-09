@@ -1,21 +1,20 @@
 import React, {Fragment} from "react";
-import LandingModule from "components/LandingModule";
-import Overview from "components/Overview";
-import Experience from "components/Experience";
-import Accommodations from "../components/Accommodations";
-import Information from "components/Information";
-import ApplicationForm from "components/ApplicationForm";
-import data from "data/pages/home.json";
+import LandingModule from "pageModules/LandingModule";
+import Overview from "pageModules/Overview";
+import Experience from "pageModules/Experience";
+import Accommodations from "../pageModules/Accommodations";
+import Information from "pageModules/Information";
+import Application from "pageModules/Application";
 
 const Home = props => {
   return (
     <Fragment>
-      {data.landingModule && <LandingModule {...data.landingModule} />}
-      {data.overview && <Overview {...data.overview} />}
-      {data.experience && <Experience {...data.experience} />}
-      {data.accommodations && <Accommodations {...data.accommodations} />}
-      {data.information && <Information {...data.information} />}
-      {data.applicationForm && <ApplicationForm {...data.applicationForm} />}
+      <LandingModule />
+      <Overview />
+      <Experience />
+      <Accommodations />
+      <Information />
+      <Application />
     </Fragment>
   );
 };
