@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import SplitHero from 'components/SplitHero';
 import TempleImage from 'media/temple-keeper.jpg';
+import LaptopImage from 'media/laptop.jpg';
 import Tout from 'components/Tout';
 import mq from 'utils/mq';
 
@@ -28,9 +29,10 @@ const ctas = [
   },
 ];
 
-const Join = ({ secondary }) => {
+const Join = ({ secondary, culture }) => {
+  const HeroImage = culture ? TempleImage : LaptopImage;
   return (
-    <SplitHero image={TempleImage} secondary>
+    <SplitHero image={HeroImage} secondary>
       <Tout title={'Join one of our upcoming retreats!'} ctas={ctas} secondary>
         <p>
           We accept a limited number of students each retreat to ensure you’re
@@ -39,8 +41,10 @@ const Join = ({ secondary }) => {
         </p>
       </Tout>
       <LearnMore>
-        Curious about our curriculum?{' '}
-        <a href="/curriculum">Click here to learn more</a>.
+        Curious about our {culture ? `curriculum` : `cultural activities`}?{' '}
+        <a href={culture ? `/curriculum` : `culture`}>
+          Click here to learn more
+        </a>.
       </LearnMore>
     </SplitHero>
   );

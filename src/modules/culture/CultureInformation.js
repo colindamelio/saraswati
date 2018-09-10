@@ -106,10 +106,11 @@ class CulturalInformation extends Component {
               rest.
             </p>
             <p>
-              <a href="http://www.villamalaathina.com/">Villa Malaathina</a>,
-              your home for the duration of our retreat, is also equipped with
-              luxurious amenities, including air-conditioned gym facilities and
-              a 25-meter pool, making it the perfect location for rest and
+              <a href="http://www.villamalaathina.com/" target="_blank">
+                Villa Malaathina
+              </a>, your home for the duration of our retreat, is also equipped
+              with luxurious amenities, including air-conditioned gym facilities
+              and a 25-meter pool, making it the perfect location for rest and
               relaxation.
             </p>
           </Tout>

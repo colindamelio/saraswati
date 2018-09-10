@@ -14,11 +14,11 @@ const CurriculumIntro = () => {
   return (
     <Container>
       <Hero>
-        <H1>
+        <H1 secondary>
           Our retreats are designed for tech-savvy beginners –{' '}
           <span className="bold">no prior experience is necessary.</span>
         </H1>
-        <BodyTextLockup>
+        <BodyTextLockup secondary>
           <p className="header">
             Industry professionals lead you through our carefully designed
             curriculum. Each class is exercise-heavy, because as the saying
