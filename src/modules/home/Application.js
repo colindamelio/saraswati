@@ -2,7 +2,7 @@ import React from 'react';
 import SplitHero from 'components/SplitHero';
 import Form from 'components/Form';
 import H1 from 'components/H1';
-import TempleImage from 'media/temple-sunset.jpg';
+import TempleImage from 'media/cooking-5.jpg';
 
 const Application = () => {
   return (

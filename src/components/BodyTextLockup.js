@@ -9,10 +9,6 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const Title = styled(H2)`
-  margin-bottom: 15px;
-`;
-
 const Description = styled.div`
   font-size: ${props => props.theme.bodyTextDesktop};
   line-height: ${props => props.theme.descriptionLineHeight};
@@ -32,18 +28,22 @@ const Description = styled.div`
     text-decoration: underline;
   }
 
-  p.header {
-    font-size: ${props => props.theme.heroDescriptionDesktop};
-    ${mq.mobile`
-      font-size: ${props => props.theme.heroDescriptionMobile};
-    `};
+  p {
+    margin-bottom: 0;
+
+    &.header {
+      font-size: ${props => props.theme.heroDescriptionDesktop};
+      ${mq.mobile`
+        font-size: ${props => props.theme.heroDescriptionMobile};
+      `};
+    }
   }
 `;
 
 const BodyTextLockup = ({ title, secondary, children }) => {
   return (
     <Container>
-      {title && <Title secondary={secondary}>{title}</Title>}
+      {title && <H2 secondary={secondary}>{title}</H2>}
       {children && <Description secondary={secondary}>{children}</Description>}
     </Container>
   );

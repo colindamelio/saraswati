@@ -5,10 +5,15 @@ import SplitHero from 'components/SplitHero';
 import H1 from 'components/H1';
 import BodyTextLockup from 'components/BodyTextLockup';
 import HeroImage from 'media/bali-landscape-1.jpg';
+import mq from 'utils/mq';
 
 const Container = styled.section`
   display: flex;
   height: calc(100vh - 94px);
+  margin-bottom: 2px;
+  ${mq.desktop`
+    margin-bottom: 5px;
+  `};
 `;
 
 const LandingIntro = () => {

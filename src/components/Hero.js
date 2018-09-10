@@ -3,13 +3,14 @@ import styled from 'styled-components';
 import mq from 'utils/mq';
 
 const Container = styled.div`
+  margin-bottom: 2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
   background: ${props =>
     props.src
-      ? `linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(${
+      ? `linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(${
           props.src
         })`
       : `${props.theme.black}`};
@@ -20,6 +21,7 @@ const Container = styled.div`
   color: ${props => props.theme.white};
   ${mq.desktop`
     flex-direction: ${props => (props.columns === 2 ? `row` : `column`)};
+    margin-bottom: 5px;
   `} ${mq.tablet`
     padding: ${props => props.theme.paddingTablet};
   `} ${mq.mobile`

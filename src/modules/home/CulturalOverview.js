@@ -5,7 +5,7 @@ import mq from 'utils/mq';
 import Hero from 'components/Hero';
 import H1 from 'components/H1';
 import Tout from 'components/Tout';
-import experienceImage from 'media/temple-courtyard.jpg';
+import experienceImage from 'media/painter.jpg';
 
 const Column = styled.div`
   width: 100%;

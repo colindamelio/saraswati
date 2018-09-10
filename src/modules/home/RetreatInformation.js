@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import H2 from 'components/H2';
 import Tout from 'components/Tout';
 import mq from '../../utils/mq';
-import colImage1 from 'media/bali-landscape-1.jpg';
-import colImage2 from 'media/cooking-2.jpg';
-import colImage3 from 'media/monkeys-1.jpg';
+import colImage1 from 'media/bali-landscape-2.jpg';
+import colImage2 from 'media/cooking-3.jpg';
+import colImage3 from 'media/monkeys-3.jpg';
 
 const Container = styled.div`
   display: flex;
@@ -46,10 +46,6 @@ const InfoColumn = styled.div`
   `}
 `;
 
-const ListItem = styled.li`
-  margin-bottom: 15px;
-`;
-
 const Image1 = {
   src: colImage1,
   alt: 'alt text',
@@ -64,6 +60,12 @@ const Image3 = {
   src: colImage3,
   alt: 'alt text',
 };
+
+const ListItem = styled.li`
+  &:first-child {
+    margin-top: 16px;
+  }
+`;
 
 const Inclusions = [
   'Airport transfer',

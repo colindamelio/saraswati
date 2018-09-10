@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Tout from 'components/Tout';
 import mq from '../../utils/mq';
-import colImage1 from 'media/monkeys-2.jpg';
-import colImage2 from 'media/cooking-1.jpg';
+import colImage1 from 'media/monkeys-4.jpg';
+import colImage2 from 'media/cooking-6.jpg';
 import colImage3 from 'media/yoga.jpg';
 
 const Container = styled.div`
