@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import SplitHero from 'components/SplitHero';
 import Form from 'components/Form';
 import H1 from 'components/H1';

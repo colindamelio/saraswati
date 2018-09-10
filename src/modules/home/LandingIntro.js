@@ -4,17 +4,17 @@ import styled from 'styled-components';
 import SplitHero from 'components/SplitHero';
 import H1 from 'components/H1';
 import BodyTextLockup from 'components/BodyTextLockup';
-import landingImage from 'media/bali-landscape-1.jpg';
+import HeroImage from 'media/bali-landscape-1.jpg';
 
 const Container = styled.section`
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 94px);
 `;
 
-const LandingModule = () => {
+const LandingIntro = () => {
   return (
     <Container>
-      <SplitHero image={landingImage}>
+      <SplitHero image={HeroImage}>
         <H1>
           At Saraswati Retreats, we believe your education should be{' '}
           <span className="bold">extraordinary.</span>
@@ -30,9 +30,9 @@ const LandingModule = () => {
   );
 };
 
-LandingModule.propTypes = {
+LandingIntro.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
 };
 
-export default LandingModule;
+export default LandingIntro;

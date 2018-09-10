@@ -14,13 +14,7 @@ const Column = styled.div`
   align-items: flex-start;
   ${mq.desktop`
     width: 50%;
-    padding: ${props => props.theme.paddingDesktop};
-  `};
-  ${mq.tablet`
-    padding: ${props => props.theme.paddingTablet};
-  `};
-  ${mq.mobile`
-    padding: ${props => props.theme.paddingMobile};
+    padding: ${props => (props.left ? `50px 50px 50px 0` : `50px 0 50px 50px`)};
   `};
 `;
 
@@ -37,13 +31,13 @@ const ctas = [
   },
 ];
 
-const Experience = () => {
+const CulturalOverview = ({ left }) => {
   return (
-    <Hero src={experienceImage}>
-      <Column>
+    <Hero image={experienceImage} columns={2}>
+      <Column left>
         <H1 secondary>
           Providing you an <span className="bold">authentic</span> Balinese
-          Experience
+          Experience.
         </H1>
       </Column>
       <Column>
@@ -65,10 +59,10 @@ const Experience = () => {
   );
 };
 
-Experience.propTypes = {
+CulturalOverview.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   cta: PropTypes.array,
 };
 
-export default Experience;
+export default CulturalOverview;

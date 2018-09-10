@@ -1,26 +1,35 @@
-import React from "react";
-import styled from "styled-components";
-import mq from "utils/mq";
+import React from 'react';
+import styled from 'styled-components';
+import mq from 'utils/mq';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  position: relative;
+  justify-content: center;
   width: 100%;
-  background: ${props => props.theme.primaryAccent}
+  background: ${props =>
+    props.src
+      ? `linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(${
+          props.src
+        })`
+      : `${props.theme.black}`};
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: ${props => props.theme.paddingDesktop};
   color: ${props => props.theme.white};
   ${mq.desktop`
-    flex-direction: row;
-    background: ${props => props.src ? `linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(${props.src})` : `${props.theme.primaryAccent}`};
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    flex-direction: ${props => (props.columns === 2 ? `row` : `column`)};
+  `} ${mq.tablet`
+    padding: ${props => props.theme.paddingTablet};
+  `} ${mq.mobile`
+    padding: ${props => props.theme.paddingMobile};
   `};
 `;
 
-const Hero = ({ src, children }) => {
+const Hero = ({ image, children, columns }) => {
   return (
-    <Container src={src}>
+    <Container src={image} columns={columns}>
       {children}
     </Container>
   );

@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import H2 from 'components/H2';
 import Tout from 'components/Tout';
-import mq from 'utils/mq';
+import mq from '../../utils/mq';
 import colImage1 from 'media/bali-landscape-1.jpg';
-import colImage2 from 'media/cooking-1.jpg';
+import colImage2 from 'media/cooking-2.jpg';
 import colImage3 from 'media/monkeys-1.jpg';
 
 const Container = styled.div`
@@ -75,10 +75,8 @@ const Inclusions = [
   '1 traditional balinese cooking class (5 hours)',
 ];
 
-class Information extends Component {
+class RetreatInformation extends Component {
   render() {
-    const { retreats } = this.props;
-
     return (
       <Container>
         <InfoColumn>
@@ -125,12 +123,12 @@ class Information extends Component {
   }
 }
 
-Information.defaultProps = {
+RetreatInformation.defaultProps = {
   retreats: [],
 };
 
-Information.propTypes = {
+RetreatInformation.propTypes = {
   retreats: PropTypes.array,
 };
 
-export default Information;
+export default RetreatInformation;

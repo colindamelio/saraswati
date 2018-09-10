@@ -29,7 +29,7 @@ const Description = styled.div`
     font-weight: ${props => props.theme.bold};
     color: ${props =>
       props.secondary ? props.theme.white : props.theme.primaryAccent};
-    text-decoration: ${props => (props.secondary ? `underline` : `none`)};
+    text-decoration: underline;
   }
 
   p.header {

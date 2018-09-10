@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import SplitHero from 'components/SplitHero';
 import Tout from 'components/Tout';
 import VillaImage from 'media/villa-malaathina-1.jpg';
-import mq from '../utils/mq';
+import mq from '../../utils/mq';
 
 const Container = styled.section`
   display: flex;

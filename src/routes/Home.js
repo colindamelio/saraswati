@@ -1,19 +1,19 @@
-import React, {Fragment} from "react";
-import LandingModule from "pageModules/LandingModule";
-import Overview from "pageModules/Overview";
-import Experience from "pageModules/Experience";
-import Accommodations from "../pageModules/Accommodations";
-import Information from "pageModules/Information";
-import Application from "pageModules/Application";
+import React, { Fragment } from 'react';
+import LandingIntro from 'modules/home/LandingIntro';
+import CurriculumOverview from 'modules/home/CurriculumOverview';
+import CulturalOverview from 'modules/home/CulturalOverview';
+import Accommodations from 'modules/home/Accommodations';
+import RetreatInformation from 'modules/home/RetreatInformation';
+import Application from 'modules/home/Application';
 
 const Home = props => {
   return (
     <Fragment>
-      <LandingModule />
-      <Overview />
-      <Experience />
+      <LandingIntro />
+      <CurriculumOverview />
+      <CulturalOverview />
       <Accommodations />
-      <Information />
+      <RetreatInformation />
       <Application />
     </Fragment>
   );

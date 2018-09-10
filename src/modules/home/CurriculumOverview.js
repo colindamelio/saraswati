@@ -1,11 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import SplitHero from 'components/SplitHero';
 import Tout from 'components/Tout';
-import Image from 'components/Image';
 import studentsImage from 'media/students.jpg';
-import mq from '../utils/mq';
+import mq from '../../utils/mq';
 
 const Container = styled.section`
   display: flex;
@@ -13,21 +12,6 @@ const Container = styled.section`
   min-height: 300px;
   ${mq.desktop`
     flex-direction: row-reverse;
-  `};
-`;
-
-const Content = styled.div`
-  width: 100%;
-  height: auto;
-  padding: ${props => props.theme.paddingDesktop};
-  ${mq.desktop`
-    width: 50%;
-  `};
-  ${mq.tablet`
-    padding: ${props => props.theme.paddingTablet};
-  `};
-  ${mq.mobile`
-    padding: ${props => props.theme.paddingMobile};
   `};
 `;
 
@@ -44,7 +28,7 @@ const ctas = [
   },
 ];
 
-const Overview = ({ image, isReversed }) => {
+const CurriculumOverview = ({ isReversed }) => {
   return (
     <Container>
       <SplitHero image={studentsImage} isReversed>
@@ -68,14 +52,14 @@ const Overview = ({ image, isReversed }) => {
   );
 };
 
-Overview.defaultProps = {
+CurriculumOverview.defaultProps = {
   ctas: [],
 };
 
-Overview.propTypes = {
+CurriculumOverview.propTypes = {
   ctas: PropTypes.array,
   title: PropTypes.string,
   isReversed: PropTypes.bool,
 };
 
-export default Overview;
+export default CurriculumOverview;
