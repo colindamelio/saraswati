@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import mq from "utils/mq";
+import styled from 'styled-components';
+import mq from 'utils/mq';
 
 const H1 = styled.h1`
   font-family: ${props => props.theme.primaryFont};
@@ -13,6 +13,9 @@ const H1 = styled.h1`
       font-weight: ${props => props.theme.bold};
     }
   }
+  ${mq.tablet`
+    font-size: ${props => props.theme.heroTitleTablet};
+  `};
   ${mq.mobile`
     font-size: ${props => props.theme.heroTitleMobile};
   `};

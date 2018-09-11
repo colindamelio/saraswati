@@ -14,6 +14,12 @@ const Container = styled.section`
     margin-bottom: 5px;
     height: calc(100vh - ${props => props.theme.navHeightDesktop});
   `};
+  ${mq.tablet`
+    min-height: 400px;
+  `};
+  ${mq.mobile`
+    min-height: 300px;
+  `};
 `;
 
 const CultureIntro = () => {
