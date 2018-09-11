@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import SplitHero from 'components/SplitHero';
 import H1 from 'components/H1';
 import BodyTextLockup from 'components/BodyTextLockup';
-import HeroImage from 'media/bali-landscape-1.jpg';
+import HeroImage from 'media/test-4.jpg';
 import mq from 'utils/mq';
 
 const Container = styled.section`

@@ -4,7 +4,7 @@ import Tout from 'components/Tout';
 import mq from '../../utils/mq';
 import colImage1 from 'media/monkeys-4.jpg';
 import colImage2 from 'media/cooking-6.jpg';
-import colImage3 from 'media/yoga.jpg';
+import colImage3 from 'media/lotus-1.jpg';
 
 const Container = styled.div`
   display: flex;
