@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import Image from "./Image";
-import Button from "./Button";
-import BodyTextLockup from "./BodyTextLockup";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import Image from './Image';
+import Button from './Button';
+import BodyTextLockup from './BodyTextLockup';
 import mq from '../utils/mq';
 
 const Container = styled.div`
@@ -16,25 +16,30 @@ const CtaContainer = styled.div`
   margin-top: ${props => props.theme.paddingDesktop};
   ${mq.tablet`
     margin-top: ${props => props.theme.paddingTablet};
-  `}
-  ${mq.mobile`
+  `} ${mq.mobile`
     margin-top: ${props => props.theme.paddingMobile};
-  `}
+  `};
 `;
 
-const Tout = ({image, title, description, secondary, ctas}) => {
+const ToutImage = styled(Image)`
+  margin-bottom: 30px;
+`;
+
+const Tout = ({ image, title, children, secondary, ctas }) => {
   return (
     <Container>
-      {image && image.src && <Image src={image.src} alt={image.alt} />}
-      <BodyTextLockup
-        secondary={secondary}
-        title={title}
-        description={description}
-      />
+      {image && image.src && <ToutImage src={image.src} alt={image.alt} />}
+      <BodyTextLockup secondary={secondary} title={title}>
+        {children}
+      </BodyTextLockup>
       {ctas && ctas.length > 0 ? (
         <CtaContainer>
           {ctas.map((cta, n) => (
-            <Button key={`${n}-cta`} href={cta.href} className={`${cta.variant}`}>
+            <Button
+              key={`${n}-cta`}
+              href={cta.href}
+              className={`${cta.variant}`}
+            >
               {cta.text}
             </Button>
           ))}
@@ -45,13 +50,12 @@ const Tout = ({image, title, description, secondary, ctas}) => {
 };
 
 Tout.defaultProps = {
-  ctas: []
+  ctas: [],
 };
 
 Tout.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.string,
-  ctas: PropTypes.array
+  ctas: PropTypes.array,
 };
 
 export default Tout;
