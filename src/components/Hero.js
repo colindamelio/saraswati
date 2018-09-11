@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import mq from 'utils/mq';
 
 const Container = styled.div`
-  margin-bottom: 2px;
+  border-bottom: 2px solid white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,8 +20,8 @@ const Container = styled.div`
   padding: ${props => props.theme.paddingDesktop};
   color: ${props => props.theme.white};
   ${mq.desktop`
+    border-bottom: 5px solid white;
     flex-direction: ${props => (props.columns === 2 ? `row` : `column`)};
-    margin-bottom: 5px;
   `} ${mq.tablet`
     padding: ${props => props.theme.paddingTablet};
   `} ${mq.mobile`

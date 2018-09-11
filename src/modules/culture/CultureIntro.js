@@ -9,9 +9,7 @@ import mq from 'utils/mq';
 
 const Container = styled.section`
   display: flex;
-  margin-bottom: 2px;
   ${mq.desktop`
-    margin-bottom: 5px;
     height: calc(100vh - ${props => props.theme.navHeightDesktop});
   `};
   ${mq.tablet`
