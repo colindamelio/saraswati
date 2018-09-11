@@ -49,6 +49,12 @@ module.exports = {
   inputHeight: '45px',
   inputPadding: '15px',
 
+  //Header//
+  headerIndex: '10',
+  navHeightDesktop: '100px',
+  navHeightTablet: '80px',
+  navHeightMobile: '50px',
+
   //Footer//
   footerPaddingDesktop: '70px 0',
   footerPaddingTablet: '50px 0',

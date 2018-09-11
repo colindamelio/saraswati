@@ -9,10 +9,16 @@ import mq from 'utils/mq';
 
 const Container = styled.section`
   display: flex;
-  height: calc(100vh - 94px);
   margin-bottom: 2px;
   ${mq.desktop`
+    height: calc(100vh - ${props => props.theme.navHeightDesktop});
     margin-bottom: 5px;
+  `};
+  ${mq.tablet`
+    height: calc(100vh - ${props => props.theme.navHeightTablet});
+  `};
+  ${mq.mobile`
+    height: calc(100vh - ${props => props.theme.navHeightMobile});
   `};
 `;
 
