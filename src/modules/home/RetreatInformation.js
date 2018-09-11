@@ -15,6 +15,7 @@ const Container = styled.div`
   ${mq.desktop`
     flex-direction: row;
     padding: ${props => props.theme.paddingDesktop};
+    border-bottom: 5px solid ${props => props.theme.primaryAccent};
   `}
   ${mq.tablet`
     padding: ${props => props.theme.paddingTablet};
