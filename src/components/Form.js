@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const ApplicationForm = styled.form`
   display: flex;
@@ -19,15 +19,20 @@ const ApplicationForm = styled.form`
 `;
 
 const Submit = styled.button`
-  margin-top: 50px;
+  margin-top: 30px;
   padding: ${props => props.theme.ctaPadding};
   background: ${props => props.theme.secondaryAccent};
+  border: none;
   color: ${props => props.theme.white};
   font-family: ${props => props.theme.secondaryFont};
   font-weight: ${props => props.theme.bold};
   font-size: ${props => props.theme.ctaFontSize};
   text-transform: ${props => props.theme.ctaCasing};
   cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background: ${props => props.theme.black};
+  }
 `;
 
 const Form = () => {
@@ -42,9 +47,7 @@ const Form = () => {
       <label htmlFor="email">Email Address</label>
       <input type="email" name="email" id="email" required />
 
-      <label htmlFor="phone">
-        Phone Number (Please include Country code)
-      </label>
+      <label htmlFor="phone">Phone Number (Please include Country code)</label>
       <input type="tel" name="phone" id="phone" required />
 
       <label htmlFor="country">
@@ -65,6 +68,6 @@ const Form = () => {
       <Submit type="submit">Submit</Submit>
     </ApplicationForm>
   );
-}
+};
 
 export default Form;

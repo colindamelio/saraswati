@@ -25,7 +25,9 @@ const Description = styled.div`
     font-weight: ${props => props.theme.bold};
     color: ${props =>
       props.secondary ? props.theme.white : props.theme.primaryAccent};
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   p {

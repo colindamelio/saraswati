@@ -39,6 +39,10 @@ const Link = styled(NavLink)`
   font-weight: ${props => props.theme.bold};
   text-transform: ${props => props.theme.ctaCasing};
   color: ${props => props.theme.white};
+  transition: color 0.3s;
+  &:hover {
+    color: ${props => props.theme.black};
+  }
   &:first-child {
     font-family: ${props => props.theme.primaryFont};
     font-size: 30px;
@@ -47,7 +51,7 @@ const Link = styled(NavLink)`
     margin-right: auto;
   }
   &:not(:first-child) {
-    padding-left: 15px;
+    padding-left: 30px;
   }
 `;
 
