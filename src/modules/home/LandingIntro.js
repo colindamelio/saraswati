@@ -11,14 +11,8 @@ const Container = styled.section`
   display: flex;
   margin-bottom: 2px;
   ${mq.desktop`
-    height: calc(100vh - ${props => props.theme.navHeightDesktop});
     margin-bottom: 5px;
-  `};
-  ${mq.tablet`
-    height: calc(100vh - ${props => props.theme.navHeightTablet});
-  `};
-  ${mq.mobile`
-    height: calc(100vh - ${props => props.theme.navHeightMobile});
+    height: calc(100vh - ${props => props.theme.navHeightDesktop});
   `};
 `;
 
@@ -31,7 +25,7 @@ const LandingIntro = () => {
           <span className="bold">extraordinary.</span>
         </H1>
         <BodyTextLockup>
-          <p className="header">
+          <p>
             Learn to code your own website in the heart of Bali.{' '}
             <a href="#">Apply</a> for our 14-day retreat today!
           </p>

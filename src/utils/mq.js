@@ -23,13 +23,13 @@ const mq = {
     `,
   [devices.tablet]: (...args) =>
     css`
-      @media screen and (min-width: 768px) and (max-width: 1023px) {
+      @media screen and (min-width: 768px) and (max-width: 1279px) {
         ${css(...args)};
       }
     `,
   [devices.desktop]: (...args) =>
     css`
-      @media screen and (min-width: 1024px) {
+      @media screen and (min-width: 1280px) {
         ${css(...args)};
       }
     `,

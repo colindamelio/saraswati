@@ -9,10 +9,10 @@ import mq from 'utils/mq';
 
 const Container = styled.section`
   display: flex;
-  height: calc(100vh - 94px);
   margin-bottom: 2px;
   ${mq.desktop`
     margin-bottom: 5px;
+    height: calc(100vh - ${props => props.theme.navHeightDesktop});
   `};
 `;
 
@@ -25,7 +25,7 @@ const CultureIntro = () => {
           Knowledge, Music, Art, Wisdom and Learning.
         </H1>
         <BodyTextLockup secondary>
-          <p className="header">
+          <p>
             She inspired the perfect balance we’ve created between culture and
             curriculum. Our goal is to nourish your mind, body and spirit
             through quality education and authentic Balinese experiences. Join

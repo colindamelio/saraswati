@@ -13,11 +13,14 @@ const NavContainer = styled.div`
   background: ${props => props.theme.primaryAccent};
   height: ${props => props.theme.navHeightDesktop};
   width: 100%;
+  padding: 0 ${props => props.theme.paddingDesktop};
   ${mq.tablet`
     height: ${props => props.theme.navHeightTablet};
+    padding: 0 ${props => props.theme.paddingTablet};
     `};
   ${mq.mobile`
     height: ${props => props.theme.navHeightMobile};
+    padding: 0 ${props => props.theme.paddingMobile};
     `};
 `;
 
@@ -31,7 +34,6 @@ const Nav = styled.nav`
 
 const Link = styled(NavLink)`
   height: ${props => props.theme.ctaFontSize};
-  padding: 0 15px;
   font-family: ${props => props.theme.secondaryFont};
   font-size: ${props => props.theme.ctaFontSize};
   font-weight: ${props => props.theme.bold};
@@ -43,6 +45,9 @@ const Link = styled(NavLink)`
     height: 30px;
     letter-spacing: 1px;
     margin-right: auto;
+  }
+  &:not(:first-child) {
+    padding-left: 15px;
   }
 `;
 

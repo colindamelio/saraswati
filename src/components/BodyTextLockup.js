@@ -30,13 +30,6 @@ const Description = styled.div`
 
   p {
     margin-bottom: 0;
-
-    &.header {
-      font-size: ${props => props.theme.heroDescriptionDesktop};
-      ${mq.mobile`
-        font-size: ${props => props.theme.heroDescriptionMobile};
-      `};
-    }
   }
 `;
 

@@ -21,11 +21,9 @@ const HeroImage = styled.div`
   background-position: center;
   flex-grow: 1;
   ${mq.tablet`
-    max-height: 450px;
-    min-height: 250px;
+    min-height: 400px;
   `} ${mq.mobile`
-    max-height: 220px;
-    min-height: 200px;
+    min-height: 300px;
   `};
 `;
 
