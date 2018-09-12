@@ -49,9 +49,9 @@ const Experience = () => {
             <span className="bold">
               Bali has a distinctive aura like no other place in the world.
             </span>{' '}
-            With lush landscapes, beautiful beaches and ancient temples, your
-            web development education is paired with an exciting discovery of
-            this Indonesian island.
+            With breathtaking landscapes, white-sand beaches and ancient
+            temples, your web development education is paired with an exciting
+            discovery of this Indonesian island.
           </p>
           <p>
             Living in Bali since 2001, we’ve integrated our lives and built our

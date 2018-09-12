@@ -78,7 +78,7 @@ const ListItem = styled.li`
 
 const Inclusions = [
   '13 nights, 14 days Luxury Villa Accommodation',
-  '10 days in-class training covering front-end fundamentals (4:1 student-mentor ratio)',
+  '10 days in-class training covering front-end development (4:1 student-mentor ratio)',
   'All Breakfasts & Lunches included',
   '4 Group Dinners including Local Balinese Fare, Beachside BBQ and Farewell Feast',
   'Ayung River Rafting through Tropical Rainforest',
