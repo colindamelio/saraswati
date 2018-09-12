@@ -17,9 +17,8 @@ module.exports = {
 
   //Font Sizing//
   heroTitleDesktop: '55px',
-  heroTitleMobile: '30px',
-  heroDescriptionDesktop: '24px',
-  heroDescriptionMobile: '24px',
+  heroTitleTablet: '40px',
+  heroTitleMobile: '24px',
 
   subtitleDesktop: '24px',
   subtitleMobile: '24px',
@@ -48,6 +47,15 @@ module.exports = {
   inputBorderStyle: '1px solid',
   inputHeight: '45px',
   inputPadding: '15px',
+  inputBorderRadius: '5px',
+
+  textareaHeight: '250px',
+
+  //Header//
+  headerIndex: '10',
+  navHeightDesktop: '100px',
+  navHeightTablet: '80px',
+  navHeightMobile: '50px',
 
   //Footer//
   footerPaddingDesktop: '70px 0',

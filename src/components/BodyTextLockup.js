@@ -25,18 +25,13 @@ const Description = styled.div`
     font-weight: ${props => props.theme.bold};
     color: ${props =>
       props.secondary ? props.theme.white : props.theme.primaryAccent};
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   p {
     margin-bottom: 0;
-
-    &.header {
-      font-size: ${props => props.theme.heroDescriptionDesktop};
-      ${mq.mobile`
-        font-size: ${props => props.theme.heroDescriptionMobile};
-      `};
-    }
   }
 `;
 

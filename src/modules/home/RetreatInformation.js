@@ -15,6 +15,7 @@ const Container = styled.div`
   ${mq.desktop`
     flex-direction: row;
     padding: ${props => props.theme.paddingDesktop};
+    border-bottom: 5px solid white;
   `}
   ${mq.tablet`
     padding: ${props => props.theme.paddingTablet};
@@ -74,7 +75,7 @@ const Inclusions = [
   'All breakfasts & lunches included',
   '4 group dinners',
   'Cultural excursions and activities',
-  '1 traditional balinese cooking class (5 hours)',
+  '1 traditional balinese cooking class',
 ];
 
 class RetreatInformation extends Component {
@@ -111,6 +112,7 @@ class RetreatInformation extends Component {
               Save big when you register early for upcoming retreats! See
               retreat dates for Early Bird cut-off.
             </p>
+            <br />
             <H2>Regular Price - $3499USD</H2>
             <p>
               We accept a limited number of students each retreat to ensure

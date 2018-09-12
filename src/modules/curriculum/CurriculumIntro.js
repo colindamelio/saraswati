@@ -9,10 +9,14 @@ import mq from 'utils/mq';
 
 const Container = styled.section`
   display: flex;
-  height: calc(100vh - 94px);
-  margin-bottom: 2px;
   ${mq.desktop`
-    margin-bottom: 5px;
+    height: calc(100vh - ${props => props.theme.navHeightDesktop});
+  `};
+  ${mq.tablet`
+    min-height: 400px;
+  `};
+  ${mq.mobile`
+    min-height: 300px;
   `};
 `;
 
@@ -25,7 +29,7 @@ const CurriculumIntro = () => {
           <span className="bold">no prior experience is necessary.</span>
         </H1>
         <BodyTextLockup secondary>
-          <p className="header">
+          <p>
             Industry professionals lead you through our carefully designed
             curriculum. Each class is exercise-heavy, because as the saying
             goes: <span className="italic">practice makes perfect</span>.

@@ -10,7 +10,9 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 2px solid white;
   ${mq.desktop`
+    border-bottom: 5px solid white;
     flex-direction: row;
     padding: ${props => props.theme.paddingDesktop};
   `}

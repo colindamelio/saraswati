@@ -9,10 +9,11 @@ import mq from 'utils/mq';
 
 const Container = styled.section`
   display: flex;
-  height: calc(100vh - 94px);
-  margin-bottom: 2px;
+  border-bottom: 2px solid white;
   ${mq.desktop`
-    margin-bottom: 5px;
+    border-bottom: 5px solid white;
+    height: calc(100vh - ${props => props.theme.navHeightDesktop});
+    min-height: 720px;
   `};
 `;
 
@@ -25,7 +26,7 @@ const LandingIntro = () => {
           <span className="bold">extraordinary.</span>
         </H1>
         <BodyTextLockup>
-          <p className="header">
+          <p>
             Learn to code your own website in the heart of Bali.{' '}
             <a href="#">Apply</a> for our 14-day retreat today!
           </p>

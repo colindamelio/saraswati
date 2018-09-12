@@ -10,10 +10,10 @@ const Container = styled.section`
   display: flex;
   flex-direction: column;
   min-height: 300px;
-  margin-bottom: 2px;
+  border-bottom: 2px solid white;
   ${mq.desktop`
+    border-bottom: 5px solid white;
     flex-direction: row-reverse;
-    margin-bottom: 5px;
   `};
 `;
 

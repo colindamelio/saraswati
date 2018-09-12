@@ -10,8 +10,11 @@ const LearnMore = styled.p`
   margin-top: ${props => props.theme.paddingDesktop}
   color: ${props => props.theme.white};
   a {
+    font-weight: ${props => props.theme.bold};
     color: ${props => props.theme.white};
-    text-decoration: underline;
+    &:hover{
+      text-decoration: underline;
+    }
   }
   ${mq.tablet`
     margin-top: ${props => props.theme.paddingTablet}
