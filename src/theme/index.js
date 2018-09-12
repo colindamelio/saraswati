@@ -47,6 +47,9 @@ module.exports = {
   inputBorderStyle: '1px solid',
   inputHeight: '45px',
   inputPadding: '15px',
+  inputBorderRadius: '5px',
+
+  textareaHeight: '250px',
 
   //Header//
   headerIndex: '10',
