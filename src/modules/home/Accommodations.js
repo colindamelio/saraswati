@@ -26,7 +26,7 @@ const Accommodations = ({ image, title, description, secondary }) => {
             Located in the charming village of Umalas, near Seminyak, Villa
             Malaathina – set among 5,000 square metres of immaculate tropical
             gardens and surrounded by traditional Balinese rice paddies – is
-            home for the duration of our retreat.
+            your luxurious home for the duration of our 2-week retreat.
           </p>
 
           <p>

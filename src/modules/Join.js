@@ -9,6 +9,7 @@ import mq from 'utils/mq';
 const LearnMore = styled.p`
   margin-top: ${props => props.theme.paddingDesktop}
   color: ${props => props.theme.white};
+  line-height: ${props => props.theme.descriptionLineHeight};
   a {
     font-weight: ${props => props.theme.bold};
     color: ${props => props.theme.white};
@@ -38,8 +39,8 @@ const Join = ({ secondary, culture }) => {
     <SplitHero image={HeroImage} secondary>
       <Tout title={'Join one of our upcoming retreats!'} ctas={ctas} secondary>
         <p>
-          We accept a limited number of students each retreat to ensure you’re
-          provided quality training.{' '}
+          To preserve a 4:1 student-mentor ratio, we accept only 12 students for
+          each retreat to ensure you’re provided quality training.{' '}
           <span className="bold">Reserve your spot today!</span>
         </p>
       </Tout>
