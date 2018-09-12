@@ -13,6 +13,7 @@ const Container = styled.section`
   ${mq.desktop`
     border-bottom: 5px solid white;
     height: calc(100vh - ${props => props.theme.navHeightDesktop});
+    min-height: 720px;
   `};
 `;
 
