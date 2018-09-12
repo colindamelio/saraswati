@@ -94,6 +94,7 @@ class Form extends Component {
           id="name"
           value={this.state.name}
           onChange={this.handleNameChange}
+          autocomplete="off"
         />
 
         <label htmlFor="email">
@@ -105,6 +106,7 @@ class Form extends Component {
           id="email"
           value={this.state.email}
           onChange={this.handleEmailChange}
+          autocomplete="off"
         />
 
         <label htmlFor="phone">Phone Number</label>
@@ -114,6 +116,7 @@ class Form extends Component {
           id="phone"
           placeholder={'+ (Country Code) Phone Number'}
           value={this.state.phone}
+          autocomplete="off"
           onChange={this.handlePhoneChange}
         />
 
@@ -124,13 +127,14 @@ class Form extends Component {
           id="location"
           placeholder={'City, Country'}
           value={this.state.location}
+          autocomplete="off"
           onChange={this.handleLocationChange}
         />
 
-        <label htmlFor="retreatDate">
+        <label htmlFor="selectedRetreat">
           Select an upcoming retreat <Required>*</Required>
         </label>
-        <select name="retreatDate" id="retreatDate">
+        <select name="selectedRetreat" id="selectedRetreat">
           {this.state.retreats.map(date => <option>{date}</option>)}
         </select>
 
