@@ -28,7 +28,7 @@ const LearnMore = styled.p`
 const ctas = [
   {
     text: 'Apply Now',
-    href: '#',
+    href: '../#applicationForm',
     variant: 'secondary',
   },
 ];

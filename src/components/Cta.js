@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Button = styled.button`
+const Cta = styled.a`
   padding: ${props => props.theme.ctaPadding};
   background: ${props => props.theme.secondaryAccent};
   border: none;
@@ -9,6 +9,7 @@ const Button = styled.button`
   font-weight: ${props => props.theme.bold};
   font-size: ${props => props.theme.ctaFontSize};
   text-transform: ${props => props.theme.ctaCasing};
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
@@ -46,4 +47,4 @@ const Button = styled.button`
   }
 `;
 
-export default Button;
+export default Cta;
