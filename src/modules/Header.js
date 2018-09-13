@@ -49,6 +49,12 @@ const Link = styled(NavLink)`
     height: 30px;
     letter-spacing: 1px;
     margin-right: auto;
+    position: relative;
+    top: 3px;
+    ${mq.mobile`
+      font-size: 20px;
+      height: 20px;
+    `};
   }
   &:not(:first-child) {
     padding-left: 30px;

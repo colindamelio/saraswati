@@ -53,9 +53,9 @@ module.exports = {
 
   //Header//
   headerIndex: '10',
-  navHeightDesktop: '100px',
-  navHeightTablet: '80px',
-  navHeightMobile: '50px',
+  navHeightDesktop: '80px',
+  navHeightTablet: '60px',
+  navHeightMobile: '40px',
 
   //Footer//
   footerPaddingDesktop: '70px 0',
