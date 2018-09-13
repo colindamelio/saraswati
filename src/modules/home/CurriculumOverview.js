@@ -24,7 +24,7 @@ const ctas = [
     variant: 'primary',
   },
   {
-    text: 'See All Activities',
+    text: 'Curriculum Overview',
     href: '#',
     variant: 'primary',
   },
