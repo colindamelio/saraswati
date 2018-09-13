@@ -122,8 +122,9 @@ class RetreatInformation extends Component {
           <Tout image={Image3}>
             <H2>Early Bird Price – $2999 USD</H2>
             <p>
-              Save big when you register early for upcoming retreats! See
-              retreat dates for Early Bird cut-off.
+              Enjoy discounted pricing and secure your spot by registering early
+              for our upcoming retreats! See retreat dates for our Early Bird
+              cut-offs.
             </p>
             <br />
             <H2>Regular Price - $3499 USD</H2>
