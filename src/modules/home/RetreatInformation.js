@@ -47,6 +47,24 @@ const InfoColumn = styled.div`
   `}
 `;
 
+const ListItem = styled.li`
+  position: relative;
+  list-style: none;
+  padding-left: 16px;
+  &:first-child {
+    margin-top: 16px;
+  }
+  &:before {
+    position: absolute;
+    left: 0;
+    content: '•';
+  }
+`;
+
+const Disclaimer = styled.p`
+  font-size: ${props => props.theme.disclaimerDesktop};
+`;
+
 const Image1 = {
   src: colImage1,
   alt: 'alt text',
@@ -61,20 +79,6 @@ const Image3 = {
   src: colImage3,
   alt: 'alt text',
 };
-
-const ListItem = styled.li`
-  position: relative;
-  list-style: none;
-  padding-left: 16px;
-  &:first-child {
-    margin-top: 16px;
-  }
-  &:before {
-    position: absolute;
-    left: 0;
-    content: '•';
-  }
-`;
 
 const Inclusions = [
   '13 nights, 14 days Luxury Villa Accommodation',
@@ -108,10 +112,10 @@ class RetreatInformation extends Component {
         <InfoColumn>
           <Tout image={Image2} title={"What's Included"}>
             {Inclusions.map((item, n) => <ListItem key={n}>{item}</ListItem>)}
-            <p>
+            <Disclaimer>
               <span className="bold">Note:</span> Please bring your own personal
               laptop. Flight costs not included.
-            </p>
+            </Disclaimer>
           </Tout>
         </InfoColumn>
         <InfoColumn>
@@ -128,7 +132,7 @@ class RetreatInformation extends Component {
               provided quality training.<br />
               <span className="bold">Reserve your spot today!</span>
             </p>
-            <p>*Rates are based on 2-person occupancy.</p>
+            <Disclaimer>*Rates are based on 2-person occupancy.</Disclaimer>
           </Tout>
         </InfoColumn>
       </Container>
