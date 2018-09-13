@@ -22,12 +22,12 @@ const Column = styled.div`
 const ctas = [
   {
     text: 'Apply Now',
-    href: '#',
+    href: '#applicationForm',
     variant: 'secondary',
   },
   {
     text: 'See All Activities',
-    href: '#',
+    href: '/culture',
     variant: 'secondary',
   },
 ];
@@ -46,7 +46,7 @@ const CulturalOverview = ({ left }) => {
           <p>
             Without a doubt,{' '}
             <span className="bold italic">Bali is beautiful</span>. Beyond the
-            tropical forests and white-sand beaches, Saraswati retreats invites
+            tropical forests and tranquil beaches, Saraswati retreats invites
             you to discover the island's rich cultural history and experience
             first-hand local traditions.
           </p>

@@ -6,7 +6,7 @@ import TempleImage from 'media/cooking-5.jpg';
 
 const Application = () => {
   return (
-    <SplitHero image={TempleImage}>
+    <SplitHero image={TempleImage} id="applicationForm">
       <H1>
         <span className="bold">Apply today</span> for an upcoming retreat!
       </H1>
