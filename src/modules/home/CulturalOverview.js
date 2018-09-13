@@ -38,7 +38,7 @@ const CulturalOverview = ({ left }) => {
       <Column left>
         <H1 secondary>
           Providing you with <span className="bold">authentic</span> Balinese
-          Experiences.
+          experiences.
         </H1>
       </Column>
       <Column>
@@ -52,9 +52,9 @@ const CulturalOverview = ({ left }) => {
           <br />
           <H2 secondary>Combining curriculum with culture.</H2>
           <p>
-            Saraswati Retreats strives to educate beyond coding – you’ll
-            experience local cuisine, traverse the natural landscape, and
-            embrace what it means to be truly Balinese.
+            Saraswati Retreats strives to educate beyond front-end fundamentals
+            – you’ll experience local cuisine, traverse the natural landscape,
+            and embrace what it means to be truly Balinese.
           </p>
         </Tout>
       </Column>
