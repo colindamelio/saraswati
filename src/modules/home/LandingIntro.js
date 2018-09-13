@@ -26,8 +26,8 @@ const LandingIntro = () => {
           <span className="bold">extraordinary.</span>
         </H1>
         <BodyTextLockup>
-          <p>
-            Learn to code your own website in the heart of Bali.<br />
+          <p className="header">
+            Learn to code your own website in the heart of Bali.{' '}
             <a href="#applicationForm">Apply</a> for our 14-day retreat today!
           </p>
         </BodyTextLockup>
