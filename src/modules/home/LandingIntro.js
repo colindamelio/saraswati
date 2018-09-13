@@ -27,7 +27,7 @@ const LandingIntro = () => {
         </H1>
         <BodyTextLockup>
           <p>
-            Learn to code your own website in the heart of Bali.{' '}
+            Learn to code your own website in the heart of Bali.<br />
             <a href="#">Apply</a> for our 14-day retreat today!
           </p>
         </BodyTextLockup>
