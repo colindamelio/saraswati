@@ -37,8 +37,9 @@ const CurriculumOverview = ({ isReversed }) => {
         <Tout title={'Front-End Fundamentals'} ctas={ctas}>
           <p>
             <span className="bold">With 10 days of in-class training</span>, our
-            goal is to ensure you have a strong foundation. Using HTML, CSS and
-            JAVASCRIPT, you will build your own website from scratch!
+            goal is to ensure you have a strong foundation in Front-End Web
+            Development. Using HTML, CSS and JavaScript, you will build your own
+            website from scratch!
           </p>
           <p>
             <span className="bold">
