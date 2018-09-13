@@ -45,9 +45,10 @@ const CulturalOverview = ({ left }) => {
         <Tout secondary ctas={ctas}>
           <p>
             Without a doubt,{' '}
-            <span className="bold italic">Bali is beautiful</span>. However,
-            most people who visit the island miss an opportunity to discover
-            real Balinese Culture.
+            <span className="bold italic">Bali is beautiful</span>. Beyond the
+            tropical forests and white-sand beaches, Saraswati retreats invites
+            you to discover the island's rich cultural history and experience
+            first-hand local traditions.
           </p>
           <br />
           <H2 secondary>Combining curriculum with culture.</H2>
