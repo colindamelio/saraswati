@@ -66,12 +66,11 @@ class CulturalInformation extends Component {
     return (
       <Container>
         <InfoColumn>
-          <Tout image={Image1} title={'Day trips to Ubud'}>
+          <Tout image={Image1} title={'Day Trips to Ubud'}>
             <p>
-              Known as a center for traditional crafts and dance, the
-              surrounding rainforest and terraced rice paddies, dotted with
-              Hindu temples and shrines, are among Bali’s most breathtaking
-              landscapes.
+              Ubud Village is a center for traditional crafts and dance. The
+              surrounding rainforest, terraced rice paddies and Hindu Temples
+              are among Bali’s most breathtaking landscapes.
             </p>
             <p>
               <span className="bold">Your retreat fee includes:</span> River
@@ -84,35 +83,36 @@ class CulturalInformation extends Component {
           <Tout image={Image2} title={'Traditional Balinese Cooking'}>
             <p>
               <span className="bold">
-                Enjoy a 5-hour traditional Balinese cooking class at Tresna Bali
-                Cooking School.
-              </span>
+                Most tourists never experience Traditional Balinese food.
+              </span>{' '}
+              Rich and lively, cultural dishes are usually reserved for Temple
+              Ceremonies and the privacy of Balinese family compounds.
             </p>
             <p>
-              This hands-on experience starts by picking spices from an organic
-              garden located on-site.
-            </p>
-            <p>
-              Your meal includes at least 1 salad, 3 mains, 1 dessert, and
-              several spicy sambals, created from recipes that have been passed
-              down through generations.
+              At Tresna Bali Cooking School, you’ll enjoy a "hands-on" culinary
+              discovery of real Balinese cuisine. Best of all, you’ll pick your
+              very own organic ingredients to cook a feast, comprising of 9
+              dishes and several spicy sambals created from recipes that have
+              been passed down through generations.
             </p>
           </Tout>
         </InfoColumn>
         <InfoColumn>
           <Tout image={Image3} title={'Mind, Body & Spirit'}>
             <p>
-              We believe balance is the key to your success.{' '}
-              <span className="bold">Complimentary Yoga classes</span> will be
-              offered after each lesson so you can unwind and let your mind
-              rest.
+              <span className="bold">
+                We believe balance is the key to your success.
+              </span>{' '}
+              After stretching your brain with our intense classes, stretch your
+              body, unwind and relax each afternoon with complimentary yoga
+              classes offered in our private in-villa studio.
             </p>
             <p>
               <a href="http://www.villamalaathina.com/" target="_blank">
                 Villa Malaathina
               </a>, your home for the duration of our retreat, is also equipped
               with luxurious amenities, including air-conditioned gym facilities
-              and a 25-meter pool, making it the perfect location for rest and
+              and a 25-meter pool, making it the perfect haven for rest and
               relaxation.
             </p>
           </Tout>

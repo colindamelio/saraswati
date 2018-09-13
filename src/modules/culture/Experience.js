@@ -35,7 +35,7 @@ const Content = styled.div`
 const ctas = [
   {
     text: 'Apply Today',
-    href: '#',
+    href: '../#applicationForm',
     variant: 'secondary',
   },
 ];
@@ -49,14 +49,20 @@ const Experience = () => {
             <span className="bold">
               Bali has a distinctive aura like no other place in the world.
             </span>{' '}
-            With lush landscapes, beautiful beaches and ancient temples, your
-            web development education is paired with an exciting discovery of
-            this Indonesian island.
+            With breathtaking landscapes, tranquil beaches and ancient temples,
+            your web development education is paired with an exciting discovery
+            of this Indonesian island.
           </p>
           <p>
-            Our retreats include cultural expeditions, traditional Balinese
-            cuisine, and the opportunity for you to curate a list of activities
-            that will nourish your mind, body and spirit.
+            Living in Bali since 2001, we’ve integrated our lives and built our
+            home within the walls of local Balinese communities.{' '}
+            <span className="bold">
+              Saraswati Retreats is an invitation to discover another world most
+              tourists never see.
+            </span>{' '}
+            You’ll actively join us on cultural expeditions, experience
+            authentic Balinese cuisine, and be able to curate a personalized
+            list of activities that nourishes your mind, body and spirit.
           </p>
         </Tout>
       </SplitHero>

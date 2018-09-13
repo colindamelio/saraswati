@@ -30,11 +30,11 @@ const CultureIntro = () => {
         </H1>
         <BodyTextLockup secondary>
           <p>
-            She inspired the perfect balance we’ve created between culture and
-            curriculum. Our goal is to nourish your mind, body and spirit
-            through quality education and authentic Balinese experiences. Join
-            one of our retreats, and{' '}
-            <span className="bold">discover the beauty of Bali.</span>
+            Goddess Saraswati inspired the perfect balance we’ve created between
+            culture and curriculum. Our goal is to nourish your mind, body and
+            spirit through quality education and authentic Balinese experiences.
+            Join one of our retreats, and{' '}
+            <span className="bold">discover the real beauty of Bali.</span>
           </p>
         </BodyTextLockup>
       </Hero>

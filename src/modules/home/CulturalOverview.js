@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import mq from 'utils/mq';
 import Hero from 'components/Hero';
 import H1 from 'components/H1';
+import H2 from 'components/H2';
 import Tout from 'components/Tout';
 import experienceImage from 'media/painter.jpg';
 
@@ -21,12 +22,12 @@ const Column = styled.div`
 const ctas = [
   {
     text: 'Apply Now',
-    href: '#',
+    href: '#applicationForm',
     variant: 'secondary',
   },
   {
     text: 'See All Activities',
-    href: '#',
+    href: '/culture',
     variant: 'secondary',
   },
 ];
@@ -36,22 +37,25 @@ const CulturalOverview = ({ left }) => {
     <Hero image={experienceImage} columns={2}>
       <Column left>
         <H1 secondary>
-          Providing you an <span className="bold">authentic</span> Balinese
-          Experience.
+          Providing you with <span className="bold">authentic</span> Balinese
+          experiences.
         </H1>
       </Column>
       <Column>
         <Tout secondary ctas={ctas}>
           <p>
             Without a doubt,{' '}
-            <span className="bold italic">Bali is beautiful</span>. However,
-            most people who visit the island miss an opportunity to discover
-            authentic Balinese Culture.
+            <span className="bold italic">Bali is beautiful</span>. Beyond the
+            tropical forests and tranquil beaches, Saraswati retreats invites
+            you to discover the island's rich cultural history and experience
+            first-hand local traditions.
           </p>
+          <br />
+          <H2 secondary>Combining curriculum with culture.</H2>
           <p>
-            Saraswati Retreats strives to educate our guests beyond coding their
-            website – experience local cuisine, traverse the landscape, and
-            embrace what it means to be truly Balinese.
+            Saraswati Retreats strives to educate beyond front-end fundamentals
+            – you’ll experience local cuisine, traverse the natural landscape,
+            and embrace what it means to be truly Balinese.
           </p>
         </Tout>
       </Column>

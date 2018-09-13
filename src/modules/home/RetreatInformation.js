@@ -47,6 +47,24 @@ const InfoColumn = styled.div`
   `}
 `;
 
+const ListItem = styled.li`
+  position: relative;
+  list-style: none;
+  padding-left: 16px;
+  &:first-child {
+    margin-top: 16px;
+  }
+  &:before {
+    position: absolute;
+    left: 0;
+    content: '•';
+  }
+`;
+
+const Disclaimer = styled.p`
+  font-size: ${props => props.theme.disclaimerDesktop};
+`;
+
 const Image1 = {
   src: colImage1,
   alt: 'alt text',
@@ -62,20 +80,15 @@ const Image3 = {
   alt: 'alt text',
 };
 
-const ListItem = styled.li`
-  &:first-child {
-    margin-top: 16px;
-  }
-`;
-
 const Inclusions = [
-  'Airport transfer',
-  '13 nights accommodation',
-  '10 days of in-class training',
-  'All breakfasts & lunches included',
-  '4 group dinners',
-  'Cultural excursions and activities',
-  '1 traditional balinese cooking class',
+  '13 nights, 14 days Luxury Villa Accommodation',
+  '10 days in-class training covering front-end development (4:1 student-mentor ratio)',
+  'All Breakfasts & Lunches included',
+  '4 Group Dinners including Local Balinese Fare, Beachside BBQ and Farewell Feast',
+  'Ayung River Rafting through Tropical Rainforest',
+  'Purifying Temple Ceremony',
+  'Artisan Village Tour in Ubud',
+  'Authentic Hands-On Balinese Cooking Class',
 ];
 
 class RetreatInformation extends Component {
@@ -91,7 +104,7 @@ class RetreatInformation extends Component {
               Bird Pricing!
             </p>
             <p>
-              A non-refundable $500USD deposit is required to secure your spot
+              A non-refundable $500 USD deposit is required to secure your spot
               on all retreats.
             </p>
           </Tout>
@@ -99,27 +112,28 @@ class RetreatInformation extends Component {
         <InfoColumn>
           <Tout image={Image2} title={"What's Included"}>
             {Inclusions.map((item, n) => <ListItem key={n}>{item}</ListItem>)}
-            <p>
-              <span className="bold">Note:</span> Please be sure to bring your
-              own personal laptop. Flight costs not included.
-            </p>
+            <Disclaimer>
+              <span className="bold">Note:</span> Please bring your own personal
+              laptop. Flight costs not included.
+            </Disclaimer>
           </Tout>
         </InfoColumn>
         <InfoColumn>
           <Tout image={Image3}>
-            <H2>Early Bird Price – $2999USD</H2>
+            <H2>Early Bird Price – $2999 USD</H2>
             <p>
-              Save big when you register early for upcoming retreats! See
-              retreat dates for Early Bird cut-off.
+              Enjoy discounted pricing and secure your spot by registering early
+              for our upcoming retreats! See retreat dates for our Early Bird
+              cut-offs.
             </p>
             <br />
-            <H2>Regular Price - $3499USD</H2>
+            <H2>Regular Price - $3499 USD</H2>
             <p>
-              We accept a limited number of students each retreat to ensure
-              you’re provided quality training. <br />
+              We accept only 12 students for each retreat to ensure you’re
+              provided quality training.<br />
               <span className="bold">Reserve your spot today!</span>
             </p>
-            <p>*Rates are based on 2-person occupancy.</p>
+            <Disclaimer>*Rates are based on 2-person occupancy.</Disclaimer>
           </Tout>
         </InfoColumn>
       </Container>

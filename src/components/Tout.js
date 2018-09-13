@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Image from './Image';
-import Button from './Button';
+import Cta from './Cta';
 import BodyTextLockup from './BodyTextLockup';
 import mq from '../utils/mq';
 
@@ -13,6 +13,7 @@ const Container = styled.div`
 
 const CtaContainer = styled.div`
   display: flex;
+  align-items: center;
   margin-top: ${props => props.theme.paddingDesktop};
   ${mq.tablet`
     margin-top: ${props => props.theme.paddingTablet};
@@ -35,13 +36,9 @@ const Tout = ({ image, title, children, secondary, ctas }) => {
       {ctas && ctas.length > 0 ? (
         <CtaContainer>
           {ctas.map((cta, n) => (
-            <Button
-              key={`${n}-cta`}
-              href={cta.href}
-              className={`${cta.variant}`}
-            >
+            <Cta key={`${n}-cta`} href={cta.href} className={`${cta.variant}`}>
               {cta.text}
-            </Button>
+            </Cta>
           ))}
         </CtaContainer>
       ) : null}

@@ -27,8 +27,8 @@ const LandingIntro = () => {
         </H1>
         <BodyTextLockup>
           <p>
-            Learn to code your own website in the heart of Bali.{' '}
-            <a href="#">Apply</a> for our 14-day retreat today!
+            Learn to code your own website in the heart of Bali.<br />
+            <a href="#applicationForm">Apply</a> for our 14-day retreat today!
           </p>
         </BodyTextLockup>
       </SplitHero>

@@ -78,7 +78,7 @@ class CurriculumInformation extends Component {
           </Tout>
         </InfoColumn>
         <InfoColumn>
-          <Tout title={"What you'll need"}>
+          <Tout title={"What you'll need..."}>
             <p>
               Saraswati Retreats will provide you learning materials and support
               during the course of our programming. We have several references
@@ -86,9 +86,8 @@ class CurriculumInformation extends Component {
               education.
             </p>
             <p>
-              However,{' '}
               <span className="bold">
-                each participant is required to bring their own personal laptop.
+                Each participant is required to bring their own personal laptop.
               </span>
             </p>
           </Tout>
