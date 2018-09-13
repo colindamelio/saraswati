@@ -21,6 +21,18 @@ const Description = styled.div`
       font-style: italic;
     }
   }
+  p {
+    margin-bottom: 0;
+    &.header {
+      font-size: ${props => props.theme.heroDescriptionDesktop};
+      ${mq.tablet`
+        font-size: ${props => props.theme.heroDescriptionTablet};
+      `};
+      ${mq.mobile`
+        font-size: ${props => props.theme.heroDescriptionMobile};
+      `};
+    }
+  }
   a {
     font-weight: ${props => props.theme.bold};
     color: ${props =>
@@ -28,10 +40,6 @@ const Description = styled.div`
     &:hover {
       text-decoration: underline;
     }
-  }
-
-  p {
-    margin-bottom: 0;
   }
 `;
 

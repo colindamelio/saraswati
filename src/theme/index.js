@@ -19,6 +19,9 @@ module.exports = {
   heroTitleDesktop: '55px',
   heroTitleTablet: '40px',
   heroTitleMobile: '24px',
+  heroDescriptionDesktop: '20px',
+  heroDescriptionTablet: '20px',
+  heroDescriptionMobile: '16px',
 
   subtitleDesktop: '24px',
   subtitleMobile: '24px',
