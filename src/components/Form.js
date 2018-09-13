@@ -24,7 +24,7 @@ const ApplicationForm = styled.form`
     padding: ${props => props.theme.inputPadding};
     border-radius: ${props => props.theme.inputBorderRadius};
     min-height: ${props => props.theme.textareaHeight};
-    resize: vertical;
+    resize: none;
   }
 `;
 
