@@ -35,7 +35,7 @@ const Content = styled.div`
 const ctas = [
   {
     text: 'Apply Today',
-    href: '../#applicationForm',
+    href: '/apply',
     variant: 'secondary',
   },
 ];
