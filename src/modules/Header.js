@@ -72,7 +72,7 @@ const MobileMenu = styled.div`
     props.isExpanded ? `translateY(0)` : `translateY(-300px)`};
 `;
 
-const MobileLink = styled(NavLink)`
+const MobileMenuItem = styled(NavLink)`
   display: flex;
   align-items: center;
   height: 100px;
@@ -80,9 +80,12 @@ const MobileLink = styled(NavLink)`
   color: ${props => props.theme.white};
   border-bottom: 1px solid ${props => props.theme.white};
   font-family: ${props => props.theme.secondaryFont};
-  font-size: 24px;
+  font-size: ${props => props.theme.subtitleDesktop}
   padding: 0 ${props => props.theme.paddingMobile};
   cursor: pointer;
+  &:hover {
+    background: ${props => props.theme.primaryAccent};
+  }
   &:last-child {
     border: none;
   }
@@ -122,9 +125,9 @@ const MobileNav = ({ routes, isExpanded, handleToggle }) => (
     </NavContainer>
     <MobileMenu isExpanded={isExpanded}>
       {routes.slice(1).map((route, index) => (
-        <MobileLink key={index} onClick={handleToggle} {...route}>
+        <MobileMenuItem key={index} onClick={handleToggle} {...route}>
           {route.title}
-        </MobileLink>
+        </MobileMenuItem>
       ))}
     </MobileMenu>
   </Fragment>
