@@ -48,7 +48,8 @@ const Link = styled(NavLink)`
   text-transform: ${props => props.theme.ctaCasing};
   color: ${props => props.theme.white};
   transition: color 0.3s;
-  &:hover {
+  &:hover,
+  &.active {
     color: ${props => props.theme.black};
   }
   &:first-child {
@@ -96,7 +97,8 @@ const MobileMenuItem = styled(NavLink)`
   font-size: ${props => props.theme.subtitleMobile};
   color: ${props => props.theme.white};
   cursor: pointer;
-  &:hover {
+  &:hover,
+  &.active {
     background: ${props => props.theme.primaryAccent};
   }
   &:last-child {
@@ -112,7 +114,7 @@ const DesktopNav = ({ routes }) => (
   <NavContainer>
     <Nav>
       {routes.map((route, index) => (
-        <Link key={index} {...route}>
+        <Link exact key={index} {...route}>
           {route.title === 'Saraswati' ? (
             <Icon name={'logo'} color={'#EEEEEE'} />
           ) : (
@@ -140,7 +142,7 @@ const MobileNav = ({ routes, isExpanded, handleToggle }) => (
     </NavContainer>
     <MobileMenu isExpanded={isExpanded}>
       {routes.slice(1).map((route, index) => (
-        <MobileMenuItem key={index} onClick={handleToggle} {...route}>
+        <MobileMenuItem exact key={index} onClick={handleToggle} {...route}>
           {route.title}
         </MobileMenuItem>
       ))}
