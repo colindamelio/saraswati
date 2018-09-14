@@ -9,6 +9,7 @@ import MaterialIcon from '../components/MaterialIcon';
 const Container = styled.div`
   width: 100%;
   position: fixed;
+  z-index: 1;
 `;
 
 const NavContainer = styled.div`
