@@ -82,6 +82,7 @@ const MobileLink = styled(NavLink)`
   font-family: ${props => props.theme.secondaryFont};
   font-size: 24px;
   padding: 0 ${props => props.theme.paddingMobile};
+  cursor: pointer;
   &:last-child {
     border: none;
   }
