@@ -39,11 +39,9 @@ const Experience = () => {
             of this Indonesian island.
           </p>
           <p>
-            Living in Bali since 2001, we’ve integrated our lives and built our
-            home within the walls of local Balinese communities.{' '}
             <span className="bold">
-              Saraswati Retreats is an invitation to discover another world most
-              tourists never see.
+              Saraswati Retreats is an invitation to discover another world
+              within the walls of local Balinese communities.
             </span>{' '}
             You’ll actively join us on cultural expeditions, experience
             authentic Balinese cuisine, and be able to curate a personalized

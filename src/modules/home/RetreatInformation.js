@@ -81,10 +81,11 @@ const Image3 = {
 };
 
 const Inclusions = [
-  '13 nights, 14 days Luxury Villa Accommodation',
-  '10 days in-class training covering front-end development (4:1 student-mentor ratio)',
-  'All Breakfasts & Lunches included',
-  '4 Group Dinners including Local Balinese Fare, Beachside BBQ and Farewell Feast',
+  '14 days Luxury Villa Accommodation',
+  '10 days Coding Curriculum (4:1 student-mentor ratio)',
+  'All Breakfasts & Lunches',
+  '4 Dinners featuring Local Balinese Fare, Beachside BBQ and Farewell Feast',
+  'On-site Yoga Classes',
   'Ayung River Rafting through Tropical Rainforest',
   'Purifying Temple Ceremony',
   'Artisan Village Tour in Ubud',
