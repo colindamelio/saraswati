@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PageContent from '../modules/PageContent';
+import PageContent from 'modules/PageContent';
 
 const Container = styled.div`
   display: flex;
