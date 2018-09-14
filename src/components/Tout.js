@@ -9,6 +9,7 @@ import mq from '../utils/mq';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 const CtaContainer = styled.div`

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import mq from 'utils/mq';
 
 const H1 = styled.h1`
+  width: 100%;
   font-family: ${props => props.theme.primaryFont};
   font-weight: ${props => props.theme.light};
   font-size: ${props => props.theme.heroTitleDesktop};
