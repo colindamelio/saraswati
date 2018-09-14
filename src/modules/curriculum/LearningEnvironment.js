@@ -28,7 +28,11 @@ const LearningEnvironment = ({ secondary }) => {
             means that you won’t ever feel left behind.
           </p>
           <p>
-            <a href="http://www.villamalaathina.com" target="_blank">
+            <a
+              href="http://www.villamalaathina.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Villa Malaathina
             </a>{' '}
             has wireless internet and a comfortable, air-conditioned conference

@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 import Home from 'routes/Home';
 import Culture from 'routes/Culture';
 import Curriculum from 'routes/Curriculum';
@@ -13,20 +14,22 @@ const Body = props => {
       <Fragment>
         <Header />
         <Switch>
-          <Route
-            exact
-            path="/"
-            render={renderProps => <Home {...props} {...renderProps} />}
-          />
-          <Route
-            path="/culture"
-            render={renderProps => <Culture {...props} {...renderProps} />}
-          />
-          <Route
-            path="/curriculum"
-            render={renderProps => <Curriculum {...props} {...renderProps} />}
-          />
-          <Route component={Error} />
+          <ScrollToTop>
+            <Route
+              exact
+              path="/"
+              render={renderProps => <Home {...props} {...renderProps} />}
+            />
+            <Route
+              path="/culture"
+              render={renderProps => <Culture {...props} {...renderProps} />}
+            />
+            <Route
+              path="/curriculum"
+              render={renderProps => <Curriculum {...props} {...renderProps} />}
+            />
+            <Route component={Error} />
+          </ScrollToTop>
         </Switch>
         <Footer />
       </Fragment>
