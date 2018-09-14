@@ -12,7 +12,7 @@ const Body = props => {
   return (
     <BrowserRouter>
       <Fragment>
-        <Header />
+        <Header {...props} />
         <ScrollToTop>
           <Switch>
             <Route

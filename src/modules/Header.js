@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import DEFAULT_PROPS from 'data/components/header';
 import mq from '../utils/mq';
+import Icon from '../components/Icon';
 
 const NavContainer = styled.div`
   position: fixed;
@@ -70,7 +71,11 @@ class Header extends Component {
         <Nav>
           {routes.map((route, index) => (
             <Link key={index} {...route}>
-              {route.title}
+              {route.title === 'Saraswati' ? (
+                <Icon name={'logo'} />
+              ) : (
+                route.title
+              )}
             </Link>
           ))}
         </Nav>
