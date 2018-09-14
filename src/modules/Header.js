@@ -69,6 +69,7 @@ const IconButton = styled.button`
   padding: 0;
   cursor: pointer;
   outline-style: none;
+  line-height: 0;
 `;
 
 const MenuIcon = styled(MaterialIcon)`
