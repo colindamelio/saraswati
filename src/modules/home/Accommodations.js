@@ -20,8 +20,8 @@ const Container = styled.section`
 const Accommodations = ({ image, title, description, secondary }) => {
   return (
     <Container>
-      <SplitHero image={VillaImage} secondary>
-        <Tout title={'Your Accommodations'} secondary>
+      <SplitHero image={VillaImage} secondary={secondary}>
+        <Tout title={'Your Accommodations'} secondary={secondary}>
           <p>
             During our 2-week retreat, Villa Malaathina is your luxurious home.
             Located near Seminyak in the charming village of Umalas, Villa
@@ -35,7 +35,7 @@ const Accommodations = ({ image, title, description, secondary }) => {
           </p>
           <p>
             For more information, visit the{' '}
-            <a href="http://www.villamalaathina.com" secondary>
+            <a href="http://www.villamalaathina.com" secondary={secondary}>
               Villa Malaathina Official Site
             </a>
             .
