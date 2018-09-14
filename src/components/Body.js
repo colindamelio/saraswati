@@ -13,8 +13,8 @@ const Body = props => {
     <BrowserRouter>
       <Fragment>
         <Header />
-        <Switch>
-          <ScrollToTop>
+        <ScrollToTop>
+          <Switch>
             <Route
               exact
               path="/"
@@ -29,8 +29,8 @@ const Body = props => {
               render={renderProps => <Curriculum {...props} {...renderProps} />}
             />
             <Route component={Error} />
-          </ScrollToTop>
-        </Switch>
+          </Switch>
+        </ScrollToTop>
         <Footer />
       </Fragment>
     </BrowserRouter>
