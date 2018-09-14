@@ -49,7 +49,7 @@ const Link = styled(NavLink)`
     height: 40px;
     margin-right: auto;
     ${mq.mobile`
-      height: 20px;
+      height: 30px;
     `};
   }
   &:not(:first-child) {
