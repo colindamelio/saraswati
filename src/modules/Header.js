@@ -46,15 +46,9 @@ const Link = styled(NavLink)`
     color: ${props => props.theme.black};
   }
   &:first-child {
-    font-family: ${props => props.theme.primaryFont};
-    font-size: 30px;
-    height: 30px;
-    letter-spacing: 1px;
+    height: 40px;
     margin-right: auto;
-    position: relative;
-    top: 3px;
     ${mq.mobile`
-      font-size: 20px;
       height: 20px;
     `};
   }
@@ -72,7 +66,7 @@ class Header extends Component {
           {routes.map((route, index) => (
             <Link key={index} {...route}>
               {route.title === 'Saraswati' ? (
-                <Icon name={'logo'} />
+                <Icon name={'logo'} color={'#EEEEEE'} />
               ) : (
                 route.title
               )}
