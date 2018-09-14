@@ -48,6 +48,8 @@ const LearningEnvironment = ({ secondary }) => {
 
 LearningEnvironment.defaultProps = {};
 
-LearningEnvironment.propTypes = {};
+LearningEnvironment.propTypes = {
+  secondary: PropTypes.bool,
+};
 
 export default LearningEnvironment;

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import mq from 'utils/mq';
 
 const MaterialIcon = styled.i`
   font-family: 'Material Icons';

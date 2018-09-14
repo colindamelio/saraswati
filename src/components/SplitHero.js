@@ -58,10 +58,7 @@ SplitHero.defaultProps = {
 };
 
 SplitHero.propTypes = {
-  image: PropTypes.shape({
-    src: PropTypes.string,
-    alt: PropTypes.string,
-  }),
+  image: PropTypes.string,
   secondary: PropTypes.bool,
   isReversed: PropTypes.bool,
 };
