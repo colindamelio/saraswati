@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import DEFAULT_PROPS from 'data/components/header';
 import mq from '../utils/mq';
 import Icon from '../components/Icon';
+import MaterialIcon from '../components/MaterialIcon';
+
+const Container = styled.div`
+  width: 100%;
+  position: fixed;
+`;
 
 const NavContainer = styled.div`
   position: fixed;
   top: 0;
   z-index: ${props => props.theme.headerIndex};
   display: flex;
-  align-items: center;
   background: ${props => props.theme.primaryAccent};
   height: ${props => props.theme.navHeightDesktop};
   width: 100%;
@@ -57,23 +62,96 @@ const Link = styled(NavLink)`
   }
 `;
 
+const MobileMenu = styled.div`
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: ${props => (props.isExpanded ? '1' : '0')}
+  transition: all 0.5s ease;
+  transform: ${props =>
+    props.isExpanded ? `translateY(0)` : `translateY(-300px)`};
+`;
+
+const MobileLink = styled(NavLink)`
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background: ${props => props.theme.black};
+  color: ${props => props.theme.white};
+  border-bottom: 1px solid ${props => props.theme.white};
+  font-family: ${props => props.theme.secondaryFont};
+  font-size: 24px;
+  padding: 0 ${props => props.theme.paddingMobile};
+  &:last-child {
+    border: none;
+  }
+
+  ${mq.tablet`
+    padding: 0 ${props => props.theme.paddingTablet};
+    `};
+`;
+
+const DesktopNav = ({ routes }) => (
+  <NavContainer>
+    <Nav>
+      {routes.map((route, index) => (
+        <Link key={index} {...route}>
+          {route.title === 'Saraswati' ? (
+            <Icon name={'logo'} color={'#EEEEEE'} />
+          ) : (
+            route.title
+          )}
+        </Link>
+      ))}
+    </Nav>
+  </NavContainer>
+);
+
+const MobileNav = ({ routes, isExpanded, handleToggle }) => (
+  <Fragment>
+    <NavContainer>
+      <Nav>
+        <Link {...routes[0]}>
+          <Icon name={'logo'} color={'#EEEEEE'} />
+        </Link>
+        <MaterialIcon onClick={handleToggle}>
+          {isExpanded ? 'close' : 'menu'}
+        </MaterialIcon>
+      </Nav>
+    </NavContainer>
+    <MobileMenu isExpanded={isExpanded}>
+      {routes.slice(1).map((route, index) => (
+        <MobileLink key={index} onClick={handleToggle} {...route}>
+          {route.title}
+        </MobileLink>
+      ))}
+    </MobileMenu>
+  </Fragment>
+);
+
 class Header extends Component {
+  state = {
+    isExpanded: false,
+  };
+
+  handleToggle = () => {
+    this.setState({ isExpanded: !this.state.isExpanded });
+  };
+
   render() {
-    const { routes } = this.props;
+    const { routes, isDesktop } = this.props;
     return (
-      <NavContainer>
-        <Nav>
-          {routes.map((route, index) => (
-            <Link key={index} {...route}>
-              {route.title === 'Saraswati' ? (
-                <Icon name={'logo'} color={'#EEEEEE'} />
-              ) : (
-                route.title
-              )}
-            </Link>
-          ))}
-        </Nav>
-      </NavContainer>
+      <Container>
+        {isDesktop ? (
+          <DesktopNav routes={routes} />
+        ) : (
+          <MobileNav
+            routes={routes}
+            isExpanded={this.state.isExpanded}
+            handleToggle={this.handleToggle}
+          />
+        )}
+      </Container>
     );
   }
 }
