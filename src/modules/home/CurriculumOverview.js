@@ -20,7 +20,7 @@ const Container = styled.section`
 const ctas = [
   {
     text: 'Apply Now',
-    href: '/apply',
+    href: '#applicationForm',
     variant: 'primary',
   },
   {
