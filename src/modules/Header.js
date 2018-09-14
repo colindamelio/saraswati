@@ -63,6 +63,19 @@ const Link = styled(NavLink)`
   }
 `;
 
+const IconButton = styled.button`
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-style: none;
+`;
+
+const MenuIcon = styled(MaterialIcon)`
+  font-size: ${props => props.theme.subtitleMobile};
+  color: ${props => props.theme.white};
+`;
+
 const MobileMenu = styled.div`
   width: 100%;
   position: absolute;
@@ -81,7 +94,7 @@ const MobileMenuItem = styled(NavLink)`
   color: ${props => props.theme.white};
   border-bottom: 1px solid ${props => props.theme.white};
   font-family: ${props => props.theme.secondaryFont};
-  font-size: ${props => props.theme.subtitleDesktop}
+  font-size: ${props => props.theme.subtitleMobile};
   padding: 0 ${props => props.theme.paddingMobile};
   cursor: pointer;
   &:hover {
@@ -119,9 +132,11 @@ const MobileNav = ({ routes, isExpanded, handleToggle }) => (
         <Link {...routes[0]}>
           <Icon name={'logo'} color={'#EEEEEE'} />
         </Link>
-        <MaterialIcon onClick={handleToggle}>
-          {isExpanded ? 'close' : 'menu'}
-        </MaterialIcon>
+        <IconButton>
+          <MenuIcon onClick={handleToggle}>
+            {isExpanded ? 'close' : 'menu'}
+          </MenuIcon>
+        </IconButton>
       </Nav>
     </NavContainer>
     <MobileMenu isExpanded={isExpanded}>

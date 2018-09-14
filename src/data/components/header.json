@@ -5,6 +5,10 @@
       "to": "/"
     },
     {
+      "title": "Home",
+      "to": "/"
+    },
+    {
       "title": "Curriculum Overview",
       "to": "/curriculum"
     },
