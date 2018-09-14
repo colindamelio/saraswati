@@ -87,15 +87,13 @@ const MobileMenu = styled.div`
 `;
 
 const MobileMenuItem = styled(NavLink)`
-  display: flex;
-  align-items: center;
-  height: 100px;
+  display: block;
   background: ${props => props.theme.black};
-  color: ${props => props.theme.white};
   border-bottom: 1px solid ${props => props.theme.white};
+  padding: ${props => props.theme.paddingMobile};
   font-family: ${props => props.theme.secondaryFont};
   font-size: ${props => props.theme.subtitleMobile};
-  padding: 0 ${props => props.theme.paddingMobile};
+  color: ${props => props.theme.white};
   cursor: pointer;
   &:hover {
     background: ${props => props.theme.primaryAccent};
@@ -103,10 +101,10 @@ const MobileMenuItem = styled(NavLink)`
   &:last-child {
     border: none;
   }
-
   ${mq.tablet`
-    padding: 0 ${props => props.theme.paddingTablet};
-    `};
+    padding: ${props => props.theme.paddingMobile} ${props =>
+    props.theme.paddingTablet};
+  `};
 `;
 
 const DesktopNav = ({ routes }) => (
