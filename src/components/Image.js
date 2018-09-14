@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Image = styled.img`
   display: block;
   width: 100%;
-  max-width: ${props => `${props.width}px`};
+  flex-shrink: 0;
 `;
 
 export default Image;
