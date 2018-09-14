@@ -133,10 +133,8 @@ const MobileNav = ({ routes, isExpanded, handleToggle }) => (
         <Link {...routes[0]}>
           <Icon name={'logo'} color={'#EEEEEE'} />
         </Link>
-        <IconButton>
-          <MenuIcon onClick={handleToggle}>
-            {isExpanded ? 'close' : 'menu'}
-          </MenuIcon>
+        <IconButton onClick={handleToggle}>
+          <MenuIcon>{isExpanded ? 'close' : 'menu'}</MenuIcon>
         </IconButton>
       </Nav>
     </NavContainer>
