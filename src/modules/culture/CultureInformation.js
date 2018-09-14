@@ -108,11 +108,16 @@ class CulturalInformation extends Component {
               classes offered in our private in-villa studio.
             </p>
             <p>
-              <a href="http://www.villamalaathina.com/" target="_blank">
+              <a
+                href="http://www.villamalaathina.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Villa Malaathina
-              </a>, your home for the duration of our retreat, is also equipped
-              with luxurious amenities, including air-conditioned gym facilities
-              and a 25-meter pool, making it the perfect haven for rest and
+              </a>
+              , your home for the duration of our retreat, is also equipped with
+              luxurious amenities, including air-conditioned gym facilities and
+              a 25-meter pool, making it the perfect haven for rest and
               relaxation.
             </p>
           </Tout>
