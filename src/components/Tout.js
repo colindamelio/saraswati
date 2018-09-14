@@ -19,6 +19,7 @@ const CtaContainer = styled.div`
     margin-top: ${props => props.theme.paddingTablet};
   `} ${mq.mobile`
     margin-top: ${props => props.theme.paddingMobile};
+    flex-direction: column;
   `};
 `;
 

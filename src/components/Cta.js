@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import mq from 'utils/mq';
 
 const Cta = styled.a`
   padding: ${props => props.theme.ctaPadding};
@@ -45,6 +46,23 @@ const Cta = styled.a`
       }
     }
   }
+  ${mq.mobile`
+    width: 100%;
+    text-align: center;
+    &:nth-child(n + 2) {
+      padding: ${props => props.theme.ctaPadding};
+      margin-left: 0;
+      margin-top: 15px;
+      text-decoration: underline;
+    }
+    &.secondary {
+      &:nth-child(n + 2) {
+        padding: ${props => props.theme.ctaPadding};
+        margin-left: 0;
+        margin-top: 15px;
+        text-decoration: underline;
+      }
+  `};
 `;
 
 export default Cta;
