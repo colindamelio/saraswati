@@ -46,7 +46,9 @@ const CurriculumOverview = ({ isReversed }) => {
               {' '}
               No prior experience is required – just a desire to learn!
             </span>{' '}
-            It may be challenging, but we’re excited to guide you through a
+            To preserve a 4:1 student-mentor ratio, we accept only 12 students
+            for each retreat to ensure you’re provided quality training. It may
+            be challenging, but we’re excited to guide you through a
             comprehensive curriculum.
           </p>
         </Tout>
