@@ -14,6 +14,7 @@ const NavContainer = styled.div`
   height: ${props => props.theme.navHeightDesktop};
   width: 100%;
   padding: 0 ${props => props.theme.paddingDesktop};
+  box-shadow: 0px 1px 15px ${props => props.theme.black};
   ${mq.tablet`
     height: ${props => props.theme.navHeightTablet};
     padding: 0 ${props => props.theme.paddingTablet};
