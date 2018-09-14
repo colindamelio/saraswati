@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import PageContent from 'modules/PageContent';
 import Application from 'modules/home/Application';
 
-const Home = props => {
+const Apply = props => {
   return (
     <Fragment>
       <PageContent>
@@ -12,4 +12,4 @@ const Home = props => {
   );
 };
 
-export default Home;
+export default Apply;
