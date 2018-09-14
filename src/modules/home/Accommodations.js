@@ -37,7 +37,8 @@ const Accommodations = ({ image, title, description, secondary }) => {
             For more information, visit the{' '}
             <a href="http://www.villamalaathina.com" secondary>
               Villa Malaathina Official Site
-            </a>.
+            </a>
+            .
           </p>
         </Tout>
       </SplitHero>
@@ -49,6 +50,7 @@ Accommodations.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   cta: PropTypes.array,
+  secondary: PropTypes.bool,
 };
 
 export default Accommodations;

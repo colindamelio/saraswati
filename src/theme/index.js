@@ -49,7 +49,7 @@ module.exports = {
   //Application Form//
   inputBorderStyle: '1px solid',
   inputHeight: '45px',
-  inputPadding: '15px',
+  inputPadding: '0 15px',
   inputBorderRadius: '5px',
 
   textareaHeight: '250px',

@@ -17,21 +17,6 @@ const Container = styled.section`
   `};
 `;
 
-const Content = styled.div`
-  width: 100%;
-  height: auto;
-  padding: ${props => props.theme.paddingDesktop};
-  ${mq.desktop`
-    width: 50%;
-  `};
-  ${mq.tablet`
-    padding: ${props => props.theme.paddingTablet};
-  `};
-  ${mq.mobile`
-    padding: ${props => props.theme.paddingMobile};
-  `};
-`;
-
 const ctas = [
   {
     text: 'Apply Today',
