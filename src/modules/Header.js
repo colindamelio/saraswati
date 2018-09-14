@@ -126,11 +126,11 @@ const DesktopNav = ({ routes }) => (
   </NavContainer>
 );
 
-const MobileNav = ({ routes, isExpanded, handleToggle }) => (
+const MobileNav = ({ routes, isExpanded, handleToggle, handleLogoClick }) => (
   <Fragment>
     <NavContainer>
       <Nav>
-        <Link {...routes[0]}>
+        <Link {...routes[0]} onClick={handleLogoClick}>
           <Icon name={'logo'} color={'#EEEEEE'} />
         </Link>
         <IconButton onClick={handleToggle}>
@@ -157,6 +157,12 @@ class Header extends Component {
     this.setState({ isExpanded: !this.state.isExpanded });
   };
 
+  handleLogoClick = () => {
+    if (this.state.isExpanded) {
+      this.setState({ isExpanded: false });
+    }
+  };
+
   render() {
     const { routes, isDesktop } = this.props;
     return (
@@ -168,6 +174,7 @@ class Header extends Component {
             routes={routes}
             isExpanded={this.state.isExpanded}
             handleToggle={this.handleToggle}
+            handleLogoClick={this.handleLogoClick}
           />
         )}
       </Container>
