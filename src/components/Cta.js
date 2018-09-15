@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import mq from 'utils/mq';
 
-const Cta = styled.a`
+const Cta = styled(NavLink)`
   padding: ${props => props.theme.ctaPadding};
   background: ${props => props.theme.secondaryAccent};
   border: none;

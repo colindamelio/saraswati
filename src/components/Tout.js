@@ -38,7 +38,7 @@ const Tout = ({ image, title, children, secondary, ctas }) => {
       {ctas && ctas.length > 0 ? (
         <CtaContainer>
           {ctas.map((cta, n) => (
-            <Cta key={`${n}-cta`} href={cta.href} className={`${cta.variant}`}>
+            <Cta key={`${n}-cta`} to={cta.href} className={`${cta.variant}`}>
               {cta.text}
             </Cta>
           ))}
