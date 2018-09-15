@@ -35,7 +35,6 @@ const NavContainer = styled.div`
 const Nav = styled.nav`
   height: 100%;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   flex-grow: 1;
 `;
@@ -71,6 +70,13 @@ const IconButton = styled.button`
   cursor: pointer;
   outline-style: none;
   line-height: 0;
+`;
+
+const Logo = styled(Icon)`
+  width: 192px;
+  ${mq.mobile`
+    width: 142px;
+  `};
 `;
 
 const MenuIcon = styled(MaterialIcon)`
@@ -116,7 +122,7 @@ const DesktopNav = ({ routes }) => (
       {routes.map((route, index) => (
         <Link exact key={index} {...route}>
           {route.title === 'Saraswati' ? (
-            <Icon name={'logo'} color={'#EEEEEE'} />
+            <Logo name={'logo'} color={'#EEEEEE'} />
           ) : (
             route.title
           )}
@@ -131,7 +137,7 @@ const MobileNav = ({ routes, isExpanded, handleToggle, handleLogoClick }) => (
     <NavContainer>
       <Nav>
         <Link {...routes[0]} onClick={handleLogoClick}>
-          <Icon name={'logo'} color={'#EEEEEE'} />
+          <Logo name={'logo'} color={'#EEEEEE'} />
         </Link>
         <IconButton onClick={handleToggle}>
           <MenuIcon>{isExpanded ? 'close' : 'menu'}</MenuIcon>
