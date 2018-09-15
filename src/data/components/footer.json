@@ -1,1 +1,16 @@
-{}
+{
+  "routes": [
+    {
+      "title": "Curriculum Overview",
+      "to": "/curriculum"
+    },
+    {
+      "title": "Cultural Activities",
+      "to": "/culture"
+    },
+    {
+      "title": "Apply",
+      "to": "/apply"
+    }
+  ]
+}
