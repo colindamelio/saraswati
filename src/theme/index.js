@@ -61,7 +61,7 @@ module.exports = {
   navHeightMobile: '40px',
 
   //Footer//
-  footerPaddingDesktop: '60px 0',
-  footerPaddingTablet: '50px 0',
-  footerPaddingMobile: '25px 0',
+  footerPaddingDesktop: '50px 70px',
+  footerPaddingTablet: '50px',
+  footerPaddingMobile: '25px',
 };
