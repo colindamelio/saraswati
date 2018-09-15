@@ -5,7 +5,7 @@ import DEFAULT_PROPS from 'data/components/footer';
 import Icon from '../components/Icon';
 import mq from 'utils/mq';
 
-const OuterContainer = styled.div`
+const Container = styled.section`
   padding: ${props => props.theme.footerPaddingDesktop};
   background: ${props => props.theme.black};
 
@@ -17,34 +17,21 @@ const OuterContainer = styled.div`
   `};
 `;
 
-const InnerContainer = styled.div`
+const Content = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 80%;
-
-  ${mq.tablet`
-    max-width: 100%;
-  `}${mq.mobile`
-  flex-direction: column-reverse;
+  ${mq.mobile`
+    flex-direction: column-reverse;
   `};
-
-  .routesList {
-    order: 1;
-  }
-  
 `;
 
 const Column = styled.ul`
-  max-width: 225px;
-  padding: 20px 0 0;
-  margin: 0;
   list-style: none;
-
-  ${mq.mobile`
-    padding: 0 0 0 20px;
-    max-width: 100%;
-  `};
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 
   &.footerLogo svg {
     max-width: 225px;
@@ -52,9 +39,17 @@ const Column = styled.ul`
 
   li {
     color: ${props => props.theme.white};
-    margin: 10px 0;
-    font-size: 14px;
+    font-size: ${props => props.theme.ctaFontSize};
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
+  ${mq.mobile`
+    margin-bottom: 30px;
+    &.shift {
+      order: 1;
+    }
+  `};
 `;
 
 const Link = styled(NavLink)`
@@ -62,21 +57,20 @@ const Link = styled(NavLink)`
   font-family: ${props => props.theme.secondaryFont};
   font-size: ${props => props.theme.ctaFontSize};
   font-weight: ${props => props.theme.bold};
-  text-transform: ${props => props.theme.ctaCasing};
   color: ${props => props.theme.white};
   transition: color 0.3s;
-
   &:hover {
     color: ${props => props.theme.primaryAccent};
   }
 `;
 
 const SocialLink = styled.a`
+  height: ${props => props.theme.ctaFontSize};
   font-family: ${props => props.theme.secondaryFont};
   font-size: ${props => props.theme.ctaFontSize};
   font-weight: ${props => props.theme.bold};
   color: ${props => props.theme.white};
-
+  transition: color 0.3s;
   &:hover {
     color: ${props => props.theme.primaryAccent};
   }
@@ -84,15 +78,15 @@ const SocialLink = styled.a`
 
 const Footer = ({ routes }) => {
   return (
-    <OuterContainer>
-      <InnerContainer>
-        <Column className="footerLogo">
+    <Container>
+      <Content>
+        <Column className={'footerLogo'}>
           <li>
             <Icon name={'logo'} color={'#EEEEEE'} />
           </li>
           <li>© 2018 Saraswati Bali Retreats</li>
         </Column>
-        <Column className="routesList">
+        <Column className={'shift'}>
           {routes.map(({ title, to }) => (
             <li key={to}>
               <Link to={to}>{title}</Link>
@@ -102,7 +96,7 @@ const Footer = ({ routes }) => {
         <Column>
           <li>
             <SocialLink
-              href="https://www.facebook.com/SaraswatiRetreats"
+              href="https://www.facebook.com/SaraswatiBaliRetreats"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -111,7 +105,7 @@ const Footer = ({ routes }) => {
           </li>
           <li>
             <SocialLink
-              href="https://www.instagram.com/saraswati_retreats"
+              href="https://www.instagram.com/saraswatibaliretreats"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -124,8 +118,8 @@ const Footer = ({ routes }) => {
             </SocialLink>
           </li>
         </Column>
-      </InnerContainer>
-    </OuterContainer>
+      </Content>
+    </Container>
   );
 };
 
