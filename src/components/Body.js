@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import ScrollToTop from './ScrollToTop';
 import Home from 'routes/Home';
 import Curriculum from 'routes/Curriculum';
@@ -11,7 +11,7 @@ import Footer from 'modules/Footer';
 
 const Body = props => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Fragment>
         <Header isDesktop={props.isDesktop} />
         <ScrollToTop>
@@ -38,7 +38,7 @@ const Body = props => {
         </ScrollToTop>
         <Footer />
       </Fragment>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
