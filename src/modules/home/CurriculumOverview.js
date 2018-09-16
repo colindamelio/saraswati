@@ -22,11 +22,13 @@ const ctas = [
     text: 'Apply Now',
     href: '#applicationForm',
     variant: 'primary',
+    hasRoute: false,
   },
   {
     text: 'Curriculum Overview',
     href: '/curriculum',
     variant: 'primary',
+    hasRoute: true,
   },
 ];
 
