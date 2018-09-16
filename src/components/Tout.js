@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Image from './Image';
 import Cta from './Cta';
 import BodyTextLockup from './BodyTextLockup';
+import { NavLink } from 'react-router-dom';
 import mq from '../utils/mq';
 
 const Container = styled.div`
@@ -28,6 +29,8 @@ const ToutImage = styled(Image)`
   margin-bottom: 30px;
 `;
 
+const RouteCta = Cta.withComponent(NavLink);
+
 const Tout = ({ image, title, children, secondary, ctas }) => {
   return (
     <Container>
@@ -37,11 +40,22 @@ const Tout = ({ image, title, children, secondary, ctas }) => {
       </BodyTextLockup>
       {ctas && ctas.length > 0 ? (
         <CtaContainer>
-          {ctas.map((cta, n) => (
-            <Cta key={`${n}-cta`} to={cta.href} className={`${cta.variant}`}>
-              {cta.text}
-            </Cta>
-          ))}
+          {ctas.map(
+            (cta, n) =>
+              cta.hasRoute ? (
+                <RouteCta
+                  key={`${n}-cta`}
+                  to={cta.href}
+                  className={`${cta.variant}`}
+                >
+                  {cta.text}
+                </RouteCta>
+              ) : (
+                <Cta key={`${n}-cta`} href={cta.href}>
+                  {cta.text}
+                </Cta>
+              )
+          )}
         </CtaContainer>
       ) : null}
     </Container>

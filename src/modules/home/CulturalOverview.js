@@ -24,11 +24,13 @@ const ctas = [
     text: 'Apply Now',
     href: '#applicationForm',
     variant: 'secondary',
+    hasRoute: false,
   },
   {
     text: 'See All Activities',
     href: '/culture',
     variant: 'secondary',
+    hasRoute: true,
   },
 ];
 
