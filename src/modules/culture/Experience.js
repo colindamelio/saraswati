@@ -22,6 +22,7 @@ const ctas = [
     text: 'Apply Today',
     href: '/apply',
     variant: 'secondary',
+    hasRoute: true,
   },
 ];
 
