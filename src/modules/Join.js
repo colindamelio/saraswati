@@ -30,6 +30,7 @@ const ctas = [
     text: 'Apply Now',
     href: '/apply',
     variant: 'secondary',
+    hasRoute: true,
   },
 ];
 
@@ -48,7 +49,8 @@ const Join = ({ secondary, culture }) => {
         Curious about our {culture ? `curriculum` : `cultural activities`}?{' '}
         <a href={culture ? `/curriculum` : `culture`}>
           Click here to learn more
-        </a>.
+        </a>
+        .
       </LearnMore>
     </SplitHero>
   );
