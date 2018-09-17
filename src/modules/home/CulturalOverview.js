@@ -22,9 +22,9 @@ const Column = styled.div`
 const ctas = [
   {
     text: 'Apply Now',
-    href: '#applicationForm',
+    href: '/apply',
     variant: 'secondary',
-    hasRoute: false,
+    hasRoute: true,
   },
   {
     text: 'See All Activities',

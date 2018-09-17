@@ -35,7 +35,11 @@ const Accommodations = ({ image, title, description, secondary }) => {
           </p>
           <p>
             For more information, visit the{' '}
-            <a href="http://www.villamalaathina.com" secondary={secondary}>
+            <a
+              href="http://www.villamalaathina.com"
+              target="_blank"
+              secondary={secondary}
+            >
               Villa Malaathina Official Site
             </a>
             .

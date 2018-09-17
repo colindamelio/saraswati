@@ -5,6 +5,7 @@ import SplitHero from 'components/SplitHero';
 import H1 from 'components/H1';
 import BodyTextLockup from 'components/BodyTextLockup';
 import HeroImage from 'media/test-4.jpg';
+import { NavLink } from 'react-router-dom';
 import mq from 'utils/mq';
 
 const Container = styled.section`
@@ -28,7 +29,7 @@ const LandingIntro = () => {
         <BodyTextLockup>
           <p className="header">
             Learn to code your own website in the heart of Bali.{' '}
-            <a href="#applicationForm">Apply</a> for our 14-day retreat today!
+            <NavLink to="/apply">Apply</NavLink> for our 14-day retreat today!
           </p>
         </BodyTextLockup>
       </SplitHero>

@@ -4,6 +4,7 @@ import SplitHero from 'components/SplitHero';
 import TempleImage from 'media/god-barong-2.jpg';
 import LaptopImage from 'media/laptop.jpg';
 import Tout from 'components/Tout';
+import { NavLink } from 'react-router-dom';
 import mq from 'utils/mq';
 
 const LearnMore = styled.p`
@@ -47,9 +48,9 @@ const Join = ({ secondary, culture }) => {
       </Tout>
       <LearnMore>
         Curious about our {culture ? `curriculum` : `cultural activities`}?{' '}
-        <a href={culture ? `/curriculum` : `culture`}>
+        <NavLink to={culture ? `/curriculum` : `culture`}>
           Click here to learn more
-        </a>
+        </NavLink>
         .
       </LearnMore>
     </SplitHero>

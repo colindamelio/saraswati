@@ -20,9 +20,9 @@ const Container = styled.section`
 const ctas = [
   {
     text: 'Apply Now',
-    href: '#applicationForm',
+    href: '/apply',
     variant: 'primary',
-    hasRoute: false,
+    hasRoute: true,
   },
   {
     text: 'Curriculum Overview',
