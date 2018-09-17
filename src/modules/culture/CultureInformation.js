@@ -48,17 +48,17 @@ const InfoColumn = styled.div`
 
 const Image1 = {
   src: colImage1,
-  alt: 'alt text',
+  alt: 'Image of a Monkey',
 };
 
 const Image2 = {
   src: colImage2,
-  alt: 'alt text',
+  alt: 'Image of a Traditional Balinese Cooking Class',
 };
 
 const Image3 = {
   src: colImage3,
-  alt: 'alt text',
+  alt: 'Image of a Lotus Flower',
 };
 
 class CulturalInformation extends Component {

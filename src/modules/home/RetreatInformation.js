@@ -67,17 +67,17 @@ const Disclaimer = styled.p`
 
 const Image1 = {
   src: colImage1,
-  alt: 'alt text',
+  alt: 'Image of Balinese Landscape',
 };
 
 const Image2 = {
   src: colImage2,
-  alt: 'alt text',
+  alt: 'Image of Traditional Balinese Cuisine',
 };
 
 const Image3 = {
   src: colImage3,
-  alt: 'alt text',
+  alt: 'Image of a Monkey',
 };
 
 const Inclusions = [
