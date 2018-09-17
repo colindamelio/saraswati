@@ -25,7 +25,7 @@ const CurriculumIntro = () => {
     <Container>
       <Hero image={HeroImage}>
         <H1 secondary>
-          Our retreats are designed for tech-savvy beginners –{' '}
+          Our retreats are designed for beginners –{' '}
           <span className="bold">no prior experience is necessary.</span>
         </H1>
         <BodyTextLockup secondary>
