@@ -53,6 +53,8 @@ module.exports = {
   inputBorderRadius: '5px',
 
   textareaHeight: '250px',
+  textareaPadding: '15px',
+  textareaLineHeight: '1.5',
 
   //Header//
   headerIndex: '10',

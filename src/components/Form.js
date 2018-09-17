@@ -23,10 +23,11 @@ const ApplicationForm = styled.form`
   textarea {
     border: ${props => props.theme.inputBorderStyle};
     border-color: ${props => props.theme.black};
-    padding: ${props => props.theme.inputPadding};
+    padding: ${props => props.theme.textareaPadding};
     border-radius: ${props => props.theme.inputBorderRadius};
     min-height: ${props => props.theme.textareaHeight};
     resize: none;
+    line-height: ${props => props.theme.textareaLineHeight};
   }
 `;
 
