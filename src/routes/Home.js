@@ -5,6 +5,7 @@ import CurriculumOverview from 'modules/home/CurriculumOverview';
 import CulturalOverview from 'modules/home/CulturalOverview';
 import Accommodations from 'modules/home/Accommodations';
 import RetreatInformation from 'modules/home/RetreatInformation';
+import CultureOnly from '../modules/home/CultureOnly';
 import Application from 'modules/home/Application';
 
 const Home = props => {
@@ -16,6 +17,7 @@ const Home = props => {
         <CulturalOverview />
         <Accommodations />
         <RetreatInformation />
+        <CultureOnly />
         <Application />
       </PageContent>
     </Fragment>

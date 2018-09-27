@@ -19,7 +19,7 @@ const Container = styled.section`
 
 const ctas = [
   {
-    text: 'Apply Now',
+    text: 'Get In Touch',
     href: '/apply',
     variant: 'primary',
     hasRoute: true,

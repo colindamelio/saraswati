@@ -21,7 +21,7 @@ const Column = styled.div`
 
 const ctas = [
   {
-    text: 'Apply Now',
+    text: 'Get In Touch',
     href: '/apply',
     variant: 'secondary',
     hasRoute: true,

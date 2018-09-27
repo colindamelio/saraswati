@@ -28,7 +28,7 @@ const LearnMore = styled.p`
 
 const ctas = [
   {
-    text: 'Apply Now',
+    text: 'Get In Touch',
     href: '/apply',
     variant: 'secondary',
     hasRoute: true,
