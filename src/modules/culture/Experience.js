@@ -19,7 +19,7 @@ const Container = styled.section`
 
 const ctas = [
   {
-    text: 'Apply Today',
+    text: 'Join the experience',
     href: '/apply',
     variant: 'secondary',
     hasRoute: true,
