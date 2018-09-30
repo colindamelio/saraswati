@@ -53,20 +53,6 @@ class CurriculumInformation extends Component {
     return (
       <Container>
         <InfoColumn>
-          <Tout title={"What's Included"}>
-            <p>
-              After enjoying a delicious breakfast (prepared by our in-house
-              chef), seize the day and embark on your web development journey.
-            </p>
-            <p>
-              Each class is broken down into small, digestible modules and
-              plenty of practical exercises. Our mentors will be with you every
-              step of the way –{' '}
-              <span className="bold">we’re committed to your success!</span>
-            </p>
-          </Tout>
-        </InfoColumn>
-        <InfoColumn>
           <Tout title={"What you'll need..."}>
             <p>
               Saraswati Retreats will provide you learning materials and support
@@ -78,6 +64,20 @@ class CurriculumInformation extends Component {
               <span className="bold">
                 Each participant is required to bring their own personal laptop.
               </span>
+            </p>
+          </Tout>
+        </InfoColumn>
+        <InfoColumn>
+          <Tout title={'Upcoming Retreats'}>
+            <p>
+              <span className="bold">February 10 – 23, 2019</span>
+              <br />Deposit payments are due October 31, 2018. Complete your
+              registration by December 15, 2018 to be eligible for our Early
+              Bird Pricing!
+            </p>
+            <p>
+              A non-refundable $500 USD deposit is required to secure your spot
+              on all retreats.
             </p>
           </Tout>
         </InfoColumn>
