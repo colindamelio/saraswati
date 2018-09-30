@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Tout from 'components/Tout';
+import H2 from 'components/H2';
 import mq from '../../utils/mq';
 
 const Container = styled.div`
@@ -43,12 +44,16 @@ const InfoColumn = styled.div`
   `}
 `;
 
+const Disclaimer = styled.p`
+  font-size: ${props => props.theme.disclaimerDesktop};
+`;
+
 class CurriculumInformation extends Component {
   render() {
     return (
       <Container>
         <InfoColumn>
-          <Tout title={'10 days of in-class training'}>
+          <Tout title={"What's Included"}>
             <p>
               After enjoying a delicious breakfast (prepared by our in-house
               chef), seize the day and embark on your web development journey.
@@ -58,22 +63,6 @@ class CurriculumInformation extends Component {
               plenty of practical exercises. Our mentors will be with you every
               step of the way –{' '}
               <span className="bold">we’re committed to your success!</span>
-            </p>
-          </Tout>
-        </InfoColumn>
-        <InfoColumn>
-          <Tout title={'Front-End Fundamentals'}>
-            <p>
-              Our curriculum is designed to cover the principles of front-end
-              development. Starting with the basics of{' '}
-              <span className="bold">HTML</span> &{' '}
-              <span className="bold">CSS</span>, we’ll quickly move towards more
-              complex concepts like layouts, positioning, navigation menus, and
-              more.
-            </p>
-            <p>
-              At the end of the retreat, you’ll have a fully-responsive website
-              that you built from scratch!
             </p>
           </Tout>
         </InfoColumn>
@@ -90,6 +79,24 @@ class CurriculumInformation extends Component {
                 Each participant is required to bring their own personal laptop.
               </span>
             </p>
+          </Tout>
+        </InfoColumn>
+        <InfoColumn>
+          <Tout>
+            <H2>Early Bird Price – $2999 USD</H2>
+            <p>
+              Enjoy discounted pricing and secure your spot by registering early
+              for our upcoming retreats! See retreat dates for our Early Bird
+              cut-offs.
+            </p>
+            <br />
+            <H2>Regular Price - $3499 USD</H2>
+            <p>
+              We accept only 12 students for each retreat to ensure you’re
+              provided quality training.<br />
+              <span className="bold">Reserve your spot today!</span>
+            </p>
+            <Disclaimer>*Rates are based on 2-person occupancy.</Disclaimer>
           </Tout>
         </InfoColumn>
       </Container>

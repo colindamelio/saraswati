@@ -47,6 +47,10 @@ const InfoColumn = styled.div`
   `}
 `;
 
+const List = styled.ul`
+  padding-left: 0;
+`;
+
 const ListItem = styled.li`
   position: relative;
   list-style: none;
@@ -112,7 +116,9 @@ class RetreatInformation extends Component {
         </InfoColumn>
         <InfoColumn>
           <Tout image={Image2} title={"What's Included"}>
-            {Inclusions.map((item, n) => <ListItem key={n}>{item}</ListItem>)}
+            <List>
+              {Inclusions.map((item, n) => <ListItem key={n}>{item}</ListItem>)}
+            </List>
             <Disclaimer>
               <span className="bold">Note:</span> Please bring your own personal
               laptop. Flight costs not included.

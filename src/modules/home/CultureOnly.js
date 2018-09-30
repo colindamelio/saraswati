@@ -5,7 +5,7 @@ import mq from 'utils/mq';
 import Hero from 'components/Hero';
 import H2 from 'components/H2';
 import Tout from 'components/Tout';
-import HeroImage from 'media/bali-ricefield-worker.jpg';
+import HeroImage from 'media/wood-texture-3.jpg';
 
 const Column = styled.div`
   width: 100%;
