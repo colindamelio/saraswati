@@ -21,10 +21,6 @@ const Container = styled.div`
   ${mq.desktop`
     border-bottom: 5px solid white;
     flex-direction: ${props => (props.columns >= 2 ? `row` : `column`)};
-  `} ${mq.tablet`
-    padding: ${props => props.theme.paddingTablet};
-  `} ${mq.mobile`
-    padding: ${props => props.theme.paddingMobile};
   `};
 `;
 
