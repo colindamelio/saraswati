@@ -4,9 +4,8 @@ import styled from 'styled-components';
 import mq from 'utils/mq';
 import Touts from 'components/Touts';
 import H1 from 'components/H1';
-import H2 from 'components/H2';
 import Tout from 'components/Tout';
-import HeroImage from '../../media/wood-texture-1.jpg';
+import HeroImage from 'media/wood-texture-1.jpg';
 
 const Column = styled.div`
   width: 100%;
