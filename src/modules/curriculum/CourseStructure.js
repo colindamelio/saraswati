@@ -51,21 +51,6 @@ const Topics = [
   'Domain registration, hosting, and getting your website online!',
 ];
 
-// const ctas = [
-//   {
-//     text: 'Get In Touch',
-//     href: '/apply',
-//     variant: 'secondary',
-//     hasRoute: true,
-//   },
-//   {
-//     text: 'See Sample Itinerary',
-//     href: '/culture',
-//     variant: 'secondary',
-//     hasRoute: true,
-//   },
-// ];
-
 const CourseStructure = ({ left }) => {
   return (
     <Touts image={HeroImage} columns={2}>
