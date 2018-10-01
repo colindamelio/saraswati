@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Tout from 'components/Tout';
 import H2 from 'components/H2';
-import mq from '../../utils/mq';
+import mq from 'utils/mq';
 
 const Container = styled.div`
   display: flex;
