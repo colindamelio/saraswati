@@ -72,12 +72,12 @@ class CurriculumInformation extends Component {
             <p>
               <span className="bold">October 27 – November 6, 2019</span>
               <br />
-              Deposit payments are due June 30, 2019. Complete your registration
-              by August 31, 2019 to be eligible for our Early Bird Pricing!
+              Complete your registration by May 31st, 2019 to be eligible for
+              our Early Bird Pricing!
             </p>
             <p>
               A non-refundable $500 USD deposit is required to secure your spot
-              on all retreats.
+              on all retreats, and is due upon acceptance into our program.
             </p>
           </Tout>
         </InfoColumn>
@@ -92,8 +92,8 @@ class CurriculumInformation extends Component {
             <br />
             <H2>Regular Price - $2799 USD</H2>
             <p>
-              We accept only 12 students for each retreat to ensure you’re
-              provided quality training.
+              To preserve a 4:1 student-mentor ratio, we accept only 12 students
+              for each retreat to ensure you’re provided quality training.
               <br />
               <span className="bold">Reserve your spot today!</span>
             </p>
