@@ -80,7 +80,7 @@ class CulturalInformation extends Component {
           </Tout>
         </InfoColumn>
         <InfoColumn>
-          <Tout image={Image2} title={'Traditional Balinese Cooking'}>
+          <Tout image={Image2} title={'Authentic Balinese Cooking Class'}>
             <p>
               <span className="bold">
                 Most tourists never experience Traditional Balinese food.

@@ -38,7 +38,7 @@ const CurriculumOverview = ({ isReversed }) => {
       <SplitHero image={studentsImage} isReversed>
         <Tout title={'Front-End Fundamentals'} ctas={ctas}>
           <p>
-            <span className="bold">With 10 days of in-class training</span>, our
+            <span className="bold">With 8 days of in-class training</span>, our
             goal is to ensure you have the knowledge, tools and support to begin
             your web development journey. Using HTML, CSS and JavaScript, you
             will build your own website from scratch!

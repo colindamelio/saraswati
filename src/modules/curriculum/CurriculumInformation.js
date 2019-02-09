@@ -70,10 +70,10 @@ class CurriculumInformation extends Component {
         <InfoColumn>
           <Tout title={'Upcoming Retreats'}>
             <p>
-              <span className="bold">February 10 – 23, 2019</span>
-              <br />Deposit payments are due October 31, 2018. Complete your
-              registration by December 15, 2018 to be eligible for our Early
-              Bird Pricing!
+              <span className="bold">October 27 – November 6, 2019</span>
+              <br />
+              Deposit payments are due June 30, 2019. Complete your registration
+              by August 31, 2019 to be eligible for our Early Bird Pricing!
             </p>
             <p>
               A non-refundable $500 USD deposit is required to secure your spot
@@ -83,17 +83,18 @@ class CurriculumInformation extends Component {
         </InfoColumn>
         <InfoColumn>
           <Tout>
-            <H2>Early Bird Price – $2999 USD</H2>
+            <H2>Early Bird Price – $2399 USD</H2>
             <p>
               Enjoy discounted pricing and secure your spot by registering early
               for our upcoming retreats! See retreat dates for our Early Bird
               cut-offs.
             </p>
             <br />
-            <H2>Regular Price - $3499 USD</H2>
+            <H2>Regular Price - $2799 USD</H2>
             <p>
               We accept only 12 students for each retreat to ensure you’re
-              provided quality training.<br />
+              provided quality training.
+              <br />
               <span className="bold">Reserve your spot today!</span>
             </p>
             <Disclaimer>*Rates are based on 2-person occupancy.</Disclaimer>
