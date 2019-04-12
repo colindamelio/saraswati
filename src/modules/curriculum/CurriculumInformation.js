@@ -90,7 +90,7 @@ class CurriculumInformation extends Component {
               cut-offs.
             </p>
             <br />
-            <H2>Regular Price - $2799 USD</H2>
+            <H2>Regular Price - $2899 USD</H2>
             <p>
               To preserve a 4:1 student-mentor ratio, we accept only 12 students
               for each retreat to ensure you’re provided quality training.

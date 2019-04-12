@@ -9,6 +9,10 @@
       "to": "/culture"
     },
     {
+      "title": "About Us",
+      "to": "/about"
+    },
+    {
       "title": "Apply",
       "to": "/apply"
     }

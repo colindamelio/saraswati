@@ -6,7 +6,8 @@ const strings = {
   'home/landingModule/title': () => {
     return (
       <Fragment>
-        At Saraswati Retreats, we believe your education should be <span className="semibold">extraordinary.</span>
+        At Saraswati Retreats, we believe your education should be{' '}
+        <span className="semibold">extraordinary.</span>
       </Fragment>
     );
   },
@@ -14,7 +15,7 @@ const strings = {
     return (
       <Fragment>
         Learn to code your own website in the heart of Bali. <Link>Apply</Link>{' '}
-        for our 14-day retreat today!
+        for our 11-day retreat today!
       </Fragment>
     );
   },

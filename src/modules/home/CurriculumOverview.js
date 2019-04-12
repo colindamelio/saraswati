@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import SplitHero from 'components/SplitHero';
 import Tout from 'components/Tout';
-import studentsImage from 'media/students.jpg';
+import studentsImage from 'media/students-2.jpg';
 import mq from '../../utils/mq';
 
 const Container = styled.section`
