@@ -55,7 +55,7 @@ const CourseStructure = ({ left }) => {
     <Touts image={HeroImage} columns={2}>
       <Column left>
         <Tout secondary>
-          <H1 secondary>10 days of training</H1>
+          <H1 secondary>8 days of training</H1>
           <p>
             After enjoying a delicious breakfast (prepared by our in-house
             chef), seize the day and embark on your web development journey.
@@ -79,7 +79,9 @@ const CourseStructure = ({ left }) => {
             we'll guide you through the following concepts:
           </p>
           <List>
-            {Topics.map((item, n) => <ListItem key={n}>{item}</ListItem>)}
+            {Topics.map((item, n) => (
+              <ListItem key={n}>{item}</ListItem>
+            ))}
           </List>
           <p>
             At the end of the retreat, you’ll have a fully-responsive website

@@ -85,10 +85,10 @@ const Image3 = {
 };
 
 const Inclusions = [
-  '14 days Luxury Villa Accommodation',
-  '10 days Coding Curriculum (4:1 student-mentor ratio)',
+  '10 nights, 11 days Luxury Villa Accommodation',
+  'In-class training covering front-end fundamentals (4:1 student-mentor ratio)',
   'All Breakfasts & Lunches',
-  '4 Dinners featuring Local Balinese Fare, Beachside BBQ and Farewell Feast',
+  '5 Dinners featuring Local Balinese Fare, Beachside BBQ and Farewell Feast',
   'On-site Yoga Classes',
   'Ayung River Rafting through Tropical Rainforest',
   'Purifying Temple Ceremony',
@@ -103,21 +103,23 @@ class RetreatInformation extends Component {
         <InfoColumn>
           <Tout image={Image1} title={'Upcoming Retreats'}>
             <p>
-              <span className="bold">February 10 – 23, 2019</span>
-              <br />Deposit payments are due October 31, 2018. Complete your
-              registration by December 15, 2018 to be eligible for our Early
-              Bird Pricing!
+              <span className="bold">October 27 – November 6, 2019</span>
+              <br />
+              Complete your registration by May 31st, 2019 to be eligible for
+              our Early Bird Pricing!
             </p>
             <p>
               A non-refundable $500 USD deposit is required to secure your spot
-              on all retreats.
+              on all retreats, and is due upon acceptance into our program.
             </p>
           </Tout>
         </InfoColumn>
         <InfoColumn>
           <Tout image={Image2} title={"What's Included"}>
             <List>
-              {Inclusions.map((item, n) => <ListItem key={n}>{item}</ListItem>)}
+              {Inclusions.map((item, n) => (
+                <ListItem key={n}>{item}</ListItem>
+              ))}
             </List>
             <Disclaimer>
               <span className="bold">Note:</span> Please bring your own personal
@@ -127,17 +129,18 @@ class RetreatInformation extends Component {
         </InfoColumn>
         <InfoColumn>
           <Tout image={Image3}>
-            <H2>Early Bird Price – $2999 USD</H2>
+            <H2>Early Bird Price – $2399 USD</H2>
             <p>
               Enjoy discounted pricing and secure your spot by registering early
               for our upcoming retreats! See retreat dates for our Early Bird
               cut-offs.
             </p>
             <br />
-            <H2>Regular Price - $3499 USD</H2>
+            <H2>Regular Price - $2799 USD</H2>
             <p>
-              We accept only 12 students for each retreat to ensure you’re
-              provided quality training.<br />
+              To preserve a 4:1 student-mentor ratio, we accept only 12 students
+              for each retreat to ensure you’re provided quality training.
+              <br />
               <span className="bold">Reserve your spot today!</span>
             </p>
             <Disclaimer>*Rates are based on 2-person occupancy.</Disclaimer>

@@ -29,8 +29,7 @@ const LandingIntro = () => {
         <BodyTextLockup>
           <p className="header">
             Learn to code your own website in the heart of Bali.{' '}
-            <NavLink to="/apply">Apply</NavLink> for one of our 14-day retreats
-            today!
+            <NavLink to="/apply">Apply</NavLink> for our 11-day retreat today!
           </p>
         </BodyTextLockup>
       </SplitHero>

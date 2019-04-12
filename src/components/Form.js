@@ -59,7 +59,7 @@ class Form extends Component {
       email: '',
       phone: '',
       location: '',
-      retreats: ['February 10-23, 2019'],
+      retreats: ['October 27 – November 6, 2019'],
     };
   }
 

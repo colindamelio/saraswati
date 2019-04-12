@@ -23,8 +23,8 @@ const Accommodations = ({ image, title, description, secondary }) => {
       <SplitHero image={VillaImage} secondary={secondary}>
         <Tout title={'Your Accommodations'} secondary={secondary}>
           <p>
-            During our 2-week retreat, Villa Malaathina is your luxurious home.
-            Located near Seminyak in the charming village of Umalas, Villa
+            For the duration of our retreat, Villa Malaathina is your luxurious
+            home. Located near Seminyak in the charming village of Umalas, Villa
             Malaathina is surrounded by 5,000 square metres of immaculate
             tropical gardens and traditional Balinese rice paddies.
           </p>
@@ -38,6 +38,7 @@ const Accommodations = ({ image, title, description, secondary }) => {
             <a
               href="http://www.villamalaathina.com"
               target="_blank"
+              rel="noopener noreferrer"
               secondary={secondary}
             >
               Villa Malaathina Official Site
