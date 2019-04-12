@@ -1,15 +1,12 @@
 {
   "landingModule": {
-    "title":
-      "At Saraswati Retreats, we believe your education should be <span className='semiBold'>extraordinary</span>.",
-    "description":
-      "Learn to code your own website in the heart of Bali. Apply for our 14-day retreat today!",
+    "title": "At Saraswati Retreats, we believe your education should be <span className='semiBold'>extraordinary</span>.",
+    "description": "Learn to code your own website in the heart of Bali. Apply for our 11-day retreat today!",
     "image": "http://www.unsplash.it/1280/800/?random"
   },
   "overview": {
     "title": "Front-End Fundamentals",
-    "description":
-      "With 10 days of in-class training, our goal is to ensure you have a strong foundation. Using HTML, CSS, and JAVASCRIPT, you will build your own website from scratch!\n No prior experience is required - just a desire to learn! It may be challenging, but we're excited to guide you through a comprehensive curriculum.",
+    "description": "With 10 days of in-class training, our goal is to ensure you have a strong foundation. Using HTML, CSS, and JAVASCRIPT, you will build your own website from scratch!\n No prior experience is required - just a desire to learn! It may be challenging, but we're excited to guide you through a comprehensive curriculum.",
     "image": "http://www.unsplash.it/1280/801/?random",
     "ctas": [
       {
@@ -26,8 +23,7 @@
   },
   "experience": {
     "title": "Providing you authentic Balinese experiences.",
-    "description":
-      "Without a doubt, Bali is beautiful. However, most people who visit the island miss an opportunity to discover authentic Balinese Culture. Saraswati Retreats strives to educate our guests beyond coding their website - experience local cuisine, traverse the landscape, and embrace what it means to be truly Balinese.",
+    "description": "Without a doubt, Bali is beautiful. However, most people who visit the island miss an opportunity to discover authentic Balinese Culture. Saraswati Retreats strives to educate our guests beyond coding their website - experience local cuisine, traverse the landscape, and embrace what it means to be truly Balinese.",
     "image": {
       "src": "image src",
       "alt": "alt text"
@@ -47,8 +43,7 @@
   },
   "accommodations": {
     "title": "Your Accommodations",
-    "description":
-      "Located in the charming village of Umalas, near Seminyak, Villa Malaathina – set among 5,000 square metres of immaculate tropical gardens and surrounded by traditional Balinese rice paddies – is home for the duration of our retreat. For more information, visit the Villa Malaanthina Official Site.",
+    "description": "Located in the charming village of Umalas, near Seminyak, Villa Malaathina – set among 5,000 square metres of immaculate tropical gardens and surrounded by traditional Balinese rice paddies – is home for the duration of our retreat. For more information, visit the Villa Malaanthina Official Site.",
     "image": "http://www.unsplash.it/960/800/?random"
   },
   "information": {
@@ -56,8 +51,7 @@
       [
         {
           "title": "Upcoming Retreats",
-          "description":
-            "February 10 – 23, 2019\nDeposit payments are due October 31, 2018. Complete your registration by December 15, 2018 to be eligible for our Early Bird Pricing!\nA non-refundable $500USD deposit is required to secure your spot on all retreats.",
+          "description": "February 10 – 23, 2019\nDeposit payments are due October 31, 2018. Complete your registration by December 15, 2018 to be eligible for our Early Bird Pricing!\nA non-refundable $500USD deposit is required to secure your spot on all retreats.",
           "image": {
             "src": "http://www.unsplash.it/960/640/",
             "alt": "alt text"
@@ -74,8 +68,7 @@
       [
         {
           "title": "Included",
-          "description":
-            "- Airport transfer\n- 13 nights accommodation\n- 10 days of in-class training\n- All breakfasts & lunches included\n- 4 group dinners\n- Cultural excursions and activities \n- 1 traditional balinese cooking class (5 hours)\nNote: Please be sure to bring your own personal laptop. Flight costs not included.",
+          "description": "- Airport transfer\n- 13 nights accommodation\n- 10 days of in-class training\n- All breakfasts & lunches included\n- 4 group dinners\n- Cultural excursions and activities \n- 1 traditional balinese cooking class (5 hours)\nNote: Please be sure to bring your own personal laptop. Flight costs not included.",
           "image": {
             "src": "http://www.unsplash.it/960/640/",
             "alt": "alt text"
@@ -85,8 +78,7 @@
       [
         {
           "title": "Early Bird",
-          "description":
-            "Save big when you register early for upcoming retreats! See retreat dates for Early Bird cut-off.",
+          "description": "Save big when you register early for upcoming retreats! See retreat dates for Early Bird cut-off.",
           "image": {
             "src": "http://www.unsplash.it/960/640/",
             "alt": "alt text"
@@ -94,8 +86,7 @@
         },
         {
           "title": "Regular",
-          "description":
-            "We accept a limited number of students each retreat to ensure you’re provided quality training. Reserve your spot today!\n*Rates are based on 2-person occupancy."
+          "description": "We accept a limited number of students each retreat to ensure you’re provided quality training. Reserve your spot today!\n*Rates are based on 2-person occupancy."
         }
       ]
     ]

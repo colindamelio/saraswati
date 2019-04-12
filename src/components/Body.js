@@ -4,6 +4,7 @@ import ScrollToTop from './ScrollToTop';
 import Home from 'routes/Home';
 import Curriculum from 'routes/Curriculum';
 import Culture from 'routes/Culture';
+import About from 'routes/About';
 import Apply from 'routes/Apply';
 import Error from 'routes/Error';
 import Header from 'modules/Header';
@@ -28,6 +29,10 @@ const Body = props => {
             <Route
               path="/culture"
               render={renderProps => <Culture {...props} {...renderProps} />}
+            />
+            <Route
+              path="/about"
+              render={renderProps => <About {...props} {...renderProps} />}
             />
             <Route
               path="/apply"
